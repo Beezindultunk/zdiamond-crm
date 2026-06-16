@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.12
+# ZDiamond CRM v13.20
 
-Google Contacts Guided Import.
+Life Signs Planner Auto Close Statistics.
