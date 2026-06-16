@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.30
+# ZDiamond CRM v13.31
 
-Import Hub Fit and Google Visible.
+Forced Login and Google Import Start.
