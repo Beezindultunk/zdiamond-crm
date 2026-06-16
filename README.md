@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.26
+# ZDiamond CRM v13.28
 
-No Overflow Screen Fit.
+Google OAuth Popup Redirect Fix.
