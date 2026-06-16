@@ -1,6 +1,6 @@
-/* ZDiamond CRM Service Worker v13.24 */
-const APP_VERSION = "v13.24";
-const CACHE_NAME = "zdiamond-crm-app-v13-24";
+/* ZDiamond CRM Service Worker v13.25 */
+const APP_VERSION = "v13.25";
+const CACHE_NAME = "zdiamond-crm-app-v13-25";
 const APP_SHELL = ["/","/index.html","/manifest.webmanifest","/icons/icon-192.png","/icons/icon-512.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));

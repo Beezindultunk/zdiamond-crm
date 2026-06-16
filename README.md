@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.24
+# ZDiamond CRM v13.25
 
-Clean Focus Layout.
+Minimal No Chaos Interface.
