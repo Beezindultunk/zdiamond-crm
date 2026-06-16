@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.31
+# ZDiamond CRM v13.35
 
-Forced Login and Google Import Start.
+Fast Name Import Wizard – quick name/CSV/Facebook import, preview, dedupe, chunked save.
