@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.35
+# ZDiamond CRM v13.37
 
-Fast Name Import Wizard – quick name/CSV/Facebook import, preview, dedupe, chunked save.
+Universal Responsive Screen Fit – iPad / phone / desktop layout hardening and screen-fit tables.
