@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.29
+# ZDiamond CRM v13.30
 
-Google OAuth Hard Fix.
+Import Hub Fit and Google Visible.
