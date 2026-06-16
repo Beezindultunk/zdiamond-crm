@@ -1,6 +1,6 @@
-/* ZDiamond CRM Service Worker v13.4 */
-const APP_VERSION = "v13.4";
-const CACHE_NAME = "zdiamond-crm-app-v13-4";
+/* ZDiamond CRM Service Worker v13.5 */
+const APP_VERSION = "v13.5";
+const CACHE_NAME = "zdiamond-crm-app-v13-5";
 const APP_SHELL = ["/","/index.html","/manifest.webmanifest","/icons/icon-192.png","/icons/icon-512.png"];
 
 self.addEventListener("install", event => {
@@ -22,9 +22,9 @@ self.addEventListener("fetch", event => {
     event.respondWith(fetch(req));
     return;
   }
-  // network-first for html/js/sw to prevent stale broken UI
-  if(req.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.endsWith("service-worker.js")){
-    event.respondWith(fetch(req).then(res => {
+  // Always network-first for app shell to avoid stale broken button code.
+  if(req.mode === "navigate" || url.pathname === "/" || url.pathname.endsWith("index.html") || url.pathname.endsWith("service-worker.js")){
+    event.respondWith(fetch(req, {cache:"no-store"}).then(res => {
       const copy = res.clone();
       if(res && res.ok && url.origin === location.origin) caches.open(CACHE_NAME).then(cache => cache.put(req, copy));
       return res;
