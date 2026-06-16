@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.23
+# ZDiamond CRM v13.24
 
-Start Screen Menu Language System.
+Clean Focus Layout.
