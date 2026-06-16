@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.10
+# ZDiamond CRM v13.12
 
-Final Full Stress Tested Stable Build.
+Google Contacts Guided Import.
