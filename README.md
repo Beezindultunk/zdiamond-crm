@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.28
+# ZDiamond CRM v13.29
 
-Google OAuth Popup Redirect Fix.
+Google OAuth Hard Fix.
