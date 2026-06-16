@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.25
+# ZDiamond CRM v13.26
 
-Minimal No Chaos Interface.
+No Overflow Screen Fit.
