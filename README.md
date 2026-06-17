@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.52
+# ZDiamond CRM v13.81
 
-Supabase Auth User Identity – email/password Auth, access token cloud headers, auth_user_id mapping.
+Real AI Backend Assistant Final – secure backend URL, OpenAI Responses API proxy concept, CRM context, AI actions, fallback mode.
