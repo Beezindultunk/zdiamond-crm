@@ -1,3 +1,3 @@
-# RisePath / ZDiamond CRM v13.83
+# RisePath / ZDiamond CRM v13.84
 
-Cloud Fallback No White Screen Final – fixes Cloud nincs beállítva blank screen, adds recovery shell and full-time test data generator.
+Early Boot Cloud Guard Final – cloud fallback installed in HEAD before legacy code, prevents white screen before app scripts run.
