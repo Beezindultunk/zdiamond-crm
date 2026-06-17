@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.39
+# ZDiamond CRM v13.45
 
-Cloud Team Sync & Google Contact Flow – cloud-ready multi-user storage, Supabase REST adapter, Google contact import flow, network-builder execution targets.
+Live Control Center Final Flow – daily workflow controller, next best action, readiness, targets, daily list.

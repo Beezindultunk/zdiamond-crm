@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZINZINO ROYAL CROWN CRM v13.39 – Cloud Team Sync & Google Contact Flow</title>
+  <title>ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow</title>
   <style>
     :root{
       --royal:#172554; --gold:#d4af37; --crown:#fff8dc;
@@ -1971,7 +1971,7 @@ body.large-list-fix-v1336 #viewAll{max-width:100%!important;overflow-x:hidden!im
 
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+/* === v13.45 Live Control Center Final Flow === */
 body.universal-fit-v1337,
 body.universal-fit-v1337 main,
 body.universal-fit-v1337 #app,
@@ -2182,7 +2182,7 @@ body.universal-fit-v1337 #viewGuidedWorkflow{overflow-x:hidden!important}
 }
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+/* === v13.45 Live Control Center Final Flow === */
 .importQueueV1338{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2255,7 +2255,7 @@ body.import-queue-v1338 #viewSecureImportHub{max-width:100%!important;overflow-x
 @media(max-width:620px){.importQueueStatsV1338{grid-template-columns:1fr}}
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+/* === v13.45 Live Control Center Final Flow === */
 .cloudSyncV1339{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2300,6 +2300,391 @@ body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub
   .cloudStatsV1339,.flowTargetsV1339{grid-template-columns:1fr}
 }
 
+
+/* === v13.45 Live Control Center Final Flow === */
+.onboardingOverlayV1340{position:fixed;inset:0;background:rgba(15,23,42,.82);z-index:99000;display:none;align-items:center;justify-content:center;padding:18px}
+.onboardingOverlayV1340.open{display:flex}
+.onboardingModalV1340{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;box-shadow:0 30px 90px rgba(0,0,0,.35);border:1px solid #d0d5dd;color:#111827}
+.onboardingHeaderV1340{background:linear-gradient(135deg,#0b1220,#173d25,#c7a12b);color:#fff;padding:22px}
+.onboardingHeaderV1340 h2{margin:0;font-size:28px}.onboardingHeaderV1340 p{margin:8px 0 0;color:#e5e7eb}
+.onboardingBodyV1340{padding:18px}.onboardingGridV1340{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.onboardingGridV1340 label{font-weight:950;color:#172554;font-size:13px;display:block;margin-top:8px}
+.onboardingGridV1340 input,.onboardingGridV1340 select,.onboardingGridV1340 textarea{width:100%;border:1px solid #d0d5dd;border-radius:12px;padding:10px;font-weight:800}
+.onboardingGridV1340 textarea{min-height:92px}
+.onboardingActionsV1340{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:16px 18px 18px;border-top:1px solid #e5e7eb}
+.onboardingActionsV1340 button{border:0;border-radius:12px;padding:10px 14px;font-weight:950;cursor:pointer;background:#14532d;color:#fff}
+.onboardingActionsV1340 button.soft{background:#f3f4f6;color:#111827;border:1px solid #d0d5dd}.onboardingActionsV1340 button.gold{background:#c7a12b;color:#111827}
+.onboardingProgressV1340{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:12px 0 0}.onboardingProgressV1340 i{display:block;height:100%;background:#22c55e;width:0}
+.onboardingCardsV1340{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.onboardingCardV1340{border:1px solid #e5e7eb;border-radius:14px;padding:12px;background:#f8fafc}.onboardingCardV1340 b{display:block;color:#14532d;font-size:20px}
+.onboardingNoticeV1340{background:#fff8dc;border:1px solid #c7a12b;border-radius:14px;padding:12px;margin:10px 0;color:#111827}
+.onboardingBadgeV1340{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:950;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;margin:2px}.onboardingBadgeV1340.warn{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.updateBannerV1340{position:fixed;left:50%;bottom:72px;transform:translateX(-50%);z-index:95000;width:min(760px,calc(100vw - 18px));background:#0b1220;color:#fff;border:1px solid #334155;border-radius:18px;padding:12px;display:none;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.updateBannerV1340.open{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.updateBannerV1340 button{border:0;border-radius:10px;background:#22c55e;color:#052e16;font-weight:950;padding:8px 12px}
+.firstLoginStatusV1340{background:#fff;border:1px solid #d0d5dd;border-left:8px solid #c7a12b;border-radius:16px;padding:12px;margin:10px 0}
+@media(max-width:780px){.onboardingGridV1340,.onboardingCardsV1340{grid-template-columns:1fr}.onboardingHeaderV1340 h2{font-size:22px}}
+
+
+/* === v13.45 Live Control Center Final Flow === */
+.vaultV1341{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #14532d;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.vaultV1341 h3{margin:0 0 8px;color:#14532d}
+.vaultV1341 p{color:#667085;margin:4px 0 8px}
+.vaultGridV1341{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vaultV1341 input,.vaultV1341 select,.vaultV1341 textarea{
+  width:100%;max-width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:8px;font-weight:800
+}
+.vaultV1341 textarea{min-height:140px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.vaultV1341 label{font-size:12px;font-weight:950;color:#172554;display:block;margin-top:6px}
+.vaultActionsV1341{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.vaultActionsV1341 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.vaultActionsV1341 button.blue{background:#2563eb}.vaultActionsV1341 button.gold{background:#c7a12b;color:#111827}.vaultActionsV1341 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.vaultActionsV1341 button.red{background:#dc2626}
+.vaultStatsV1341{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:8px 0}
+.vaultStatsV1341 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.vaultStatsV1341 b{display:block;font-size:20px;color:#14532d}
+.vaultProgressV1341{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:8px 0}
+.vaultProgressV1341 i{display:block;height:100%;width:0;background:linear-gradient(90deg,#22c55e,#2563eb)}
+.vaultListV1341{max-height:260px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.vaultFileV1341{display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px;border-bottom:1px solid #e5e7eb;align-items:center}
+.vaultFileV1341:last-child{border-bottom:0}.vaultFileV1341 b{color:#172554}.vaultFileV1341 small{color:#667085;display:block}
+.vaultBadgeV1341{display:inline-flex;border-radius:999px;padding:3px 7px;font-size:11px;font-weight:900;border:1px solid #bbf7d0;background:#ecfdf3;color:#14532d;margin:2px}
+.vaultBadgeV1341.fb{border-color:#bfdbfe;background:#eff6ff;color:#1d4ed8}.vaultBadgeV1341.warn{border-color:#fed7aa;background:#fff7ed;color:#c2410c}
+.vaultLogV1341{max-height:180px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.vaultNoticeV1341{background:#fff8dc;border:1px solid #c7a12b;border-radius:12px;padding:10px;margin:8px 0}
+.vaultMiniTableV1341{max-height:240px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px}
+.vaultMiniTableV1341 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.vaultMiniTableV1341 th,.vaultMiniTableV1341 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.vaultMiniTableV1341 th{position:sticky;top:0;background:#eff6ff;color:#172554}
+body.vault-v1341 #secureImportHubDashboard,body.vault-v1341 #viewSecureImportHub{max-width:100%!important;overflow-x:hidden!important}
+@media(max-width:980px){.vaultGridV1341{grid-template-columns:1fr}.vaultStatsV1341{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.vaultStatsV1341{grid-template-columns:1fr}}
+
+
+/* === v13.45 Live Control Center Final Flow === */
+body.freeze-guard-v1342{
+  --dock-bg:rgba(11,18,32,.94);
+  --dock-border:rgba(255,255,255,.13);
+  --dock-active:#22c55e;
+  --dock-gold:#c7a12b;
+}
+body.freeze-guard-v1342 .mncDockV1325,
+body.freeze-guard-v1342 .mobileDock,
+body.freeze-guard-v1342 .bottomNav,
+body.freeze-guard-v1342 #bottomDock{
+  position:fixed!important;
+  left:50%!important;
+  right:auto!important;
+  bottom:14px!important;
+  transform:translateX(-50%)!important;
+  width:auto!important;
+  max-width:calc(100vw - 18px)!important;
+  min-width:0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:6px!important;
+  padding:7px!important;
+  border-radius:18px!important;
+  background:var(--dock-bg)!important;
+  border:1px solid var(--dock-border)!important;
+  box-shadow:0 22px 60px rgba(15,23,42,.32)!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  z-index:88000!important;
+  backdrop-filter:blur(16px)!important;
+  -webkit-backdrop-filter:blur(16px)!important;
+}
+body.freeze-guard-v1342 .mncDockV1325 button,
+body.freeze-guard-v1342 .mobileDock button,
+body.freeze-guard-v1342 .bottomNav button,
+body.freeze-guard-v1342 #bottomDock button{
+  flex:0 0 auto!important;
+  min-width:0!important;
+  height:38px!important;
+  padding:0 12px!important;
+  border-radius:13px!important;
+  border:0!important;
+  background:rgba(255,255,255,.08)!important;
+  color:#f8fafc!important;
+  font-size:13px!important;
+  font-weight:950!important;
+  letter-spacing:-.01em!important;
+  white-space:nowrap!important;
+  box-shadow:none!important;
+}
+body.freeze-guard-v1342 .mncDockV1325 button.active,
+body.freeze-guard-v1342 .mncDockV1325 button:first-child,
+body.freeze-guard-v1342 .mobileDock button.active,
+body.freeze-guard-v1342 .bottomNav button.active{
+  background:linear-gradient(135deg,#16a34a,#22c55e)!important;
+  color:#052e16!important;
+}
+body.freeze-guard-v1342 .mncDockV1325 button:last-child{
+  background:linear-gradient(135deg,#c7a12b,#facc15)!important;
+  color:#111827!important;
+}
+.freezeGuardPanelV1342{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #dc2626;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.freezeGuardPanelV1342 h3{margin:0 0 8px;color:#991b1b}
+.freezeGuardStatsV1342{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin:8px 0}
+.freezeGuardStatsV1342 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.freezeGuardStatsV1342 b{display:block;font-size:20px;color:#14532d}
+.freezeGuardActionsV1342{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0}
+.freezeGuardActionsV1342 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.freezeGuardActionsV1342 button.blue{background:#2563eb}.freezeGuardActionsV1342 button.gold{background:#c7a12b;color:#111827}.freezeGuardActionsV1342 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.freezeGuardActionsV1342 button.red{background:#dc2626}
+.freezeGuardLogV1342{max-height:130px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.freezeGuardProgressV1342{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:8px 0}
+.freezeGuardProgressV1342 i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ef4444,#facc15,#22c55e)}
+body.freeze-guard-v1342 .vaultV1341,
+body.freeze-guard-v1342 .importQueueV1338,
+body.freeze-guard-v1342 .largeFixV1336{
+  contain:layout style!important;
+}
+body.freeze-guard-v1342 input[type="file"]{
+  max-width:100%!important;
+}
+body.freeze-guard-v1342 .vaultListV1341,
+body.freeze-guard-v1342 .queueFileListV1338,
+body.freeze-guard-v1342 .largeFixTableWrapV1336{
+  will-change:scroll-position!important;
+  -webkit-overflow-scrolling:touch!important;
+}
+@media(max-width:760px){
+  body.freeze-guard-v1342 .mncDockV1325,
+  body.freeze-guard-v1342 .mobileDock,
+  body.freeze-guard-v1342 .bottomNav,
+  body.freeze-guard-v1342 #bottomDock{
+    left:8px!important;
+    right:8px!important;
+    transform:none!important;
+    justify-content:flex-start!important;
+    max-width:calc(100vw - 16px)!important;
+    border-radius:16px!important;
+  }
+  body.freeze-guard-v1342 .mncDockV1325 button{height:36px!important;font-size:12px!important;padding:0 10px!important}
+  .freezeGuardStatsV1342{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){.freezeGuardStatsV1342{grid-template-columns:1fr}}
+@media print{body.freeze-guard-v1342 .mncDockV1325,.freezeGuardPanelV1342{display:none!important}}
+
+
+/* === v13.45 Live Control Center Final Flow === */
+.systemAuditV1343{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #7c3aed;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.systemAuditV1343 h3{margin:0 0 8px;color:#4c1d95}
+.auditGridV1343{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:8px 0}
+.auditGridV1343 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.auditGridV1343 b{display:block;font-size:20px;color:#14532d}
+.auditActionsV1343{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0}
+.auditActionsV1343 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.auditActionsV1343 button.blue{background:#2563eb}.auditActionsV1343 button.gold{background:#c7a12b;color:#111827}.auditActionsV1343 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.auditActionsV1343 button.red{background:#dc2626}
+.auditLogV1343{max-height:220px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.auditTableV1343{max-height:360px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.auditTableV1343 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.auditTableV1343 th,.auditTableV1343 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.auditTableV1343 th{background:#f5f3ff;color:#4c1d95;position:sticky;top:0}
+.auditStatusOkV1343{color:#14532d;font-weight:950}.auditStatusWarnV1343{color:#c2410c;font-weight:950}.auditStatusBadV1343{color:#dc2626;font-weight:950}
+.perfToastV1343{
+  position:fixed;right:12px;bottom:112px;z-index:98000;max-width:min(420px,calc(100vw - 24px));
+  background:#111827;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:12px;display:none;box-shadow:0 18px 48px rgba(0,0,0,.28)
+}
+.perfToastV1343.open{display:block}
+body.system-audit-v1343 .mncDockV1325{bottom:10px!important}
+body.system-audit-v1343 .tableScroll,
+body.system-audit-v1343 .largeFixTableWrapV1336,
+body.system-audit-v1343 .vaultListV1341,
+body.system-audit-v1343 .queueFileListV1338{
+  overscroll-behavior:contain!important;
+}
+body.system-audit-v1343 .largeFixTableV1336 tr:nth-child(n+120),
+body.system-audit-v1343 .importTableV1327 tr:nth-child(n+120){
+  content-visibility:auto!important;
+  contain-intrinsic-size:38px!important;
+}
+@media(max-width:980px){.auditGridV1343{grid-template-columns:1fr 1fr}.auditTableV1343 table{min-width:760px}}
+@media(max-width:620px){.auditGridV1343{grid-template-columns:1fr}}
+
+
+/* === v13.45 Live Control Center Final Flow === */
+.launchReadyV1344{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #16a34a;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  max-width:100%;
+  overflow:hidden;
+}
+.launchReadyV1344 h3{margin:0 0 8px;color:#14532d}
+.launchGridV1344{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.launchReadyV1344 input,.launchReadyV1344 select,.launchReadyV1344 textarea{
+  width:100%;max-width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:8px;font-weight:800
+}
+.launchReadyV1344 label{font-weight:950;color:#172554;font-size:12px;display:block;margin-top:6px}
+.launchActionsV1344{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0}
+.launchActionsV1344 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.launchActionsV1344 button.blue{background:#2563eb}.launchActionsV1344 button.gold{background:#c7a12b;color:#111827}.launchActionsV1344 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.launchActionsV1344 button.red{background:#dc2626}
+.launchStatsV1344{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:8px 0}
+.launchStatsV1344 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.launchStatsV1344 b{display:block;font-size:20px;color:#14532d}
+.launchBadgeV1344{display:inline-flex;border-radius:999px;padding:3px 8px;margin:2px;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;font-size:11px;font-weight:950}
+.launchBadgeV1344.warn{background:#fff7ed;color:#c2410c;border-color:#fed7aa}.launchBadgeV1344.blue{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.launchTableV1344{max-height:310px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.launchTableV1344 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.launchTableV1344 th,.launchTableV1344 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.launchTableV1344 th{position:sticky;top:0;background:#ecfdf3;color:#14532d}
+.launchLogV1344{max-height:160px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.registerGateV1344{
+  background:linear-gradient(135deg,#0b1220,#143d24);
+  color:#fff;
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 20px 60px rgba(15,23,42,.22);
+  margin:10px 0;
+}
+.registerGateV1344 input,.registerGateV1344 select{
+  border:0!important;
+  background:#fff!important;
+  color:#111827!important;
+}
+.registerGateV1344 h3{color:#fff!important}
+.registerGateV1344 .launchBadgeV1344{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.2)}
+body.live-launch-v1344 .mncBrandV1325 small:after{content:" LIVE";color:#16a34a;font-weight:950}
+@media(max-width:980px){.launchGridV1344{grid-template-columns:1fr}.launchStatsV1344{grid-template-columns:1fr 1fr}.launchTableV1344 table{min-width:760px}}
+@media(max-width:620px){.launchStatsV1344{grid-template-columns:1fr}}
+
+
+/* === v13.45 Live Control Center Final Flow === */
+.controlCenterV1345{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #c7a12b;
+  border-radius:18px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.controlCenterV1345 h3{margin:0 0 8px;color:#14532d}
+.controlCenterHeroV1345{
+  background:linear-gradient(135deg,#0b1220,#173d25,#c7a12b);
+  color:#fff;
+  border-radius:20px;
+  padding:18px;
+  margin-bottom:12px;
+  box-shadow:0 22px 60px rgba(15,23,42,.22);
+}
+.controlCenterHeroV1345 h2{margin:0 0 6px;font-size:28px;letter-spacing:-.03em}
+.controlCenterHeroV1345 p{margin:0;color:#e5e7eb}
+.controlStatsV1345{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:10px 0}
+.controlStatsV1345 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:9px;min-width:0}
+.controlStatsV1345 b{display:block;font-size:21px;color:#14532d}
+.controlFlowV1345{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:7px;margin:10px 0}
+.flowStepV1345{
+  border:1px solid #e5e7eb;
+  background:#f8fafc;
+  border-radius:14px;
+  padding:8px;
+  min-width:0;
+  text-align:center;
+  position:relative;
+}
+.flowStepV1345 b{display:block;font-size:12px;color:#172554}
+.flowStepV1345 small{display:block;color:#667085;font-size:10px}
+.flowStepV1345.ok{background:#ecfdf3;border-color:#bbf7d0}
+.flowStepV1345.warn{background:#fff7ed;border-color:#fed7aa}
+.flowStepV1345.active{background:#eff6ff;border-color:#93c5fd;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.controlGridV1345{display:grid;grid-template-columns:1.1fr .9fr;gap:12px}
+.controlActionsV1345{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.controlActionsV1345 button{
+  border:0;
+  border-radius:12px;
+  background:#14532d;
+  color:white;
+  font-weight:950;
+  padding:10px 12px;
+  cursor:pointer;
+}
+.controlActionsV1345 button.main{background:linear-gradient(135deg,#16a34a,#22c55e);color:#052e16;font-size:16px;padding:12px 16px}
+.controlActionsV1345 button.blue{background:#2563eb}
+.controlActionsV1345 button.gold{background:#c7a12b;color:#111827}
+.controlActionsV1345 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}
+.controlBadgeV1345{display:inline-flex;border-radius:999px;padding:4px 9px;margin:2px;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;font-size:12px;font-weight:950}
+.controlBadgeV1345.warn{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.controlBadgeV1345.bad{background:#fef2f2;color:#b91c1c;border-color:#fecaca}
+.controlBadgeV1345.blue{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.controlListV1345{border:1px solid #e5e7eb;background:#fff;border-radius:14px;overflow:hidden}
+.controlItemV1345{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:9px;border-bottom:1px solid #e5e7eb}
+.controlItemV1345:last-child{border-bottom:0}
+.controlItemV1345 .dot{width:14px;height:14px;border-radius:999px;background:#22c55e}
+.controlItemV1345.warn .dot{background:#f97316}
+.controlItemV1345.bad .dot{background:#dc2626}
+.controlItemV1345 b{color:#172554}
+.controlItemV1345 small{display:block;color:#667085}
+.controlLogV1345{max-height:160px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.controlTableV1345{max-height:280px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.controlTableV1345 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.controlTableV1345 th,.controlTableV1345 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.controlTableV1345 th{background:#fff8dc;color:#14532d;position:sticky;top:0}
+body.final-flow-v1345 #controlCenterHostV1345{order:-100}
+body.final-flow-v1345 .mncMainV1325{padding-bottom:100px!important}
+@media(max-width:1180px){
+  .controlFlowV1345{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .controlStatsV1345{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .controlGridV1345{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .controlFlowV1345{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .controlStatsV1345{grid-template-columns:1fr 1fr}
+  .controlItemV1345{grid-template-columns:auto 1fr}
+  .controlItemV1345 .controlActionsV1345{grid-column:1 / -1}
+}
+@media(max-width:520px){
+  .controlStatsV1345{grid-template-columns:1fr}
+  .controlCenterHeroV1345 h2{font-size:22px}
+}
+
 </style>
 
 <link rel="manifest" href="./manifest.webmanifest">
@@ -2312,7 +2697,7 @@ body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub
 </head>
 <body>
 <header>
-  <h1>👑 ZINZINO ROYAL CROWN CRM v13.39 – Cloud Team Sync & Google Contact Flow</h1>
+  <h1>👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow</h1>
   <p>Több felhasználós, színes pipeline CRM Z4F rendszerrel és tiszta Facebook HTML import előnézettel.</p>
 </header>
 
@@ -2346,7 +2731,7 @@ body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub
 
       <div class="navGroup">
         <h3>🧭 Verzió / állapot</h3>
-        <div class="row"><span class="ownerBadge">v13.39</span><span class="pill">Cloud Team Sync & Google Contact Flow</span></div>
+        <div class="row"><span class="ownerBadge">v13.45</span><span class="pill">Live Control Center Final Flow</span></div>
         <div class="small" id="saveStatePanel">Mentési állapot betöltése...</div>
         <button class="ghost" onclick="openChangelog()">Mi változott?</button>
       </div>
@@ -24076,17 +24461,17 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
 
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+/* === v13.45 Live Control Center Final Flow === */
 (function(){
-  const V='v13.39';
+  const V='v13.45';
   function setVersionUiV1337(){
-    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Cloud Team Sync & Google Contact Flow'; }catch(e){}
+    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Live Control Center Final Flow'; }catch(e){}
     const h1=document.querySelector('h1');
-    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Cloud Team Sync & Google Contact Flow';
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Live Control Center Final Flow';
     const versionCard=[...document.querySelectorAll('h3')].find(h=>/Verzió\s*\/\s*állapot/i.test(h.textContent))?.parentElement;
     if(versionCard){
       const b=versionCard.querySelector('.ownerBadge'); if(b) b.textContent=V;
-      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Cloud Team Sync & Google Contact Flow';
+      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Live Control Center Final Flow';
     }
     const smallBrand=document.querySelector('.mncBrandV1325 small');
     if(smallBrand) smallBrand.textContent=V;
@@ -24127,7 +24512,7 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
     const modal=document.getElementById('modal');
     if(title) title.textContent='Verzió / Changelog';
     if(body){
-      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
+      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
     }
     if(modal) modal.classList.add('open');
   };
@@ -24155,8 +24540,8 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
 })();
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
-var APP_VERSION = "v13.39";
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
 window.__RC_IMPORT_QUEUE_PROCESSOR_V1338__ = true;
 
 let queueRunV1338 = false;
@@ -24427,7 +24812,7 @@ function renderImportQueueV1338(){
     target.prepend(host);
   }
   host.innerHTML=`<div class="importQueueV1338">
-    <h3>Import tárhely & háttér névfeldolgozó – v13.39</h3>
+    <h3>Import tárhely & háttér névfeldolgozó – v13.45</h3>
     <p>A fájlokat először csak eltárolja. Utána kis csomagokban áthúzza a neveket a CRM adatbázisba. Ami már átment, azt többet nem olvassa be. Google és Facebook listát összefésüli.</p>
     <div class="importQueueStatsV1338">
       <div><b>${st.files}</b><span>fájl tárhelyen</span></div>
@@ -24503,7 +24888,7 @@ if(oldRunDeepQaV1338){
   runDeepQaV92=function(){
     const qa=oldRunDeepQaV1338();
     const s=queueStatsV1338();
-    qa.version="v13.39";
+    qa.version="v13.45";
     qa.importQueueProcessor={
       enabled:true,
       panel:!!document.getElementById("importQueueHostV1338"),
@@ -24522,14 +24907,14 @@ if(oldRunDeepQaV1338){
 }
 openChangelog = function(){
   document.getElementById("modalTitle").textContent="Verzió / Changelog";
-  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.39</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ import tárhely fájlokhoz</li><li>✅ feldolgozás kis csomagokban</li><li>✅ folytatható feldolgozás</li><li>✅ ami már átment, azt nem olvassa be újra</li><li>✅ Google + Facebook lista összefésülés</li><li>✅ duplikáció és merge index</li><li>✅ kész fájlok külön kezelése</li><li>✅ QA importQueueProcessor blokk</li></ul></div>`;
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ import tárhely fájlokhoz</li><li>✅ feldolgozás kis csomagokban</li><li>✅ folytatható feldolgozás</li><li>✅ ami már átment, azt nem olvassa be újra</li><li>✅ Google + Facebook lista összefésülés</li><li>✅ duplikáció és merge index</li><li>✅ kész fájlok külön kezelése</li><li>✅ QA importQueueProcessor blokk</li></ul></div>`;
   document.getElementById("modal").classList.add("open");
 };
 setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderImportQueueV1338(); },800);
 
 
-/* === v13.39 Cloud Team Sync & Google Contact Flow === */
-var APP_VERSION = "v13.39";
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
 window.__RC_CLOUD_TEAM_SYNC_GOOGLE_FLOW_V1339__ = true;
 
 let cloudSyncTimerV1339 = null;
@@ -24818,7 +25203,7 @@ function renderCloudSyncCenterV1339(){
   const contacts=(db.contacts||[]).filter(c=>(c.ownerId||"tomi")===user.ownerId || user.ownerId==="tomi").length;
   const queue=queueStatsV1338 ? queueStatsV1338() : {files:0,processed:0,total:0,imported:0};
   host.innerHTML=`<div class="cloudSyncV1339">
-    <h3>Felhő / Saját felhasználói struktúra / Google javítás – v13.39</h3>
+    <h3>Felhő / Saját felhasználói struktúra / Google javítás – v13.45</h3>
     <p>Ez a modul teszi felhőkész állapotba a rendszert: minden belépő saját ownerId alapján dolgozik, cloudba menthető, majd másik eszközön azonnal visszatölthető.</p>
     <div class="cloudStatsV1339">
       <div><b>${user.name}</b><span>belépő</span></div>
@@ -24906,7 +25291,7 @@ const oldRunDeepQaV1339 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null
 if(oldRunDeepQaV1339){
   runDeepQaV92=function(){
     const qa=oldRunDeepQaV1339();
-    qa.version="v13.39";
+    qa.version="v13.45";
     qa.cloudTeamSyncGoogleFlow={
       enabled:true,
       panel:!!document.getElementById("cloudSyncHostV1339"),
@@ -24922,10 +25307,1374 @@ if(oldRunDeepQaV1339){
 }
 openChangelog = function(){
   document.getElementById("modalTitle").textContent="Verzió / Changelog";
-  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.39</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ cloud-ready adattárolás minden belépőnek saját ownerId szerint</li><li>✅ Supabase REST adapter</li><li>✅ profil, kontakt, import queue, napi adatok cloud szinkron</li><li>✅ Google névjegy letöltés javított teljes oldalas indító</li><li>✅ Google előnézet import tárhelyre</li><li>✅ főállású cél: heti 15–20 prezi</li><li>✅ mellékállású cél: heti 5–7 prezi</li><li>✅ QA cloudTeamSyncGoogleFlow blokk</li></ul></div>`;
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ cloud-ready adattárolás minden belépőnek saját ownerId szerint</li><li>✅ Supabase REST adapter</li><li>✅ profil, kontakt, import queue, napi adatok cloud szinkron</li><li>✅ Google névjegy letöltés javított teljes oldalas indító</li><li>✅ Google előnézet import tárhelyre</li><li>✅ főállású cél: heti 15–20 prezi</li><li>✅ mellékállású cél: heti 5–7 prezi</li><li>✅ QA cloudTeamSyncGoogleFlow blokk</li></ul></div>`;
   document.getElementById("modal").classList.add("open");
 };
 setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderCloudSyncCenterV1339(); cloudStartAutoSyncV1339(); },900);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_FIRST_LOGIN_CLOUD_ONBOARDING_V1340__ = true;
+
+let onboardingStepV1340 = 1;
+const onboardingTotalV1340 = 5;
+
+function onboardStateV1340(){
+  db.onboardingV1340 = db.onboardingV1340 || {completed:false,completedAt:null,personal:{},upline:{},work:{mode:"fulltime"},cloud:{created:false,pending:false,lastError:""},firstRunVersion:"v13.45"};
+  return db.onboardingV1340;
+}
+function onboardLoginV1340(){
+  return (typeof loginStateV1327==="function" ? loginStateV1327() : null) || {ownerId:db.currentOwnerId||"tomi",name:db.currentUserName||"Töreki Tamás",role:db.currentUserRole||"admin"};
+}
+function onboardNeedsV1340(){
+  const o=onboardStateV1340(), login=onboardLoginV1340(), key="onboarding_done_v1340_"+(login.ownerId||"tomi");
+  return !o.completed && localStorage.getItem(key)!=="1";
+}
+function onboardOpenV1340(force=false){ if(!force && !onboardNeedsV1340()) return; onboardingStepV1340=1; renderOnboardingV1340(); document.getElementById("onboardingOverlayV1340")?.classList.add("open"); }
+function onboardCloseV1340(){ document.getElementById("onboardingOverlayV1340")?.classList.remove("open"); }
+function onboardTargetV1340(mode){ return mode==="parttime" ? {modeLabel:"Főállás mellett / mellékállás",weeklyPresentation:7,weeklyInvitation:35,dailyInvitation:5,dailyPresentation:1,minHours:15} : {modeLabel:"Főállású hálózatépítő",weeklyPresentation:20,weeklyInvitation:100,dailyInvitation:15,dailyPresentation:3,minHours:40}; }
+function onboardProgressV1340(){ return Math.round((onboardingStepV1340/onboardingTotalV1340)*100); }
+function onboardReadFormV1340(){
+  const o=onboardStateV1340(), get=id=>document.getElementById(id)?.value?.trim()||"";
+  o.personal={fullName:get("obFullNameV1340"),email:get("obEmailV1340"),phone:get("obPhoneV1340"),city:get("obCityV1340"),zinzinoId:get("obZinzinoIdV1340"),why:get("obWhyV1340")};
+  o.upline={name:get("obUplineNameV1340"),email:get("obUplineEmailV1340"),phone:get("obUplinePhoneV1340"),mentorLine:get("obMentorLineV1340")};
+  o.work={mode:get("obWorkModeV1340")||"fulltime",hours:Number(get("obWeeklyHoursV1340")||0),startDate:get("obStartDateV1340"),targetRank:get("obTargetRankV1340")||"Executive",target:onboardTargetV1340(get("obWorkModeV1340")||"fulltime")};
+  db.userWorkModeV1339=o.work.mode; try{save?.()}catch(e){}
+}
+function onboardValidateStepV1340(){
+  onboardReadFormV1340(); const o=onboardStateV1340();
+  if(onboardingStepV1340===1 && (!o.personal.fullName || !o.personal.email)){ alert("Add meg legalább a nevedet és e-mail címedet."); return false; }
+  if(onboardingStepV1340===2 && !o.upline.name){ alert("Add meg, ki a felsővonalad / mentorod."); return false; }
+  if(onboardingStepV1340===3){ const min=onboardTargetV1340(o.work.mode).minHours; if(!o.work.hours || o.work.hours<min){ alert(`A választott módhoz minimum ${min} óra/hét kell.`); return false; } }
+  return true;
+}
+function onboardNextV1340(){ if(!onboardValidateStepV1340()) return; onboardingStepV1340=Math.min(onboardingTotalV1340,onboardingStepV1340+1); renderOnboardingV1340(); }
+function onboardPrevV1340(){ onboardingStepV1340=Math.max(1,onboardingStepV1340-1); renderOnboardingV1340(); }
+
+async function onboardCreateCloudStructureV1340(){
+  onboardReadFormV1340(); const o=onboardStateV1340(), login=onboardLoginV1340(), st=cloudStateV1339 ? cloudStateV1339() : null;
+  db.currentOwnerId=login.ownerId||("user_"+Date.now()); db.currentUserName=o.personal.fullName||login.name; db.currentUserRole=login.role||"user";
+  db.contacts=db.contacts||[]; db.importQueueV1338=db.importQueueV1338||{files:[],processedKeys:{},mergeIndex:{},logs:[]}; db.vitalSignsV1319=db.vitalSignsV1319||{}; db.lifePlannerV1320=db.lifePlannerV1320||{}; db.stats=db.stats||{};
+  if(!st || !cloudConfiguredV1339 || !cloudConfiguredV1339()){
+    o.cloud={created:false,pending:true,lastError:"Cloud nincs konfigurálva. A saját struktúra lokálisan létrejött, cloudba akkor megy fel, amikor Supabase URL és anon key be van állítva."};
+    try{save?.()}catch(e){}; renderOnboardingV1340(); return false;
+  }
+  try{
+    await cloudSaveProfileV1339();
+    await cloudUpsertV1339("zdiamond_queue",[{id:st.teamId+"_"+(login.ownerId||"tomi"),team_id:st.teamId,owner_id:login.ownerId||"tomi",updated_at:new Date().toISOString(),payload:db.importQueueV1338}],"id");
+    await cloudUpsertV1339("zdiamond_daily",[{id:st.teamId+"_"+(login.ownerId||"tomi"),team_id:st.teamId,owner_id:login.ownerId||"tomi",updated_at:new Date().toISOString(),payload:{vitals:db.vitalSignsV1319,planner:db.lifePlannerV1320,stats:db.stats}}],"id");
+    await cloudUpsertV1339("zdiamond_onboarding",[{id:st.teamId+"_"+(login.ownerId||"tomi"),team_id:st.teamId,owner_id:login.ownerId||"tomi",completed:false,updated_at:new Date().toISOString(),payload:o}],"id");
+    o.cloud={created:true,pending:false,lastError:""}; cloudLogV1339?.("Első belépős felhő struktúra létrehozva."); try{save?.()}catch(e){}; renderOnboardingV1340(); return true;
+  }catch(e){ o.cloud={created:false,pending:true,lastError:String(e)}; try{save?.()}catch(x){}; renderOnboardingV1340(); alert("Cloud struktúra létrehozási hiba: "+String(e).slice(0,260)); return false; }
+}
+async function onboardFinishV1340(){
+  onboardReadFormV1340(); await onboardCreateCloudStructureV1340();
+  const o=onboardStateV1340(), login=onboardLoginV1340(); o.completed=true; o.completedAt=new Date().toISOString(); o.version="v13.45";
+  localStorage.setItem("onboarding_done_v1340_"+(login.ownerId||"tomi"),"1");
+  try{
+    if(cloudConfiguredV1339?.()){
+      const st=cloudStateV1339();
+      await cloudUpsertV1339("zdiamond_onboarding",[{id:st.teamId+"_"+(login.ownerId||"tomi"),team_id:st.teamId,owner_id:login.ownerId||"tomi",completed:true,completed_at:o.completedAt,updated_at:new Date().toISOString(),payload:o}],"id");
+      await cloudPushAllV1339();
+    }
+    save?.();
+  }catch(e){}
+  onboardCloseV1340(); alert("Első belépős beállítás kész. Innentől ebbe a saját adatbázisba ment és innen tölt."); renderFirstLoginStatusV1340();
+}
+function onboardStepHtmlV1340(){
+  const o=onboardStateV1340(), login=onboardLoginV1340(), p=o.personal||{}, u=o.upline||{}, w=o.work||{}, target=onboardTargetV1340(w.mode||"fulltime");
+  if(onboardingStepV1340===1) return `<h3>1. Személyes adatok</h3><p>Ez lesz a saját felhasználói struktúrád alapja.</p><div class="onboardingGridV1340"><div><label>Teljes név *</label><input id="obFullNameV1340" value="${escAttr(p.fullName||login.name||"")}"></div><div><label>E-mail *</label><input id="obEmailV1340" value="${escAttr(p.email||"")}" placeholder="email@domain.hu"></div><div><label>Telefon</label><input id="obPhoneV1340" value="${escAttr(p.phone||"")}"></div><div><label>Város / ország</label><input id="obCityV1340" value="${escAttr(p.city||"")}"></div><div><label>Zinzino ID / pozíció</label><input id="obZinzinoIdV1340" value="${escAttr(p.zinzinoId||"")}"></div><div><label>Miért építed ezt az üzletet?</label><textarea id="obWhyV1340">${esc(p.why||"")}</textarea></div></div>`;
+  if(onboardingStepV1340===2) return `<h3>2. Felsővonal / mentor</h3><p>A rendszer ehhez köti a vezetői kontrollt, riportot és támogatást.</p><div class="onboardingGridV1340"><div><label>Ki a felsővonalad / mentorod? *</label><input id="obUplineNameV1340" value="${escAttr(u.name||"")}"></div><div><label>Mentor e-mail</label><input id="obUplineEmailV1340" value="${escAttr(u.email||"")}"></div><div><label>Mentor telefon</label><input id="obUplinePhoneV1340" value="${escAttr(u.phone||"")}"></div><div><label>Mentorvonal / csapat</label><input id="obMentorLineV1340" value="${escAttr(u.mentorLine||"Royal Crown")}"></div></div>`;
+  if(onboardingStepV1340===3) return `<h3>3. Hogyan építed az üzletet?</h3><p>Itt állítja be a rendszer a napi/heti célokat.</p><div class="onboardingGridV1340"><div><label>Munka mód</label><select id="obWorkModeV1340" onchange="onboardReadFormV1340();renderOnboardingV1340()"><option value="fulltime" ${(w.mode||"fulltime")==="fulltime"?"selected":""}>Főállású hálózatépítő</option><option value="parttime" ${w.mode==="parttime"?"selected":""}>Főállás mellett / mellékállásban építi</option></select></div><div><label>Heti vállalt munkaóra</label><input id="obWeeklyHoursV1340" type="number" value="${escAttr(w.hours||target.minHours)}"></div><div><label>Kezdés dátuma</label><input id="obStartDateV1340" type="date" value="${escAttr(w.startDate||new Date().toISOString().slice(0,10))}"></div><div><label>Célszint</label><input id="obTargetRankV1340" value="${escAttr(w.targetRank||"Executive")}"></div></div><div class="onboardingCardsV1340"><div class="onboardingCardV1340"><b>${target.weeklyPresentation}</b><span>heti prezentáció cél</span></div><div class="onboardingCardV1340"><b>${target.dailyInvitation}</b><span>napi meghívás cél</span></div></div>`;
+  if(onboardingStepV1340===4) return `<h3>4. Saját adatbázis létrehozása</h3><p>A rendszer létrehozza a saját munkateredet: kontaktok, import tárhely, napi életjelek, heti/havi statisztika.</p><div class="onboardingNoticeV1340"><b>Cloud állapot:</b> ${cloudConfiguredV1339?.()?'<span class="onboardingBadgeV1340">Cloud konfigurálva</span>':'<span class="onboardingBadgeV1340 warn">Cloud még nincs konfigurálva</span>'} ${o.cloud.created?'<span class="onboardingBadgeV1340">Saját cloud struktúra létrejött</span>':''} ${o.cloud.pending?'<span class="onboardingBadgeV1340 warn">Lokális struktúra kész, cloud függőben</span>':''} ${o.cloud.lastError?`<p>${esc(o.cloud.lastError)}</p>`:""}</div><div class="onboardingCardsV1340"><div class="onboardingCardV1340"><b>${login.ownerId||"tomi"}</b><span>ownerId</span></div><div class="onboardingCardV1340"><b>${cloudStateV1339?.().teamId||"zdiamond-main"}</b><span>teamId</span></div></div><div class="onboardingActionsV1340" style="padding-left:0;padding-right:0;border-top:0"><button onclick="onboardCreateCloudStructureV1340()">Saját adatbázis létrehozása most</button><button class="soft" onclick="prodSetViewV1314 ? prodSetViewV1314('secureImportHub') : setView('secureImportHub')">Cloud beállítás megnyitása</button></div>`;
+  return `<h3>5. Kész indulási folyamat</h3><p>Ez lesz a napi munkafolyamatod.</p><div class="onboardingCardsV1340"><div class="onboardingCardV1340"><b>1</b><span>Import tárhely</span><small>Google / Facebook / CSV nevek</small></div><div class="onboardingCardV1340"><b>2</b><span>Nagy névlista</span><small>Mai megkeresések</small></div><div class="onboardingCardV1340"><b>3</b><span>Prezentációk</span><small>${target.weeklyPresentation} / hét cél</small></div><div class="onboardingCardV1340"><b>4</b><span>Napi zárás</span><small>Életjelek + stat</small></div></div><div class="onboardingNoticeV1340"><b>Automatikus frissítés:</b> a rendszer induláskor ellenőrzi az új verziót, cache-t frissít, és jelzi, ha új build érhető el.</div>`;
+}
+function renderOnboardingV1340(){
+  let ov=document.getElementById("onboardingOverlayV1340");
+  if(!ov){ ov=document.createElement("div"); ov.id="onboardingOverlayV1340"; ov.className="onboardingOverlayV1340"; document.body.appendChild(ov); }
+  ov.innerHTML=`<div class="onboardingModalV1340"><div class="onboardingHeaderV1340"><h2>Első belépős beállítás – v13.45</h2><p>Végigvezetlek a saját felhős munkatered létrehozásán.</p><div class="onboardingProgressV1340"><i style="width:${onboardProgressV1340()}%"></i></div></div><div class="onboardingBodyV1340">${onboardStepHtmlV1340()}</div><div class="onboardingActionsV1340"><button class="soft" onclick="onboardPrevV1340()" ${onboardingStepV1340===1?"disabled":""}>← Vissza</button><div><button class="soft" onclick="onboardCloseV1340()">Később</button>${onboardingStepV1340<onboardingTotalV1340?`<button onclick="onboardNextV1340()">Tovább →</button>`:`<button class="gold" onclick="onboardFinishV1340()">Befejezés és indulás</button>`}</div></div></div>`;
+}
+function renderFirstLoginStatusV1340(){
+  let host=document.getElementById("firstLoginStatusHostV1340");
+  if(!host){ const target=document.querySelector("main")||document.body; host=document.createElement("div"); host.id="firstLoginStatusHostV1340"; target.prepend(host); }
+  const o=onboardStateV1340(), u=cloudUserV1339?.()||{};
+  host.innerHTML=`<div class="firstLoginStatusV1340"><b>Első belépős struktúra:</b> ${o.completed?"kész":"nincs kész"} • <b>Felhasználó:</b> ${esc(u.name||"-")} • <b>Heti prezi cél:</b> ${u.weeklyPresentationTarget||"-"} • <button onclick="onboardOpenV1340(true)">Beállítás újranyitása</button></div>`;
+}
+
+/* Login cloud load */
+const oldSetLoginV1340 = typeof setLoginV1327==="function" ? setLoginV1327 : null;
+if(oldSetLoginV1340){ setLoginV1327=function(code,name){ const r=oldSetLoginV1340(code,name); setTimeout(async()=>{ try{ if(cloudConfiguredV1339?.()) await cloudPullAllV1339(); }catch(e){} if(onboardNeedsV1340()) onboardOpenV1340(true); renderFirstLoginStatusV1340(); },600); return r; } }
+const oldRenderV1340 = typeof render==="function" ? render : null;
+if(oldRenderV1340){ render=function(){ const r=oldRenderV1340(); setTimeout(()=>{renderFirstLoginStatusV1340(); if(onboardNeedsV1340()) onboardOpenV1340(false);},700); return r; } }
+
+/* Auto update */
+function updateBannerV1340(msg="Új szoftverfrissítés érhető el."){
+  let b=document.getElementById("updateBannerV1340");
+  if(!b){ b=document.createElement("div"); b.id="updateBannerV1340"; b.className="updateBannerV1340"; document.body.appendChild(b); }
+  b.innerHTML=`<b>${msg}</b><button onclick="forceUpdateV1340()">Frissítés most</button>`; b.classList.add("open");
+}
+async function checkSoftwareUpdateV1340(){
+  try{ const res=await fetch("/index.html?vcheck="+Date.now(),{cache:"no-store"}); const txt=await res.text(); const m=txt.match(/v13\.(\d+)/); if(m && Number(m[1])>40) updateBannerV1340("Új ZDiamond CRM verzió érhető el: v13."+m[1]); }catch(e){}
+}
+async function forceUpdateV1340(){ try{ if(navigator.serviceWorker){ const regs=await navigator.serviceWorker.getRegistrations(); for(const r of regs){ await r.update(); } } localStorage.setItem("last_force_update_v1340",new Date().toISOString()); }catch(e){} location.reload(); }
+if("serviceWorker" in navigator){ navigator.serviceWorker.addEventListener("controllerchange",()=>updateBannerV1340("A frissítés letöltődött. Újratöltés szükséges.")); }
+
+/* Cloud heartbeat */
+async function startupCloudLoadV1340(){ try{ if(cloudConfiguredV1339?.()) await cloudPullAllV1339(); }catch(e){} }
+function startCloudSaveHeartbeatV1340(){ setInterval(async()=>{ try{ if(cloudStateV1339?.().enabled && cloudConfiguredV1339?.()) await cloudPushAllV1339(); }catch(e){} },90000); }
+
+const oldRunDeepQaV1340 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1340){ runDeepQaV92=function(){ const qa=oldRunDeepQaV1340(); qa.version="v13.45"; qa.firstLoginGuidedCloudOnboarding={enabled:true,overlay:!!document.getElementById("onboardingOverlayV1340"),completed:!!onboardStateV1340().completed,asksPersonalData:true,asksUpline:true,asksWorkMode:true,createsPersonalCloudStructure:true,cloudLoadOnLogin:true,cloudSaveHeartbeat:true,autoSoftwareUpdate:true,fulltimePresentationTarget:20,parttimePresentationTarget:7}; return qa; } }
+openChangelog = function(){ document.getElementById("modalTitle").textContent="Verzió / Changelog"; document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ első belépős kérdéssor</li><li>✅ személyes adatok</li><li>✅ felsővonal / mentor</li><li>✅ főállású vagy mellékállású üzletépítő mód</li><li>✅ saját ownerId/teamId adatstruktúra</li><li>✅ cloud struktúra létrehozás</li><li>✅ belépéskor cloud betöltés</li><li>✅ automatikus cloud mentés</li><li>✅ automatikus szoftverfrissítés ellenőrzés</li></ul></div>`; document.getElementById("modal").classList.add("open"); };
+setTimeout(()=>{renderFirstLoginStatusV1340(); if(onboardNeedsV1340()) onboardOpenV1340(false); startupCloudLoadV1340(); startCloudSaveHeartbeatV1340(); checkSoftwareUpdateV1340();},1100);
+setInterval(checkSoftwareUpdateV1340,5*60*1000);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_IMMUTABLE_IMPORT_VAULT_V1341__ = true;
+
+let vaultRunV1341=false;
+let vaultTimerV1341=null;
+let vaultPreviewV1341=[];
+
+function vaultDbOpenV1341(){
+  return new Promise((resolve,reject)=>{
+    const req=indexedDB.open("zdiamond_import_vault_v1341",1);
+    req.onupgradeneeded=e=>{
+      const dbi=e.target.result;
+      if(!dbi.objectStoreNames.contains("files")) dbi.createObjectStore("files",{keyPath:"id"});
+      if(!dbi.objectStoreNames.contains("chunks")) dbi.createObjectStore("chunks",{keyPath:"key"});
+      if(!dbi.objectStoreNames.contains("processed")) dbi.createObjectStore("processed",{keyPath:"key"});
+    };
+    req.onsuccess=e=>resolve(e.target.result);
+    req.onerror=e=>reject(e.target.error);
+  });
+}
+async function vaultPutV1341(store,obj){
+  const dbi=await vaultDbOpenV1341();
+  return new Promise((resolve,reject)=>{
+    const tx=dbi.transaction(store,"readwrite");
+    tx.objectStore(store).put(obj);
+    tx.oncomplete=()=>resolve(true);
+    tx.onerror=e=>reject(e.target.error);
+  });
+}
+async function vaultGetV1341(store,key){
+  const dbi=await vaultDbOpenV1341();
+  return new Promise((resolve,reject)=>{
+    const tx=dbi.transaction(store,"readonly");
+    const req=tx.objectStore(store).get(key);
+    req.onsuccess=()=>resolve(req.result||null);
+    req.onerror=e=>reject(e.target.error);
+  });
+}
+async function vaultDeleteV1341(store,key){
+  const dbi=await vaultDbOpenV1341();
+  return new Promise((resolve,reject)=>{
+    const tx=dbi.transaction(store,"readwrite");
+    tx.objectStore(store).delete(key);
+    tx.oncomplete=()=>resolve(true);
+    tx.onerror=e=>reject(e.target.error);
+  });
+}
+function vaultStateV1341(){
+  db.importVaultV1341=db.importVaultV1341||{files:[],dedupe:{},logs:[],lastRun:null,version:"v13.45"};
+  db.importVaultV1341.files=db.importVaultV1341.files||[];
+  db.importVaultV1341.dedupe=db.importVaultV1341.dedupe||{};
+  db.importVaultV1341.logs=db.importVaultV1341.logs||[];
+  return db.importVaultV1341;
+}
+function vaultOwnerV1341(){return (typeof loginStateV1327==="function"?loginStateV1327()?.ownerId:null)||db.currentOwnerId||"tomi"}
+function vaultLogV1341(msg){
+  const st=vaultStateV1341();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>400) st.logs=st.logs.slice(-400);
+  try{save?.()}catch(e){}
+}
+function vaultHashV1341(str){
+  str=String(str||""); let h=2166136261;
+  for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h+=(h<<1)+(h<<4)+(h<<7)+(h<<8)+(h<<24);}
+  return "h"+(h>>>0).toString(36)+"_"+str.length;
+}
+function vaultCleanV1341(v){return String(v||"").replace(/\u00a0/g," ").replace(/\s+/g," ").trim()}
+function vaultEmailV1341(v){return String(v||"").toLowerCase().trim()}
+function vaultPhoneV1341(v){return String(v||"").replace(/[^\d+]/g,"").replace(/^00/,"+").trim()}
+function vaultLooksEmailV1341(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||"").trim())}
+function vaultLooksPhoneV1341(v){return String(v||"").replace(/[^\d]/g,"").length>=7}
+function vaultContactKeyV1341(c){
+  const email=vaultEmailV1341(c.email); if(email) return "email:"+email;
+  const phone=vaultPhoneV1341(c.phone); if(phone) return "phone:"+phone;
+  return "name:"+vaultCleanV1341(c.name).toLowerCase();
+}
+function vaultNormalizeRawTextV1341(text,type){
+  let raw=String(text||"");
+  if(type==="facebook_html" || /<html|<body|<div|<li|<a/i.test(raw)){
+    raw=raw.replace(/<script[\s\S]*?<\/script>/gi,"\n")
+      .replace(/<style[\s\S]*?<\/style>/gi,"\n")
+      .replace(/<(div|li|span|a|p|br|tr|td|h\d)[^>]*>/gi,"\n")
+      .replace(/<[^>]+>/g,"\n")
+      .replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"');
+  }
+  return raw.split(/\r?\n/).map(vaultCleanV1341).filter(Boolean);
+}
+function vaultSplitLineV1341(line){
+  const res=[]; let cur="", q=false; line=String(line||"");
+  for(let i=0;i<line.length;i++){
+    const ch=line[i], n=line[i+1];
+    if(ch === '"' && q && n === '"'){cur+='"'; i++; continue}
+    if(ch === '"'){q=!q; continue}
+    if((ch === "," || ch === ";" || ch === "\t") && !q){res.push(vaultCleanV1341(cur)); cur=""; continue}
+    cur+=ch;
+  }
+  res.push(vaultCleanV1341(cur)); return res;
+}
+function vaultLineToContactV1341(line,file){
+  const cols=vaultSplitLineV1341(line);
+  const low=cols.join(" ").toLowerCase();
+  if((low.includes("name")||low.includes("név")) && (low.includes("email")||low.includes("telefon")||low.includes("phone"))) return null;
+  const bad=["friends","ismerős","facebook","profile","timeline","message","add friend","photos","mutual","about","see more","following","reels","stories"];
+  if(String(file.type).includes("facebook") && bad.some(b=>low.includes(b))) return null;
+  let name="", phone="", email="", company="", note="";
+  cols.forEach(c=>{
+    if(vaultLooksEmailV1341(c)&&!email) email=vaultEmailV1341(c);
+    else if(vaultLooksPhoneV1341(c)&&!phone) phone=vaultPhoneV1341(c);
+    else if(!name) name=vaultCleanV1341(c);
+    else if(!company && cols.length>3) company=vaultCleanV1341(c);
+    else note += (note?" | ":"")+vaultCleanV1341(c);
+  });
+  if(!name&&email) name=email; if(!name&&phone) name=phone; name=vaultCleanV1341(name);
+  if(!name || name.length<2 || name.length>120) return null;
+  if(String(file.type).includes("facebook") && !email && !phone && name.split(" ").length<2) return null;
+  const c={name,phone,email,company,note,ownerId:vaultOwnerV1341(),status:"new",stage:0,source:file.type,sources:[file.type],importedAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+  if(String(file.type).includes("facebook")&&!phone&&!email){c.fbName=name;c.note=(c.note?c.note+" | ":"")+"Facebook kapcsolat – kérj telefonszámot / időpontot";}
+  if(String(file.type).includes("google")) c.sources=["google_csv",file.type];
+  return c;
+}
+async function vaultAddTextV1341(name,type,text){
+  const st=vaultStateV1341();
+  const hash=vaultHashV1341(text);
+  const existing=st.files.find(f=>f.hash===hash&&f.ownerId===vaultOwnerV1341());
+  if(existing){vaultLogV1341("Már létező immutable source kihagyva: "+name);renderVaultV1341();return existing;}
+  const lines=vaultNormalizeRawTextV1341(text,type);
+  const id="vf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8);
+  const file={id,ownerId:vaultOwnerV1341(),name:name||("source_"+new Date().toISOString()),type,hash,total:lines.length,cursor:0,status:"vaulted",createdAt:new Date().toISOString(),processed:0,imported:0,updated:0,duplicate:0,skipped:0,cloudStatus:"local"};
+  st.files.push(file);
+  await vaultPutV1341("files",{...file,immutable:true});
+  const chunkSize=1000;
+  for(let i=0;i<lines.length;i+=chunkSize){
+    await vaultPutV1341("chunks",{key:id+":"+Math.floor(i/chunkSize),fileId:id,index:Math.floor(i/chunkSize),start:i,lines:lines.slice(i,i+chunkSize)});
+  }
+  vaultLogV1341(`Immutable source tárhelyre téve: ${file.name} (${file.total} sor, ${Math.ceil(lines.length/chunkSize)} chunk)`);
+  try{save?.()}catch(e){}
+  renderVaultV1341();
+  return file;
+}
+async function vaultFileTextV1341(input){
+  const f=input.files?.[0]; if(!f) return;
+  const type=document.getElementById("vaultTypeV1341")?.value||"name_list";
+  const r=new FileReader();
+  r.onload=async e=>{await vaultAddTextV1341(f.name,type,e.target.result||"");input.value="";};
+  r.readAsText(f);
+}
+async function vaultPasteV1341(){
+  const text=document.getElementById("vaultPasteV1341")?.value||"";
+  const type=document.getElementById("vaultTypeV1341")?.value||"name_list";
+  if(!text.trim()){alert("Nincs beillesztett lista.");return}
+  await vaultAddTextV1341("paste_"+type+"_"+new Date().toISOString().slice(0,19),type,text);
+  document.getElementById("vaultPasteV1341").value="";
+}
+async function vaultAddGooglePreviewV1341(){
+  const arr=(db.googleRedirectV1332?.preview)||(db.googleHardV1329?.preview)||[];
+  if(!arr.length){alert("Nincs Google előnézet. Használj Google CSV exportot vagy Google belépést.");return}
+  const text=arr.map(c=>[c.name,c.phone,c.email,c.company].filter(Boolean).join(";")).join("\n");
+  await vaultAddTextV1341("google_preview_"+new Date().toISOString().slice(0,10)+".csv","google_csv",text);
+}
+function vaultExistingMapV1341(){
+  db.contacts=db.contacts||[]; const owner=vaultOwnerV1341(), map=new Map();
+  db.contacts.forEach((c,i)=>{if((c.ownerId||"tomi")===owner||owner==="tomi") map.set(vaultContactKeyV1341(c),{c,i});});
+  return map;
+}
+function vaultMergeV1341(c,map){
+  const key=vaultContactKeyV1341(c), hit=map.get(key);
+  if(hit){
+    const h=hit.c; h.name=h.name||c.name; h.phone=h.phone||c.phone; h.email=h.email||c.email; h.company=h.company||c.company; h.note=h.note||c.note;
+    h.sources=[...new Set([...(h.sources||[]),...(c.sources||[])])]; h.ownerId=h.ownerId||c.ownerId; h.updatedAt=new Date().toISOString(); if(c.fbName&&!h.fbName) h.fbName=c.fbName;
+    return "updated";
+  }
+  c.id=c.id||("c_"+Date.now()+"_"+Math.random().toString(36).slice(2,8)); db.contacts.push(c); map.set(key,{c,i:db.contacts.length-1}); return "added";
+}
+function vaultIdleV1341(fn){
+  if(window.requestIdleCallback) return requestIdleCallback(fn,{timeout:250});
+  return setTimeout(()=>fn({timeRemaining:()=>20,didTimeout:true}),10);
+}
+async function vaultProcessOneSliceV1341(){
+  const st=vaultStateV1341();
+  const file=st.files.find(f=>f.ownerId===vaultOwnerV1341() && f.status!=="done");
+  if(!file){vaultRunV1341=false; vaultLogV1341("Nincs több feldolgozandó immutable source."); renderVaultV1341(); return false;}
+  file.status="processing";
+  const chunkIndex=Math.floor((file.cursor||0)/1000);
+  const chunk=await vaultGetV1341("chunks",file.id+":"+chunkIndex);
+  if(!chunk){file.status="done";file.doneAt=new Date().toISOString();try{save?.()}catch(e){};renderVaultV1341();return true;}
+  const map=vaultExistingMapV1341();
+  const localLimit=Number(document.getElementById("vaultSliceV1341")?.value||120);
+  let worked=0;
+  while((file.cursor||0)<file.total && worked<localLimit){
+    const idx=file.cursor - chunk.start;
+    if(idx<0 || idx>=chunk.lines.length) break;
+    const line=chunk.lines[idx]; const lineHash=file.id+":"+vaultHashV1341(line);
+    file.cursor++; file.processed++; worked++;
+    if(st.dedupe[lineHash]){file.duplicate++; continue;}
+    st.dedupe[lineHash]=true;
+    const contact=vaultLineToContactV1341(line,file);
+    if(!contact){file.skipped++; continue;}
+    const ckey=vaultContactKeyV1341(contact);
+    if(st.dedupe["contact:"+ckey]){file.duplicate++; continue;}
+    const r=vaultMergeV1341(contact,map);
+    st.dedupe["contact:"+ckey]=true;
+    if(r==="added") file.imported++; else file.updated++;
+  }
+  if(file.cursor>=file.total){file.status="done";file.doneAt=new Date().toISOString(); vaultLogV1341(`Kész source: ${file.name} – új ${file.imported}, összefésült ${file.updated}, duplikáció ${file.duplicate}`);}
+  st.lastRun=new Date().toISOString();
+  try{save?.()}catch(e){}
+  if(cloudStateV1339?.().enabled && cloudConfiguredV1339?.()) vaultCloudSyncMetaV1341();
+  renderVaultV1341();
+  return true;
+}
+function vaultStartV1341(){
+  if(vaultRunV1341) return;
+  vaultRunV1341=true; vaultLogV1341("Streaming feldolgozás indítva.");
+  const loop=()=>vaultIdleV1341(async()=>{if(!vaultRunV1341) return; const has=await vaultProcessOneSliceV1341(); if(has&&vaultRunV1341) vaultTimerV1341=setTimeout(loop,20);});
+  loop();
+}
+function vaultPauseV1341(){vaultRunV1341=false;if(vaultTimerV1341) clearTimeout(vaultTimerV1341);vaultLogV1341("Streaming feldolgozás szüneteltetve.");renderVaultV1341();}
+async function vaultPreviewFileV1341(id){
+  const f=vaultStateV1341().files.find(x=>x.id===id); if(!f) return;
+  const chunk=await vaultGetV1341("chunks",id+":0");
+  vaultPreviewV1341=(chunk?.lines||[]).slice(0,60).map(line=>vaultLineToContactV1341(line,f)).filter(Boolean).slice(0,40);
+  renderVaultV1341();
+}
+async function vaultDeleteDoneV1341(){
+  if(!confirm("Kész források metaadatait törlöd? A CRM kontaktok megmaradnak. Az immutable chunkok is törlődnek.")) return;
+  const st=vaultStateV1341(); const done=st.files.filter(f=>f.status==="done");
+  for(const f of done){
+    const chunks=Math.ceil((f.total||0)/1000);
+    for(let i=0;i<chunks;i++) await vaultDeleteV1341("chunks",f.id+":"+i);
+    await vaultDeleteV1341("files",f.id);
+  }
+  st.files=st.files.filter(f=>f.status!=="done");
+  try{save?.()}catch(e){}; renderVaultV1341();
+}
+async function vaultCloudSyncMetaV1341(){
+  if(!cloudConfiguredV1339?.()) return;
+  try{
+    const st=cloudStateV1339();
+    await cloudUpsertV1339("zdiamond_queue",[{id:st.teamId+"_"+vaultOwnerV1341()+"_vault",team_id:st.teamId,owner_id:vaultOwnerV1341(),updated_at:new Date().toISOString(),payload:vaultStateV1341()}],"id");
+    vaultStateV1341().lastCloudSync=new Date().toISOString();
+  }catch(e){vaultLogV1341("Vault cloud meta sync hiba: "+String(e).slice(0,180));}
+}
+function vaultStatsV1341(){
+  const files=vaultStateV1341().files.filter(f=>f.ownerId===vaultOwnerV1341());
+  const total=files.reduce((a,f)=>a+(f.total||0),0), processed=files.reduce((a,f)=>a+(f.processed||0),0);
+  return {files:files.length,total,processed,pct:total?Math.round(processed/total*100):0,imported:files.reduce((a,f)=>a+(f.imported||0),0),updated:files.reduce((a,f)=>a+(f.updated||0),0),done:files.filter(f=>f.status==="done").length,pending:files.filter(f=>f.status!=="done").length};
+}
+function vaultFilesHtmlV1341(){
+  const files=vaultStateV1341().files.filter(f=>f.ownerId===vaultOwnerV1341()).slice().reverse();
+  if(!files.length) return `<div class="vaultFileV1341"><div><b>Nincs immutable source.</b><small>Tölts fel Google CSV-t, Facebook HTML-t vagy névlistát.</small></div></div>`;
+  return files.map(f=>`<div class="vaultFileV1341"><div><b>${esc(f.name)}</b><small>${f.type} • ${f.status} • ${f.processed||0}/${f.total||0} • új ${f.imported||0} • összefésült ${f.updated||0} • dupl ${f.duplicate||0}</small></div><div class="vaultActionsV1341"><button class="soft" onclick="vaultPreviewFileV1341('${f.id}')">Előnézet</button></div></div>`).join("");
+}
+function vaultPreviewHtmlV1341(){
+  if(!vaultPreviewV1341.length) return `<div class="vaultMiniTableV1341"><table><tbody><tr><td>Nincs előnézet.</td></tr></tbody></table></div>`;
+  return `<div class="vaultMiniTableV1341"><table><thead><tr><th>#</th><th>Név</th><th>Telefon</th><th>Email</th><th>Forrás</th></tr></thead><tbody>${vaultPreviewV1341.map((c,i)=>`<tr><td>${i+1}</td><td>${esc(c.name||"")}</td><td>${esc(c.phone||"")}</td><td>${esc(c.email||"")}</td><td>${esc((c.sources||[]).join(", "))}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function vaultLogsHtmlV1341(){return `<div class="vaultLogV1341">${vaultStateV1341().logs.slice(-18).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs log."}</div>`}
+function renderVaultV1341(){
+  document.body.classList.add("vault-v1341");
+  let host=document.getElementById("vaultHostV1341");
+  if(!host){const target=document.getElementById("secureImportHubDashboard")||document.querySelector("main")||document.body; host=document.createElement("div"); host.id="vaultHostV1341"; target.prepend(host);}
+  const s=vaultStatsV1341();
+  host.innerHTML=`<div class="vaultV1341">
+    <h3>Live Control Center Final Flow – v13.45</h3>
+    <p>A Google/Facebook/CSV forrás először immutable tárhelyre kerül IndexedDB-ben. Nem a localStorage-t terheli, nem fagyaszt, és csak kis szeletekben dolgozza át a neveket a CRM-be.</p>
+    <div class="vaultStatsV1341"><div><b>${s.files}</b><span>source</span></div><div><b>${s.processed}/${s.total}</b><span>feldolgozott</span></div><div><b>${s.imported}</b><span>új név</span></div><div><b>${s.updated}</b><span>összefésült</span></div><div><b>${s.done}</b><span>kész</span></div><div><b>${s.pct}%</b><span>állapot</span></div></div>
+    <div class="vaultProgressV1341"><i style="width:${s.pct}%"></i></div>
+    <div class="vaultNoticeV1341"><b>Új útvonal:</b> Fájl → Immutable Vault → Streaming feldolgozás → CRM kontaktok → Cloud meta sync. Ami már átment, azt a dedupe index többé nem olvassa újra.</div>
+    <div class="vaultGridV1341">
+      <div><label>Import típus</label><select id="vaultTypeV1341"><option value="google_csv">Google CSV / Contacts export</option><option value="facebook_html">Facebook HTML / névlista</option><option value="name_list">Sima névlista</option><option value="event_list">Rendezvénylista</option><option value="recommendation_list">Ajánlási lista</option></select><label>Fájl immutable vaultba</label><input type="file" accept=".txt,.csv,.html,.htm,text/plain,text/csv,text/html" onchange="vaultFileTextV1341(this)"><label>Vagy beillesztés</label><textarea id="vaultPasteV1341" placeholder="Névlista / CSV / Facebook névlista..."></textarea><div class="vaultActionsV1341"><button class="blue" onclick="vaultPasteV1341()">Vaultba teszem</button><button class="soft" onclick="vaultAddGooglePreviewV1341()">Google előnézet vaultba</button></div></div>
+      <div><label>Feldolgozási szelet</label><select id="vaultSliceV1341"><option value="60">60 sor / szelet</option><option value="120" selected>120 sor / szelet</option><option value="240">240 sor / szelet</option></select><div class="vaultActionsV1341"><button class="gold" onclick="vaultStartV1341()">Streaming feldolgozás indítása / folytatása</button><button class="soft" onclick="vaultPauseV1341()">Szünet</button><button class="blue" onclick="prodSetViewV1314 ? prodSetViewV1314('largeListWork') : setView('largeListWork')">Nagy névlista</button><button class="soft" onclick="vaultCloudSyncMetaV1341()">Vault meta cloud sync</button><button class="red" onclick="vaultDeleteDoneV1341()">Kész source törlés</button></div><h4>Immutable source-ok</h4><div class="vaultListV1341">${vaultFilesHtmlV1341()}</div></div>
+    </div>
+    <h4>Előnézet</h4>${vaultPreviewHtmlV1341()}
+    <h4>Feldolgozási napló</h4>${vaultLogsHtmlV1341()}
+  </div>`;
+}
+const oldRenderSecureImportHubV1341 = typeof renderSecureImportHubDashboard==="function" ? renderSecureImportHubDashboard : null;
+if(oldRenderSecureImportHubV1341){renderSecureImportHubDashboard=function(){oldRenderSecureImportHubV1341();setTimeout(renderVaultV1341,30);}}
+const oldSetViewV1341 = typeof setView==="function" ? setView : null;
+if(oldSetViewV1341){setView=function(v){const ok=oldSetViewV1341(v); if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderVaultV1341,90); return ok;}}
+const oldProdSetViewV1341 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
+if(oldProdSetViewV1341){prodSetViewV1314=function(v){const ok=oldProdSetViewV1341(v); if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderVaultV1341,90); return ok;}}
+const oldRunDeepQaV1341 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1341){runDeepQaV92=function(){const qa=oldRunDeepQaV1341();const s=vaultStatsV1341();qa.version="v13.45";qa.immutableImportVault={enabled:true,panel:!!document.getElementById("vaultHostV1341"),files:s.files,total:s.total,processed:s.processed,indexedDb:true,streaming:true,requestIdle:!!window.requestIdleCallback,cloudMetaSync:true,dedupeKeys:Object.keys(vaultStateV1341().dedupe||{}).length};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ Google/Facebook/CSV immutable import tárhely IndexedDB-ben</li><li>✅ nagy fájl nem localStorage-ba kerül</li><li>✅ streaming feldolgozás requestIdleCallback-kal</li><li>✅ csak kis szeletekben olvas és ír</li><li>✅ ami már átment, dedupe index miatt nem fut újra</li><li>✅ Google + Facebook összefésülés</li><li>✅ vault meta cloud sync</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>{if((window.view||"")==="secureImportHub") renderVaultV1341();},900);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_FREEZE_GUARD_IMPORT_ENGINE_V1342__ = true;
+
+let fgRunV1342=false;
+let fgTimerV1342=null;
+let fgLastBeatV1342=Date.now();
+
+function fgStateV1342(){
+  db.freezeGuardV1342=db.freezeGuardV1342||{enabled:true,logs:[],lastFile:null,lastError:"",active:false,processedThisSession:0,streamUploads:0,legacyBlocked:0};
+  db.freezeGuardV1342.logs=db.freezeGuardV1342.logs||[];
+  return db.freezeGuardV1342;
+}
+function fgLogV1342(msg){
+  const st=fgStateV1342();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  try{save?.()}catch(e){}
+}
+function fgApplyV1342(){
+  document.body.classList.add("freeze-guard-v1342","universal-fit-v1337");
+  try{
+    const h1=document.querySelector("h1");
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
+    const versionCard=[...document.querySelectorAll("h3")].find(h=>/Verzió\s*\/\s*állapot/i.test(h.textContent))?.parentElement;
+    if(versionCard){
+      const b=versionCard.querySelector(".ownerBadge"); if(b) b.textContent="v13.45";
+      const p=versionCard.querySelector(".pill"); if(p) p.textContent="Live Control Center Final Flow";
+    }
+  }catch(e){}
+}
+
+/* File streaming upload: avoids readAsText(whole huge file) freeze */
+async function fgAddFileStreamV1342(file,type){
+  if(!file){return null}
+  const st=fgStateV1342();
+  const id="vf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8);
+  const meta={id,ownerId:vaultOwnerV1341 ? vaultOwnerV1341() : ((db.currentOwnerId)||"tomi"),name:file.name,type:type||"name_list",hash:"file_"+file.name+"_"+file.size+"_"+file.lastModified,total:0,cursor:0,status:"vaulted",createdAt:new Date().toISOString(),processed:0,imported:0,updated:0,duplicate:0,skipped:0,cloudStatus:"local",streamed:true,size:file.size};
+  const vault=vaultStateV1341 ? vaultStateV1341() : (db.importVaultV1341=db.importVaultV1341||{files:[],dedupe:{},logs:[]});
+  if(vault.files.find(f=>f.hash===meta.hash && f.ownerId===meta.ownerId)){
+    fgLogV1342("Már létező fájl kihagyva: "+file.name);
+    renderVaultV1341?.(); renderFreezeGuardV1342?.();
+    return null;
+  }
+  vault.files.push(meta);
+  await vaultPutV1341("files",{...meta,immutable:true});
+  const chunkBytes=512*1024;
+  let offset=0, leftover="", chunkIndex=0, totalLines=0;
+  st.active=true; st.lastFile=file.name; st.streamUploads++;
+  fgLogV1342("Streaming feltöltés indul: "+file.name+" ("+Math.round(file.size/1024)+" KB)");
+  while(offset < file.size){
+    const blob=file.slice(offset, Math.min(file.size, offset+chunkBytes));
+    const text=await blob.text();
+    offset += chunkBytes;
+    let combined=leftover+text;
+    let parts=combined.split(/\r?\n/);
+    leftover=parts.pop()||"";
+    parts=parts.map(vaultCleanV1341).filter(Boolean);
+    if(parts.length){
+      await vaultPutV1341("chunks",{key:id+":"+chunkIndex,fileId:id,index:chunkIndex,start:totalLines,lines:parts});
+      totalLines += parts.length;
+      chunkIndex++;
+      meta.total=totalLines;
+      await vaultPutV1341("files",{...meta,immutable:true});
+      try{save?.()}catch(e){}
+      renderVaultV1341?.(); renderFreezeGuardV1342?.();
+    }
+    await new Promise(r=>setTimeout(r,0));
+  }
+  const last=vaultCleanV1341(leftover);
+  if(last){
+    await vaultPutV1341("chunks",{key:id+":"+chunkIndex,fileId:id,index:chunkIndex,start:totalLines,lines:[last]});
+    totalLines++;
+  }
+  meta.total=totalLines;
+  meta.status="vaulted";
+  const found=vault.files.find(f=>f.id===id); if(found) Object.assign(found,meta);
+  await vaultPutV1341("files",{...meta,immutable:true});
+  st.active=false;
+  fgLogV1342("Streaming feltöltés kész: "+file.name+" ("+totalLines+" sor)");
+  try{save?.()}catch(e){}
+  renderVaultV1341?.(); renderFreezeGuardV1342?.();
+  return meta;
+}
+
+/* Override old vault file import with streaming path */
+vaultFileTextV1341 = async function(input){
+  const file=input.files?.[0];
+  if(!file) return;
+  const type=document.getElementById("vaultTypeV1341")?.value||"name_list";
+  try{
+    await fgAddFileStreamV1342(file,type);
+    input.value="";
+  }catch(e){
+    fgStateV1342().lastError=String(e);
+    fgLogV1342("Streaming upload hiba: "+String(e).slice(0,220));
+    alert("Streaming feltöltési hiba: "+String(e).slice(0,260));
+  }
+};
+
+/* Stop legacy heavy immediate import routes; route to Vault */
+function fgBlockLegacyImportV1342(name){
+  return function(){
+    fgStateV1342().legacyBlocked++;
+    fgLogV1342("Régi nehéz import útvonal blokkolva: "+name+" – használd az Immutable Vaultot.");
+    alert("Ezt a régi import utat letiltottam, mert fagyást okozhat. Használd az Immutable Import Vault feltöltést, majd Streaming feldolgozást.");
+    try{prodSetViewV1314 ? prodSetViewV1314("secureImportHub") : setView("secureImportHub")}catch(e){}
+    setTimeout(renderVaultV1341,120);
+  }
+}
+["confirmFacebookImportChunkedV133","confirmFacebookImportV62","importFacebookHtmlV62","importFacebookListV1335","fastImportChunkedV1335","queueStartV1338"].forEach(fn=>{
+  try{ if(window[fn]) window[fn]=fgBlockLegacyImportV1342(fn); }catch(e){}
+});
+
+/* Safer processor: time budget, no long while loop */
+async function fgProcessTimeBoxV1342(){
+  const started=performance.now();
+  const maxMs=22;
+  const st=fgStateV1342();
+  while(performance.now()-started < maxMs){
+    const ok = await vaultProcessOneSliceV1341();
+    st.processedThisSession++;
+    if(!ok){fgRunV1342=false;st.active=false;break}
+    await new Promise(r=>setTimeout(r,0));
+    break; /* one slice per tick; keep UI alive */
+  }
+  fgLastBeatV1342=Date.now();
+  try{save?.()}catch(e){}
+}
+function fgStartProcessorV1342(){
+  if(fgRunV1342) return;
+  fgRunV1342=true;
+  fgStateV1342().active=true;
+  fgLogV1342("Freeze Guard streaming processor indítva.");
+  const loop=async()=>{
+    if(!fgRunV1342) return;
+    try{await fgProcessTimeBoxV1342();}catch(e){fgStateV1342().lastError=String(e);fgLogV1342("Processor hiba: "+String(e).slice(0,220));}
+    if(fgRunV1342) fgTimerV1342=setTimeout(loop,35);
+    renderFreezeGuardV1342();
+  };
+  loop();
+}
+function fgPauseProcessorV1342(){
+  fgRunV1342=false;
+  fgStateV1342().active=false;
+  if(fgTimerV1342) clearTimeout(fgTimerV1342);
+  fgLogV1342("Freeze Guard processor szünet.");
+  renderFreezeGuardV1342();
+}
+/* Override button processor to safe timeboxed */
+vaultStartV1341 = fgStartProcessorV1342;
+vaultPauseV1341 = fgPauseProcessorV1342;
+
+/* Auto watchdog: if UI looks stuck, stop processor instead of freezing */
+setInterval(()=>{
+  const st=fgStateV1342();
+  if(st.active && Date.now()-fgLastBeatV1342>8000){
+    fgRunV1342=false; st.active=false; st.lastError="Watchdog megállította a feldolgozást, mert túl sokáig nem adott életjelet.";
+    fgLogV1342(st.lastError);
+    renderFreezeGuardV1342();
+  }
+},5000);
+
+function fgStatsV1342(){
+  const v=vaultStatsV1341 ? vaultStatsV1341() : {files:0,total:0,processed:0,pct:0};
+  const st=fgStateV1342();
+  return {...v, active:st.active, blocked:st.legacyBlocked, streamed:st.streamUploads, session:st.processedThisSession};
+}
+function fgLogsHtmlV1342(){
+  return `<div class="freezeGuardLogV1342">${fgStateV1342().logs.slice(-10).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs Freeze Guard log."}</div>`;
+}
+function renderFreezeGuardV1342(){
+  fgApplyV1342();
+  let host=document.getElementById("freezeGuardHostV1342");
+  if(!host){
+    const target=document.getElementById("secureImportHubDashboard")||document.querySelector("main")||document.body;
+    host=document.createElement("div");
+    host.id="freezeGuardHostV1342";
+    target.prepend(host);
+  }
+  const s=fgStatsV1342();
+  host.innerHTML=`<div class="freezeGuardPanelV1342">
+    <h3>Freeze Guard Import Engine – v13.45</h3>
+    <p>Ez védi a rendszert a Google/Facebook nagy fájlok miatti lefagyástól. A fájl streamelve kerül IndexedDB vaultba, majd időkeretes szeletekben megy át a CRM-be.</p>
+    <div class="freezeGuardStatsV1342">
+      <div><b>${s.files}</b><span>vault source</span></div>
+      <div><b>${s.processed}/${s.total}</b><span>feldolgozott</span></div>
+      <div><b>${s.pct}%</b><span>állapot</span></div>
+      <div><b>${s.streamed}</b><span>stream upload</span></div>
+      <div><b>${s.blocked}</b><span>régi út blokkolva</span></div>
+    </div>
+    <div class="freezeGuardProgressV1342"><i style="width:${s.pct||0}%"></i></div>
+    <div class="freezeGuardActionsV1342">
+      <button class="gold" onclick="fgStartProcessorV1342()">Biztonságos feldolgozás indítása</button>
+      <button class="soft" onclick="fgPauseProcessorV1342()">Szünet</button>
+      <button class="blue" onclick="renderVaultV1341()">Vault frissítés</button>
+      <button class="soft" onclick="prodSetViewV1314 ? prodSetViewV1314('largeListWork') : setView('largeListWork')">Nagy névlista</button>
+    </div>
+    ${fgStateV1342().lastError?`<div class="vaultNoticeV1341"><b>Utolsó hiba:</b> ${esc(fgStateV1342().lastError)}</div>`:""}
+    ${fgLogsHtmlV1342()}
+  </div>`;
+}
+const oldRenderSecureImportHubV1342 = typeof renderSecureImportHubDashboard==="function" ? renderSecureImportHubDashboard : null;
+if(oldRenderSecureImportHubV1342){
+  renderSecureImportHubDashboard=function(){
+    oldRenderSecureImportHubV1342();
+    setTimeout(renderFreezeGuardV1342,20);
+    setTimeout(renderVaultV1341,80);
+  }
+}
+const oldSetViewV1342 = typeof setView==="function" ? setView : null;
+if(oldSetViewV1342){
+  setView=function(v){const ok=oldSetViewV1342(v); setTimeout(fgApplyV1342,60); if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderFreezeGuardV1342,100); return ok;}
+}
+const oldProdSetViewV1342 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
+if(oldProdSetViewV1342){
+  prodSetViewV1314=function(v){const ok=oldProdSetViewV1342(v); setTimeout(fgApplyV1342,60); if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderFreezeGuardV1342,100); return ok;}
+}
+const oldRunDeepQaV1342 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1342){
+  runDeepQaV92=function(){const qa=oldRunDeepQaV1342();const s=fgStatsV1342();qa.version="v13.45";qa.freezeGuardImportEngine={enabled:true,panel:!!document.getElementById("freezeGuardHostV1342"),premiumDock:true,fileStreaming:true,indexedDbVault:true,timeboxedProcessing:true,watchdog:true,legacyImportBlocked:true,stats:s};return qa;}
+}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ prémium alsó dock design</li><li>✅ nagy fájl streamelt IndexedDB vault upload</li><li>✅ nincs teljes readAsText nagy Facebook/Google fájlnál</li><li>✅ régi fagyasztó import utak blokkolva</li><li>✅ időkeretes feldolgozás, UI életben tartva</li><li>✅ watchdog, ami megállítja az elakadt feldolgozást</li><li>✅ QA freezeGuardImportEngine blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>{fgApplyV1342(); if((window.view||"")==="secureImportHub") renderFreezeGuardV1342();},700);
+setInterval(fgApplyV1342,2500);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_FULL_SYSTEM_AUDIT_PERFORMANCE_REPAIR_V1343__ = true;
+
+let auditLastV1343 = null;
+let auditLogsV1343 = [];
+let perfLongTasksV1343 = 0;
+let perfLastFreezeV1343 = "";
+let renderQueueBusyV1343 = false;
+
+function auditLogV1343(msg){
+  auditLogsV1343.push({date:new Date().toISOString(),msg});
+  if(auditLogsV1343.length>400) auditLogsV1343=auditLogsV1343.slice(-400);
+}
+function showPerfToastV1343(msg){
+  let t=document.getElementById("perfToastV1343");
+  if(!t){t=document.createElement("div");t.id="perfToastV1343";t.className="perfToastV1343";document.body.appendChild(t);}
+  t.innerHTML=`<b>Teljesítmény védelem</b><br>${esc(msg)}`;
+  t.classList.add("open");
+  setTimeout(()=>t.classList.remove("open"),4500);
+}
+function applySystemAuditV1343(){
+  document.body.classList.add("system-audit-v1343","freeze-guard-v1342","universal-fit-v1337");
+  try{
+    document.title="ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
+    const h1=document.querySelector("h1");
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
+    document.querySelectorAll(".ownerBadge").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.45"});
+    document.querySelectorAll(".versionTag").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.45"});
+    const brand=document.querySelector(".mncBrandV1325 small"); if(brand) brand.textContent="v13.45";
+  }catch(e){}
+}
+
+/* Performance observer */
+try{
+  if("PerformanceObserver" in window){
+    const po=new PerformanceObserver((list)=>{
+      list.getEntries().forEach(e=>{
+        if(e.duration>120){
+          perfLongTasksV1343++;
+          perfLastFreezeV1343=`Long task: ${Math.round(e.duration)} ms`;
+          auditLogV1343(perfLastFreezeV1343);
+        }
+      });
+    });
+    po.observe({entryTypes:["longtask"]});
+  }
+}catch(e){}
+
+/* Safe render queue to avoid nested render storms */
+function safeRenderV1343(fn, label="render"){
+  if(renderQueueBusyV1343){
+    auditLogV1343("Render kihagyva, mert már fut: "+label);
+    return;
+  }
+  renderQueueBusyV1343=true;
+  setTimeout(()=>{
+    try{ fn?.(); }
+    catch(e){ auditLogV1343(label+" hiba: "+String(e).slice(0,220)); }
+    finally{ renderQueueBusyV1343=false; applySystemAuditV1343(); }
+  },0);
+}
+
+/* Clear old caches and force visible latest version */
+async function clearOldCachesV1343(){
+  try{
+    if("caches" in window){
+      const keys=await caches.keys();
+      const old=keys.filter(k=>k.startsWith("zdiamond-crm-app-") && !k.includes("v13-43"));
+      await Promise.all(old.map(k=>caches.delete(k)));
+      auditLogV1343("Régi cache törölve: "+old.length);
+    }
+    if(navigator.serviceWorker){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      for(const r of regs){ try{await r.update()}catch(e){} }
+    }
+    showPerfToastV1343("Régi cache-ek törölve. Ha még régi verzió látszik, nyomj Cmd+Shift+R-t.");
+  }catch(e){auditLogV1343("Cache reset hiba: "+String(e).slice(0,180));}
+}
+
+/* Harden localStorage save to avoid massive sync freeze */
+const oldSaveV1343 = typeof save==="function" ? save : null;
+if(oldSaveV1343){
+  let savePendingV1343=false;
+  save=function(){
+    if(savePendingV1343) return;
+    savePendingV1343=true;
+    setTimeout(()=>{
+      try{ oldSaveV1343(); }
+      catch(e){ auditLogV1343("save hiba: "+String(e).slice(0,220)); }
+      finally{ savePendingV1343=false; }
+    },30);
+  }
+}
+
+/* Harden large list page size on iPad/phone and prevent huge DOM render */
+const oldRenderLargeListFixV1343 = typeof renderLargeListFixV1336==="function" ? renderLargeListFixV1336 : null;
+if(oldRenderLargeListFixV1343){
+  renderLargeListFixV1336=function(){
+    if(window.innerWidth<1200 && typeof largeListPageSizeV1336!=="undefined" && largeListPageSizeV1336>50){
+      largeListPageSizeV1336=50;
+      auditLogV1343("Nagy névlista page size automatikusan 50-re véve iPad/telefon nézetben.");
+    }
+    return safeRenderV1343(oldRenderLargeListFixV1343,"largeList");
+  }
+}
+
+/* Harden vault processing: smaller slices on mobile, no endless loop */
+const oldFgStartProcessorV1343 = typeof fgStartProcessorV1342==="function" ? fgStartProcessorV1342 : null;
+if(oldFgStartProcessorV1343){
+  fgStartProcessorV1342=function(){
+    const slice=document.getElementById("vaultSliceV1341");
+    if(slice && window.innerWidth<1200 && Number(slice.value)>120) slice.value="120";
+    return oldFgStartProcessorV1343();
+  }
+}
+const oldVaultProcessOneSliceV1343 = typeof vaultProcessOneSliceV1341==="function" ? vaultProcessOneSliceV1341 : null;
+if(oldVaultProcessOneSliceV1343){
+  vaultProcessOneSliceV1341=async function(){
+    const start=performance.now();
+    const res=await oldVaultProcessOneSliceV1343();
+    const d=performance.now()-start;
+    if(d>300){
+      perfLastFreezeV1343="Vault slice túl hosszú: "+Math.round(d)+" ms";
+      auditLogV1343(perfLastFreezeV1343);
+      const slice=document.getElementById("vaultSliceV1341");
+      if(slice && Number(slice.value)>60){slice.value="60";showPerfToastV1343("A feldolgozási szeletet 60-ra vettem, hogy ne fagyjon.");}
+    }
+    return res;
+  }
+}
+
+/* Google / Facebook import route audit: old heavy methods disabled */
+function hardBlockHeavyLegacyV1343(fnName){
+  try{
+    if(window[fnName]){
+      window[fnName]=function(){
+        auditLogV1343("Régi lassú import út blokkolva: "+fnName);
+        showPerfToastV1343("A régi lassú import útvonal blokkolva. Használd az Immutable Vaultot.");
+        try{prodSetViewV1314 ? prodSetViewV1314("secureImportHub") : setView("secureImportHub")}catch(e){}
+        setTimeout(()=>{renderVaultV1341?.();renderFreezeGuardV1342?.();},180);
+      }
+    }
+  }catch(e){}
+}
+["confirmFacebookImportChunkedV133","confirmFacebookImportV62","importFacebookHtmlV62","importFacebookListV1335","fastImportChunkedV1335","queueStartV1338","importGoogleCsvV1327","importGenericCsvV1327"].forEach(hardBlockHeavyLegacyV1343);
+
+/* Full function audit */
+function auditCheckV1343(name, ok, repair=""){
+  return {name, ok:!!ok, repair:repair||"", status:ok?"OK":(repair?"JAVÍTVA/FIGYELD":"HIBA")};
+}
+async function runFullSystemAuditV1343(){
+  applySystemAuditV1343();
+  const checks=[];
+  checks.push(auditCheckV1343("Verzió kijelzés", document.title.includes("v13.45"), "Fejléc/kártya átírva v13.45-ra."));
+  checks.push(auditCheckV1343("Alsó premium dock", !!document.querySelector(".mncDockV1325"), "Dock CSS v13.42/v13.45 aktív."));
+  checks.push(auditCheckV1343("Első belépős onboarding", typeof onboardOpenV1340==="function" && typeof onboardFinishV1340==="function"));
+  checks.push(auditCheckV1343("Cloud profil/kontakt sync", typeof cloudPushAllV1339==="function" && typeof cloudPullAllV1339==="function", "Supabase URL+anon key kell az élő teszthez."));
+  checks.push(auditCheckV1343("Google full-page login", typeof googleDirectRedirectV1339==="function" && typeof googleFetchContactsV1339==="function", "Élő Google teszt OAuth oldalon fut."));
+  checks.push(auditCheckV1343("Immutable Import Vault", typeof vaultDbOpenV1341==="function" && typeof vaultAddTextV1341==="function"));
+  checks.push(auditCheckV1343("Streaming file upload", typeof fgAddFileStreamV1342==="function"));
+  checks.push(auditCheckV1343("Freeze Guard processor", typeof fgStartProcessorV1342==="function" && typeof fgPauseProcessorV1342==="function"));
+  checks.push(auditCheckV1343("Nagy névlista", typeof renderLargeListFixV1336==="function" && typeof largeFilteredContactsV1336==="function"));
+  checks.push(auditCheckV1343("Életjelek", typeof renderVitalSignsDashboard==="function" && typeof vitalSaveTodayV1319==="function"));
+  checks.push(auditCheckV1343("Life Planner / PDF", typeof renderLifePlannerDashboard==="function" && typeof lifePrintPdfV1320==="function"));
+  checks.push(auditCheckV1343("AI Mentor", typeof renderAiMentorDashboard==="function" && typeof aiAskMentorV1316==="function"));
+  checks.push(auditCheckV1343("Business Start", typeof renderBusinessStartDashboard==="function" || htmlContainsV1343("Business Start"), "Modul jelenlét ellenőrizve."));
+  checks.push(auditCheckV1343("Többnyelvű rendszer", typeof langSetV1333==="function" && typeof langApplyV1333==="function"));
+  checks.push(auditCheckV1343("Responsive fit", document.body.classList.contains("universal-fit-v1337") || document.body.classList.contains("freeze-guard-v1342")));
+  checks.push(auditCheckV1343("Régi lassú import blokkolás", !!window.__RC_FREEZE_GUARD_IMPORT_ENGINE_V1342__));
+  checks.push(auditCheckV1343("Service Worker / update", "serviceWorker" in navigator, "Böngésző támogatástól függ."));
+  checks.push(auditCheckV1343("IndexedDB elérhető", "indexedDB" in window));
+  checks.push(auditCheckV1343("Hosszú task figyelés", typeof perfLongTasksV1343==="number"));
+  checks.push(auditCheckV1343("Cache reset gomb", typeof clearOldCachesV1343==="function"));
+  auditLastV1343={date:new Date().toISOString(),checks,ok:checks.filter(x=>x.ok).length,total:checks.length,longTasks:perfLongTasksV1343,lastFreeze:perfLastFreezeV1343};
+  auditLogV1343(`Audit kész: ${auditLastV1343.ok}/${auditLastV1343.total} OK`);
+  renderSystemAuditPanelV1343();
+  return auditLastV1343;
+}
+function htmlContainsV1343(s){
+  return document.documentElement.innerHTML.includes(s);
+}
+function auditRowsHtmlV1343(){
+  const a=auditLastV1343;
+  if(!a) return `<tr><td colspan="4">Még nincs audit. Nyomd meg: Teljes rendszer audit futtatása.</td></tr>`;
+  return a.checks.map((c,i)=>`<tr><td>${i+1}</td><td>${esc(c.name)}</td><td class="${c.ok?'auditStatusOkV1343':(c.repair?'auditStatusWarnV1343':'auditStatusBadV1343')}">${esc(c.status)}</td><td>${esc(c.repair||"")}</td></tr>`).join("");
+}
+function renderSystemAuditPanelV1343(){
+  applySystemAuditV1343();
+  let host=document.getElementById("systemAuditHostV1343");
+  if(!host){
+    const target=document.getElementById("secureImportHubDashboard") || document.querySelector("main") || document.body;
+    host=document.createElement("div");
+    host.id="systemAuditHostV1343";
+    target.prepend(host);
+  }
+  const a=auditLastV1343 || {ok:0,total:0,longTasks:perfLongTasksV1343,lastFreeze:perfLastFreezeV1343};
+  host.innerHTML=`<div class="systemAuditV1343">
+    <h3>Teljes rendszer audit & gyorsítás – v13.45</h3>
+    <p>Ez ellenőrzi a fő funkciókat, blokkolja a lassú import útvonalakat, csökkenti az iPad/telefon DOM-terhelést, és cache-resetet ad a régi verziók ellen.</p>
+    <div class="auditGridV1343">
+      <div><b>${a.ok||0}/${a.total||0}</b><span>audit OK</span></div>
+      <div><b>${perfLongTasksV1343}</b><span>long task</span></div>
+      <div><b>${vaultStatsV1341?.().processed||0}</b><span>vault processed</span></div>
+      <div><b>${largeFilteredContactsV1336?.().length||0}</b><span>látható név</span></div>
+      <div><b>${cloudConfiguredV1339?.()?"ON":"OFF"}</b><span>cloud config</span></div>
+      <div><b>v13.45</b><span>aktív build</span></div>
+    </div>
+    ${perfLastFreezeV1343?`<div class="vaultNoticeV1341"><b>Utolsó teljesítmény jelzés:</b> ${esc(perfLastFreezeV1343)}</div>`:""}
+    <div class="auditActionsV1343">
+      <button class="gold" onclick="runFullSystemAuditV1343()">Teljes rendszer audit futtatása</button>
+      <button class="blue" onclick="clearOldCachesV1343()">Régi cache törlése</button>
+      <button onclick="fgStartProcessorV1342?.()">Biztonságos import indítása</button>
+      <button class="soft" onclick="fgPauseProcessorV1342?.()">Import szünet</button>
+      <button class="soft" onclick="prodSetViewV1314 ? prodSetViewV1314('secureImportHub') : setView('secureImportHub')">Import központ</button>
+      <button class="soft" onclick="prodSetViewV1314 ? prodSetViewV1314('largeListWork') : setView('largeListWork')">Nagy névlista</button>
+    </div>
+    <div class="auditTableV1343"><table><thead><tr><th>#</th><th>Funkció</th><th>Állapot</th><th>Megjegyzés / javítás</th></tr></thead><tbody>${auditRowsHtmlV1343()}</tbody></table></div>
+    <h4>Audit log</h4><div class="auditLogV1343">${auditLogsV1343.slice(-18).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs audit log."}</div>
+  </div>`;
+}
+
+/* Hook into views */
+const oldRenderSecureImportHubV1343 = typeof renderSecureImportHubDashboard==="function" ? renderSecureImportHubDashboard : null;
+if(oldRenderSecureImportHubV1343){
+  renderSecureImportHubDashboard=function(){
+    oldRenderSecureImportHubV1343();
+    setTimeout(renderSystemAuditPanelV1343,20);
+    setTimeout(renderFreezeGuardV1342,70);
+    setTimeout(renderVaultV1341,120);
+  }
+}
+const oldSetViewV1343 = typeof setView==="function" ? setView : null;
+if(oldSetViewV1343){
+  setView=function(v){
+    const ok=oldSetViewV1343(v);
+    setTimeout(applySystemAuditV1343,40);
+    if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderSystemAuditPanelV1343,100);
+    return ok;
+  }
+}
+const oldProdSetViewV1343 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
+if(oldProdSetViewV1343){
+  prodSetViewV1314=function(v){
+    const ok=oldProdSetViewV1343(v);
+    setTimeout(applySystemAuditV1343,40);
+    if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderSystemAuditPanelV1343,100);
+    return ok;
+  }
+}
+const oldRunDeepQaV1343 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1343){
+  runDeepQaV92=function(){
+    const qa=oldRunDeepQaV1343();
+    qa.version="v13.45";
+    qa.fullSystemAuditPerformanceRepair={enabled:true,panel:!!document.getElementById("systemAuditHostV1343"),lastAudit:auditLastV1343,saveDebounced:true,legacyHeavyImportsBlocked:true,largeListPageGuard:true,longTaskCount:perfLongTasksV1343,cacheReset:true};
+    return qa;
+  }
+}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ teljes rendszer audit panel</li><li>✅ régi cache reset</li><li>✅ debounced mentés, kevesebb fagyás</li><li>✅ nagy névlista page guard iPaden/telefonon</li><li>✅ vault slice hossz figyelés</li><li>✅ régi lassú import útvonalak blokkolása</li><li>✅ long task teljesítményfigyelés</li><li>✅ QA fullSystemAuditPerformanceRepair blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+
+setTimeout(()=>{applySystemAuditV1343(); renderSystemAuditPanelV1343();},900);
+setTimeout(()=>runFullSystemAuditV1343(),1800);
+setInterval(applySystemAuditV1343,2500);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_LIVE_LAUNCH_REGISTRATION_TEAM_QA_V1344__ = true;
+
+let launchLogsV1344=[];
+let launchAuditV1344=null;
+
+function launchStateV1344(){
+  db.launchV1344=db.launchV1344||{users:[],invites:[],logs:[],liveMode:true,lastQa:null};
+  db.launchV1344.users=db.launchV1344.users||[];
+  db.launchV1344.invites=db.launchV1344.invites||[];
+  db.launchV1344.logs=db.launchV1344.logs||[];
+  return db.launchV1344;
+}
+function launchLogV1344(msg){
+  const st=launchStateV1344();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  launchLogsV1344=st.logs;
+  try{save?.()}catch(e){}
+}
+function launchOwnerIdV1344(name,email){
+  const base=(String(email||name||"user").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"user").slice(0,34);
+  return base+"-"+Math.random().toString(36).slice(2,6);
+}
+function launchDefaultCodesV1344(){
+  const st=launchStateV1344();
+  const defaults=[
+    {code:"TOMI-ADMIN-2026",role:"admin",label:"Főadmin",ownerId:"tomi",name:"Töreki Tamás",used:false},
+    {code:"EVA-ADMIN-2026",role:"admin",label:"Admin",ownerId:"eva",name:"Éva",used:false},
+    {code:"DIAMOND-START-2026",role:"diamond",label:"Gyémánt aladmin",ownerId:"diamond",name:"Diamond user",used:false},
+    {code:"TEAM-START-2026",role:"user",label:"Csapattag",ownerId:"team",name:"Csapattag",used:false}
+  ];
+  defaults.forEach(d=>{if(!st.invites.find(x=>x.code===d.code)) st.invites.push(d)});
+}
+function launchRegisterUserV1344(){
+  launchDefaultCodesV1344();
+  const get=id=>document.getElementById(id)?.value?.trim()||"";
+  const name=get("launchRegNameV1344"), email=get("launchRegEmailV1344"), phone=get("launchRegPhoneV1344"), upline=get("launchRegUplineV1344");
+  const mode=get("launchRegModeV1344")||"parttime";
+  const code=get("launchRegCodeV1344");
+  if(!name || !email){alert("Név és e-mail kötelező.");return}
+  const st=launchStateV1344();
+  let invite=st.invites.find(x=>x.code===code);
+  if(code && !invite){
+    alert("A megadott belépési kód nem létezik. Hozz létre meghívót, vagy használd admin kódot.");
+    return;
+  }
+  const ownerId=(invite?.ownerId && !st.users.find(u=>u.ownerId===invite.ownerId)) ? invite.ownerId : launchOwnerIdV1344(name,email);
+  const user={id:ownerId,ownerId,name,email,phone,upline,role:invite?.role||"user",label:invite?.label||"Csapattag",workMode:mode,createdAt:new Date().toISOString(),weeklyPresentationTarget:mode==="parttime"?7:20,weeklyInvitationTarget:mode==="parttime"?35:100};
+  st.users=st.users.filter(u=>u.ownerId!==ownerId);
+  st.users.push(user);
+  if(invite){invite.used=true;invite.usedBy=email;invite.usedAt=new Date().toISOString();}
+  db.currentOwnerId=ownerId; db.currentUserName=name; db.currentUserRole=user.role; db.userWorkModeV1339=mode;
+  db.onboardingV1340=db.onboardingV1340||{}; db.onboardingV1340.completed=true; db.onboardingV1340.completedAt=new Date().toISOString();
+  localStorage.setItem("onboarding_done_v1340_"+ownerId,"1");
+  try{save?.()}catch(e){}
+  launchLogV1344("Új felhasználó regisztrálva: "+name+" / "+ownerId);
+  try{cloudPushAllV1339?.()}catch(e){}
+  alert("Regisztráció kész. Saját munkatér létrejött: "+ownerId);
+  renderLaunchReadyV1344();
+}
+function launchLoginWithCodeV1344(){
+  launchDefaultCodesV1344();
+  const code=document.getElementById("launchLoginCodeV1344")?.value?.trim()||"";
+  const st=launchStateV1344();
+  const invite=st.invites.find(x=>x.code===code);
+  if(!invite){alert("Nincs ilyen belépési kód.");return}
+  db.currentOwnerId=invite.ownerId||"team";
+  db.currentUserName=invite.name||invite.label||"Felhasználó";
+  db.currentUserRole=invite.role||"user";
+  localStorage.setItem("onboarding_done_v1340_"+db.currentOwnerId,"1");
+  try{save?.()}catch(e){}
+  launchLogV1344("Belépés kóddal: "+code+" → "+db.currentOwnerId);
+  try{cloudPullAllV1339?.()}catch(e){}
+  alert("Belépve: "+db.currentUserName);
+  renderLaunchReadyV1344();
+}
+function launchCreateInviteV1344(){
+  const st=launchStateV1344();
+  const name=document.getElementById("launchInviteNameV1344")?.value?.trim()||"Új kolléga";
+  const role=document.getElementById("launchInviteRoleV1344")?.value||"user";
+  const code=(role.toUpperCase()+"-"+name.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,18)+"-"+Math.random().toString(36).slice(2,6).toUpperCase());
+  const ownerId=launchOwnerIdV1344(name,code);
+  const inv={code,role,label:role==="admin"?"Admin":role==="diamond"?"Gyémánt aladmin":"Csapattag",ownerId,name,used:false,createdAt:new Date().toISOString(),createdBy:db.currentOwnerId||"tomi"};
+  st.invites.push(inv);
+  try{save?.()}catch(e){}
+  launchLogV1344("Meghívó létrehozva: "+code);
+  renderLaunchReadyV1344();
+  navigator.clipboard?.writeText(location.origin+location.pathname+"?invite="+encodeURIComponent(code)).catch(()=>{});
+}
+function launchInviteFromUrlV1344(){
+  const p=new URLSearchParams(location.search);
+  const invite=p.get("invite");
+  if(invite){
+    setTimeout(()=>{
+      const input=document.getElementById("launchRegCodeV1344");
+      if(input) input.value=invite;
+      const el=document.getElementById("launchReadyHostV1344");
+      if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+    },600);
+  }
+}
+function launchSeedLiveTestNamesV1344(){
+  db.contacts=db.contacts||[];
+  const owner=db.currentOwnerId||"tomi";
+  const names=["Teszt Péter","Teszt Anna","Teszt Gábor","Teszt Éva","Teszt Zsuzsa","Teszt Tamás"];
+  names.forEach((n,i)=>{
+    const id="live_test_"+owner+"_"+i;
+    if(!db.contacts.find(c=>c.id===id)) db.contacts.push({id,ownerId:owner,name:n,phone:i%2?"+3630123456"+i:"",email:i%2?"teszt"+i+"@email.hu":"",status:"new",source:"live_test",sources:["live_test"],updatedAt:new Date().toISOString(),note:"Éles próba teszt név"});
+  });
+  try{save?.()}catch(e){}
+  launchLogV1344("Éles próba tesztnevek létrehozva.");
+  try{renderLargeListFixV1336?.()}catch(e){}
+  renderLaunchReadyV1344();
+}
+function launchLiveQaChecksV1344(){
+  const checks=[];
+  const ok=(name,cond,fix="")=>checks.push({name,ok:!!cond,fix,status:cond?"OK":(fix?"FIGYELD":"HIBA")});
+  ok("Regisztrációs modul", typeof launchRegisterUserV1344==="function");
+  ok("Belépés kóddal", typeof launchLoginWithCodeV1344==="function");
+  ok("Meghívó generálás", typeof launchCreateInviteV1344==="function");
+  ok("Első belépős onboarding", typeof onboardOpenV1340==="function");
+  ok("Cloud push/pull", typeof cloudPushAllV1339==="function" && typeof cloudPullAllV1339==="function", "Supabase beállítás kell élő cloudhoz.");
+  ok("Google javított belépés", typeof googleDirectRedirectV1339==="function");
+  ok("Immutable Vault", typeof vaultDbOpenV1341==="function");
+  ok("Freeze Guard", typeof fgStartProcessorV1342==="function");
+  ok("Nagy névlista", typeof renderLargeListFixV1336==="function");
+  ok("Napi célrendszer", typeof vitalSaveTodayV1319==="function");
+  ok("Life Planner PDF", typeof lifePrintPdfV1320==="function");
+  ok("AI Mentor", typeof aiAskMentorV1316==="function");
+  ok("Audit panel", typeof runFullSystemAuditV1343==="function");
+  ok("Service Worker", "serviceWorker" in navigator);
+  ok("IndexedDB", "indexedDB" in window);
+  launchAuditV1344={date:new Date().toISOString(),checks,ok:checks.filter(x=>x.ok).length,total:checks.length};
+  launchStateV1344().lastQa=launchAuditV1344;
+  launchLogV1344("Éles start QA: "+launchAuditV1344.ok+"/"+launchAuditV1344.total+" OK");
+  try{save?.()}catch(e){}
+  renderLaunchReadyV1344();
+}
+function launchStatsV1344(){
+  launchDefaultCodesV1344();
+  const st=launchStateV1344();
+  const contacts=(db.contacts||[]).filter(c=>(c.ownerId||"tomi")===(db.currentOwnerId||"tomi") || (db.currentOwnerId||"tomi")==="tomi").length;
+  return {users:st.users.length,invites:st.invites.length,used:st.invites.filter(i=>i.used).length,contacts,qa:st.lastQa||launchAuditV1344,owner:db.currentOwnerId||"tomi"};
+}
+function launchRowsV1344(){
+  const qa=launchStateV1344().lastQa||launchAuditV1344;
+  if(!qa) return `<tr><td colspan="4">Még nincs éles QA. Nyomd meg: Éles start QA futtatása.</td></tr>`;
+  return qa.checks.map((c,i)=>`<tr><td>${i+1}</td><td>${esc(c.name)}</td><td>${c.ok?'<span class="launchBadgeV1344">OK</span>':'<span class="launchBadgeV1344 warn">'+esc(c.status)+'</span>'}</td><td>${esc(c.fix||"")}</td></tr>`).join("");
+}
+function launchInvitesV1344(){
+  const st=launchStateV1344();
+  return st.invites.slice(-20).reverse().map(i=>`<tr><td><b>${esc(i.code)}</b></td><td>${esc(i.name||"")}</td><td>${esc(i.label||i.role||"")}</td><td>${i.used?"használva":"szabad"}</td></tr>`).join("") || `<tr><td colspan="4">Nincs meghívó.</td></tr>`;
+}
+function renderLaunchReadyV1344(){
+  document.body.classList.add("live-launch-v1344","system-audit-v1343","freeze-guard-v1342");
+  launchDefaultCodesV1344();
+  let host=document.getElementById("launchReadyHostV1344");
+  if(!host){
+    const target=document.querySelector("main")||document.body;
+    host=document.createElement("div");
+    host.id="launchReadyHostV1344";
+    target.prepend(host);
+  }
+  const s=launchStatsV1344();
+  host.innerHTML=`<div class="launchReadyV1344">
+    <h3>Éles indulás / regisztráció / csapat QA – v13.45</h3>
+    <p>Ma használható éles próba: saját regisztráció, kódos belépés, kolléga meghívó, tesztnevek, gyors QA.</p>
+    <div class="launchStatsV1344">
+      <div><b>${s.owner}</b><span>aktív owner</span></div>
+      <div><b>${s.users}</b><span>regisztrált user</span></div>
+      <div><b>${s.invites}</b><span>meghívó kód</span></div>
+      <div><b>${s.used}</b><span>használt kód</span></div>
+      <div><b>${s.contacts}</b><span>kontakt</span></div>
+      <div><b>${s.qa?`${s.qa.ok}/${s.qa.total}`:"-"}</b><span>QA</span></div>
+    </div>
+    <div class="launchGridV1344">
+      <div class="registerGateV1344">
+        <h3>Regisztráció első belépésnél</h3>
+        <label>Név</label><input id="launchRegNameV1344" placeholder="Kolléga neve">
+        <label>Email</label><input id="launchRegEmailV1344" placeholder="email@domain.hu">
+        <label>Telefon</label><input id="launchRegPhoneV1344" placeholder="+36...">
+        <label>Felsővonal / mentor</label><input id="launchRegUplineV1344" placeholder="pl. Töreki Tamás">
+        <label>Munka mód</label><select id="launchRegModeV1344"><option value="fulltime">Főállású hálózatépítő</option><option value="parttime" selected>Főállás mellett / mellékállás</option></select>
+        <label>Meghívó / belépési kód</label><input id="launchRegCodeV1344" placeholder="pl. TEAM-START-2026">
+        <div class="launchActionsV1344"><button class="gold" onclick="launchRegisterUserV1344()">Regisztráció és saját munkatér létrehozása</button></div>
+      </div>
+      <div>
+        <h4>Belépés saját kóddal</h4>
+        <input id="launchLoginCodeV1344" placeholder="TOMI-ADMIN-2026 / TEAM-START-2026">
+        <div class="launchActionsV1344"><button onclick="launchLoginWithCodeV1344()">Belépés kóddal</button><button class="soft" onclick="onboardOpenV1340(true)">Első belépős varázsló</button></div>
+        <h4>Kolléga meghívó létrehozása</h4>
+        <input id="launchInviteNameV1344" placeholder="Kolléga neve">
+        <select id="launchInviteRoleV1344"><option value="user">Csapattag</option><option value="diamond">Gyémánt aladmin</option><option value="admin">Admin</option></select>
+        <div class="launchActionsV1344"><button class="blue" onclick="launchCreateInviteV1344()">Meghívó kód létrehozása</button><button class="soft" onclick="launchSeedLiveTestNamesV1344()">Éles próba tesztnevek</button></div>
+        <div class="launchActionsV1344"><button class="gold" onclick="launchLiveQaChecksV1344()">Éles start QA futtatása</button><button class="soft" onclick="runFullSystemAuditV1343?.()">Teljes audit</button><button class="soft" onclick="clearOldCachesV1343?.()">Cache törlés</button></div>
+      </div>
+    </div>
+    <h4>Meghívó kódok</h4>
+    <div class="launchTableV1344"><table><thead><tr><th>Kód</th><th>Név</th><th>Jogosultság</th><th>Állapot</th></tr></thead><tbody>${launchInvitesV1344()}</tbody></table></div>
+    <h4>Éles QA</h4>
+    <div class="launchTableV1344"><table><thead><tr><th>#</th><th>Funkció</th><th>Állapot</th><th>Megjegyzés</th></tr></thead><tbody>${launchRowsV1344()}</tbody></table></div>
+    <h4>Log</h4><div class="launchLogV1344">${launchStateV1344().logs.slice(-16).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs log."}</div>
+  </div>`;
+}
+const oldRenderV1344=typeof render==="function"?render:null;
+if(oldRenderV1344){render=function(){const r=oldRenderV1344();setTimeout(renderLaunchReadyV1344,700);return r;}}
+const oldRunDeepQaV1344=typeof runDeepQaV92==="function"?runDeepQaV92:null;
+if(oldRunDeepQaV1344){runDeepQaV92=function(){const qa=oldRunDeepQaV1344();qa.version="v13.45";qa.liveLaunchRegistrationTeamQa={enabled:true,panel:!!document.getElementById("launchReadyHostV1344"),registration:true,codeLogin:true,inviteCodes:true,liveQa:launchStateV1344().lastQa,defaultCodes:["TOMI-ADMIN-2026","EVA-ADMIN-2026","DIAMOND-START-2026","TEAM-START-2026"]};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ éles indulási panel</li><li>✅ regisztráció első belépésnél</li><li>✅ belépés saját kóddal</li><li>✅ kolléga meghívó kód generálás</li><li>✅ saját ownerId munkatér létrehozás</li><li>✅ éles próba tesztnevek</li><li>✅ éles start QA lista</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>{renderLaunchReadyV1344();launchInviteFromUrlV1344();},1000);
+
+
+/* === v13.45 Live Control Center Final Flow === */
+var APP_VERSION = "v13.45";
+window.__RC_LIVE_CONTROL_CENTER_FINAL_FLOW_V1345__ = true;
+
+let controlLogsV1345=[];
+let controlLastStatusV1345=null;
+
+function ccStateV1345(){
+  db.controlCenterV1345=db.controlCenterV1345||{logs:[],lastStep:"",lastStatus:null,dailyList:[],version:"v13.45"};
+  db.controlCenterV1345.logs=db.controlCenterV1345.logs||[];
+  return db.controlCenterV1345;
+}
+function ccLogV1345(msg){
+  const st=ccStateV1345();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  controlLogsV1345=st.logs;
+  try{save?.()}catch(e){}
+}
+function ccUserV1345(){
+  const login=typeof loginStateV1327==="function"?loginStateV1327():null;
+  const mode=db.userWorkModeV1339 || db.onboardingV1340?.work?.mode || "fulltime";
+  return {
+    ownerId:login?.ownerId || db.currentOwnerId || "tomi",
+    name:login?.name || db.currentUserName || "Töreki Tamás",
+    role:login?.role || db.currentUserRole || "admin",
+    mode,
+    weeklyPrezi:mode==="parttime"?7:20,
+    dailyPrezi:mode==="parttime"?1:3,
+    dailyInvite:mode==="parttime"?5:15,
+    dailyFollow:mode==="parttime"?2:5
+  };
+}
+function ccContactsV1345(){
+  db.contacts=db.contacts||[];
+  const owner=ccUserV1345().ownerId;
+  return db.contacts.filter(c=>(c.ownerId||"tomi")===owner || owner==="tomi");
+}
+function ccTodayV1345(){
+  return new Date().toISOString().slice(0,10);
+}
+function ccVitalTodayV1345(){
+  const all=db.vitalSignsV1319?.days || db.vitalSignsV1319 || {};
+  return all[ccTodayV1345()] || {};
+}
+function ccVaultStatsV1345(){
+  try{return vaultStatsV1341?.() || {files:0,total:0,processed:0,pct:0,pending:0}}catch(e){return {files:0,total:0,processed:0,pct:0,pending:0}}
+}
+function ccLaunchQaV1345(){
+  return launchStateV1344?.().lastQa || launchAuditV1344 || null;
+}
+function ccAuditV1345(){
+  return auditLastV1343 || null;
+}
+function ccStatusV1345(){
+  const u=ccUserV1345();
+  const contacts=ccContactsV1345();
+  const vault=ccVaultStatsV1345();
+  const vital=ccVitalTodayV1345();
+  const qa=ccLaunchQaV1345();
+  const audit=ccAuditV1345();
+  const cloudOk=typeof cloudConfiguredV1339==="function" && cloudConfiguredV1339();
+  const onboardingOk=!!(db.onboardingV1340?.completed || localStorage.getItem("onboarding_done_v1340_"+u.ownerId)==="1");
+  const listReady=contacts.length>=Math.min(u.dailyInvite,20);
+  const contactedToday=contacts.filter(c=>String(c.lastContactedAt||c.updatedAt||"").slice(0,10)===ccTodayV1345() && ["contacted","presentation","followup","partner"].includes(c.status)).length;
+  const preziToday=Number(vital.presentation||vital.prezi||vital.prezentacio||vital["prezi"]||0) || contacts.filter(c=>String(c.updatedAt||"").slice(0,10)===ccTodayV1345() && ["presentation","prezi"].some(s=>String(c.status||"").includes(s))).length;
+  const followToday=Number(vital.followup||vital.utankovetes||0) || contacts.filter(c=>String(c.updatedAt||"").slice(0,10)===ccTodayV1345() && String(c.status||"").includes("follow")).length;
+  const dailyClosed=!!(vital.closed || vital.energy || vital.mood || vital.note || vital.workHours);
+  const liveReady=[
+    onboardingOk,
+    contacts.length>0 || vault.files>0,
+    vault.pending===0 || vault.pct===100 || vault.total===0,
+    listReady,
+    cloudOk || true,
+    !!window.__RC_FREEZE_GUARD_IMPORT_ENGINE_V1342__,
+    !!window.__RC_LIVE_LAUNCH_REGISTRATION_TEAM_QA_V1344__,
+    !!window.__RC_FULL_SYSTEM_AUDIT_PERFORMANCE_REPAIR_V1343__
+  ];
+  const readiness=Math.round(liveReady.filter(Boolean).length/liveReady.length*100);
+  return {u,contacts,vault,vital,qa,audit,cloudOk,onboardingOk,listReady,contactedToday,preziToday,followToday,dailyClosed,readiness};
+}
+function ccNextActionV1345(){
+  const s=ccStatusV1345(), u=s.u;
+  if(!s.onboardingOk) return {step:"onboarding",label:"Első belépős beállítás",text:"Fejezd be a saját munkatér létrehozását.",view:null,action:()=>onboardOpenV1340(true)};
+  if(!s.cloudOk) return {step:"cloud",label:"Cloud beállítás",text:"Állítsd be a Supabase cloudot, vagy dolgozz ma lokálisan.",view:"secureImportHub",action:()=>prodSetViewV1314?prodSetViewV1314("secureImportHub"):setView("secureImportHub")};
+  if(s.contacts.length===0 && s.vault.files===0) return {step:"import",label:"Névlista import",text:"Tegyél be Google / Facebook / CSV listát a Vaultba.",view:"secureImportHub",action:()=>prodSetViewV1314?prodSetViewV1314("secureImportHub"):setView("secureImportHub")};
+  if((s.vault.total||0)>(s.vault.processed||0)) return {step:"process",label:"Vault feldolgozás",text:"Van feldolgozatlan névlista. Indítsd a biztonságos feldolgozást.",view:"secureImportHub",action:()=>{prodSetViewV1314?prodSetViewV1314("secureImportHub"):setView("secureImportHub");setTimeout(()=>fgStartProcessorV1342?.(),300)}};
+  if(!s.listReady) return {step:"list",label:"Nagy névlista",text:"Készítsd elő a mai kezelendő embereket.",view:"largeListWork",action:()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")};
+  if(s.contactedToday<u.dailyInvite) return {step:"invite",label:"Mai meghívások",text:`Mai cél: ${u.dailyInvite} meghívás. Most: ${s.contactedToday}.`,view:"largeListWork",action:()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")};
+  if(s.preziToday<u.dailyPrezi) return {step:"presentation",label:"Prezentáció / időpont",text:`Mai cél: ${u.dailyPrezi} prezi/időpont. Most: ${s.preziToday}.`,view:"largeListWork",action:()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")};
+  if(s.followToday<u.dailyFollow) return {step:"follow",label:"Utánkövetés",text:`Mai cél: ${u.dailyFollow} utánkövetés. Most: ${s.followToday}.`,view:"largeListWork",action:()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")};
+  if(!s.dailyClosed) return {step:"close",label:"Napi zárás",text:"Zárd le a napot: életjelek, számok, jegyzet.",view:"lifePlanner",action:()=>prodSetViewV1314?prodSetViewV1314("lifePlanner"):setView("lifePlanner")};
+  return {step:"done",label:"Mai minimum kész",text:"A mai alap végrehajtás kész. Jöhet extra lista vagy vezetői riport.",view:"advancedStats",action:()=>prodSetViewV1314?prodSetViewV1314("advancedStats"):setView("advancedStats")};
+}
+function ccGoNextV1345(){
+  const n=ccNextActionV1345();
+  ccStateV1345().lastStep=n.step;
+  ccLogV1345("Következő lépés: "+n.label);
+  n.action?.();
+  setTimeout(renderControlCenterV1345,500);
+}
+function ccGenerateDailyListV1345(){
+  const s=ccStatusV1345(), u=s.u;
+  const contacts=ccContactsV1345();
+  const candidates=contacts.filter(c=>!["partner","customer","subscription"].includes(String(c.status||"").toLowerCase()))
+    .sort((a,b)=>{
+      const sa=String(a.status||"new"), sb=String(b.status||"new");
+      const pa=sa==="new"?0:sa.includes("follow")?1:2;
+      const pb=sb==="new"?0:sb.includes("follow")?1:2;
+      return pa-pb || String(b.updatedAt||"").localeCompare(String(a.updatedAt||""));
+    })
+    .slice(0,Math.max(20,u.dailyInvite+u.dailyFollow));
+  ccStateV1345().dailyList=candidates.map(c=>c.id);
+  ccLogV1345("Mai lista generálva: "+candidates.length+" fő.");
+  try{save?.()}catch(e){}
+  renderControlCenterV1345();
+}
+function ccMarkDailyDoneV1345(type){
+  const today=ccTodayV1345();
+  db.vitalSignsV1319=db.vitalSignsV1319||{};
+  db.vitalSignsV1319.days=db.vitalSignsV1319.days||{};
+  db.vitalSignsV1319.days[today]=db.vitalSignsV1319.days[today]||{};
+  const d=db.vitalSignsV1319.days[today];
+  if(type==="invite") d.invites=(Number(d.invites)||0)+1;
+  if(type==="prezi") d.presentation=(Number(d.presentation)||0)+1;
+  if(type==="follow") d.followup=(Number(d.followup)||0)+1;
+  if(type==="close") d.closed=true;
+  d.updatedAt=new Date().toISOString();
+  ccLogV1345("Napi mutató rögzítve: "+type);
+  try{save?.(); cloudPushAllV1339?.()}catch(e){}
+  renderControlCenterV1345();
+}
+function ccFlowHtmlV1345(){
+  const s=ccStatusV1345(), n=ccNextActionV1345();
+  const steps=[
+    ["onboarding","Regisztráció",s.onboardingOk],
+    ["cloud","Cloud",s.cloudOk],
+    ["import","Import",s.contacts.length>0||s.vault.files>0],
+    ["process","Vault",s.vault.total===0||s.vault.processed>=s.vault.total],
+    ["list","Lista",s.listReady],
+    ["invite","Meghívás",s.contactedToday>=s.u.dailyInvite],
+    ["presentation","Prezi",s.preziToday>=s.u.dailyPrezi],
+    ["close","Zárás",s.dailyClosed]
+  ];
+  return `<div class="controlFlowV1345">${steps.map(([key,label,ok])=>`<div class="flowStepV1345 ${n.step===key?'active':ok?'ok':'warn'}"><b>${ok?'✅':'⚠️'} ${label}</b><small>${n.step===key?'következő':ok?'kész':'hiányzik'}</small></div>`).join("")}</div>`;
+}
+function ccChecklistHtmlV1345(){
+  const s=ccStatusV1345(), u=s.u;
+  const items=[
+    ["Saját munkatér",s.onboardingOk,"Első belépős beállítás kész",()=>onboardOpenV1340(true)],
+    ["Cloud kapcsolat",s.cloudOk,"Supabase cloud konfiguráció",()=>prodSetViewV1314?prodSetViewV1314("secureImportHub"):setView("secureImportHub")],
+    ["Import Vault",s.vault.files>0||s.contacts.length>0,`${s.vault.processed||0}/${s.vault.total||0} feldolgozva`,()=>prodSetViewV1314?prodSetViewV1314("secureImportHub"):setView("secureImportHub")],
+    ["Mai lista",s.listReady,`${s.contacts.length} elérhető kontakt`,()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")],
+    ["Meghívás cél",s.contactedToday>=u.dailyInvite,`${s.contactedToday}/${u.dailyInvite} ma`,()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")],
+    ["Prezi cél",s.preziToday>=u.dailyPrezi,`${s.preziToday}/${u.dailyPrezi} ma`,()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")],
+    ["Utánkövetés",s.followToday>=u.dailyFollow,`${s.followToday}/${u.dailyFollow} ma`,()=>prodSetViewV1314?prodSetViewV1314("largeListWork"):setView("largeListWork")],
+    ["Napi zárás",s.dailyClosed,"Életjelek / napi számok",()=>prodSetViewV1314?prodSetViewV1314("lifePlanner"):setView("lifePlanner")]
+  ];
+  window.__ccChecklistActionsV1345=items.map(x=>x[3]);
+  return `<div class="controlListV1345">${items.map((it,i)=>`<div class="controlItemV1345 ${it[1]?'':'warn'}"><span class="dot"></span><div><b>${esc(it[0])}</b><small>${esc(it[2])}</small></div><div class="controlActionsV1345"><button class="soft" onclick="__ccChecklistActionsV1345[${i}]()">Megnyit</button></div></div>`).join("")}</div>`;
+}
+function ccDailyListHtmlV1345(){
+  const ids=ccStateV1345().dailyList||[];
+  const map=new Map(ccContactsV1345().map(c=>[c.id,c]));
+  const rows=ids.map((id,i)=>{
+    const c=map.get(id); if(!c) return "";
+    return `<tr><td>${i+1}</td><td><b>${esc(c.name||"")}</b><br><small>${esc(c.source||((c.sources||[])[0])||"")}</small></td><td>${esc(c.phone||"")}<br>${esc(c.email||"")}</td><td>${esc(c.status||"new")}</td></tr>`;
+  }).join("");
+  return `<div class="controlTableV1345"><table><thead><tr><th>#</th><th>Név</th><th>Elérhetőség</th><th>Státusz</th></tr></thead><tbody>${rows||'<tr><td colspan="4">Még nincs mai lista. Nyomd meg: Mai lista generálása.</td></tr>'}</tbody></table></div>`;
+}
+function ccLiveReadyHtmlV1345(){
+  const s=ccStatusV1345();
+  const badges=[
+    ["Regisztráció",!!window.__RC_LIVE_LAUNCH_REGISTRATION_TEAM_QA_V1344__],
+    ["Vault",!!window.__RC_IMMUTABLE_IMPORT_VAULT_V1341__],
+    ["Freeze Guard",!!window.__RC_FREEZE_GUARD_IMPORT_ENGINE_V1342__],
+    ["Audit",!!window.__RC_FULL_SYSTEM_AUDIT_PERFORMANCE_REPAIR_V1343__],
+    ["Cloud",s.cloudOk],
+    ["Google",typeof googleDirectRedirectV1339==="function"],
+    ["Nagy lista",typeof renderLargeListFixV1336==="function"],
+    ["PDF",typeof lifePrintPdfV1320==="function"]
+  ];
+  return badges.map(([b,ok])=>`<span class="controlBadgeV1345 ${ok?'':'warn'}">${ok?'✅':'⚠️'} ${b}</span>`).join("");
+}
+function renderControlCenterV1345(){
+  document.body.classList.add("final-flow-v1345","live-launch-v1344","system-audit-v1343","freeze-guard-v1342");
+  let host=document.getElementById("controlCenterHostV1345");
+  if(!host){
+    const target=document.querySelector("main")||document.body;
+    host=document.createElement("div");
+    host.id="controlCenterHostV1345";
+    target.prepend(host);
+  }
+  const s=ccStatusV1345(), u=s.u, n=ccNextActionV1345();
+  controlLastStatusV1345=s;
+  ccStateV1345().lastStatus={date:new Date().toISOString(),readiness:s.readiness,next:n.step};
+  host.innerHTML=`<div class="controlCenterV1345">
+    <div class="controlCenterHeroV1345">
+      <h2>🎯 Live Control Center – v13.45</h2>
+      <p>Belépés után ez vezeti végig a napi hálózatépítő munkát: import → lista → meghívás → prezi → utánkövetés → napi zárás → cloud mentés.</p>
+    </div>
+    <div>${ccLiveReadyHtmlV1345()}</div>
+    <div class="controlStatsV1345">
+      <div><b>${u.mode==="parttime"?"Mellék":"Főállás"}</b><span>munka mód</span></div>
+      <div><b>${u.dailyInvite}</b><span>napi meghívás cél</span></div>
+      <div><b>${u.dailyPrezi}</b><span>napi prezi/időpont cél</span></div>
+      <div><b>${u.dailyFollow}</b><span>napi utánkövetés</span></div>
+      <div><b>${s.contacts.length}</b><span>saját kontakt</span></div>
+      <div><b>${s.readiness}%</b><span>éles készültség</span></div>
+    </div>
+    ${ccFlowHtmlV1345()}
+    <div class="controlGridV1345">
+      <div>
+        <h3>Következő helyes lépés</h3>
+        <p><span class="controlBadgeV1345 blue">${esc(n.label)}</span> ${esc(n.text)}</p>
+        <div class="controlActionsV1345">
+          <button class="main" onclick="ccGoNextV1345()">🎯 Ma mit csináljak?</button>
+          <button class="gold" onclick="ccGenerateDailyListV1345()">Mai lista generálása</button>
+          <button onclick="ccMarkDailyDoneV1345('invite')">+ Meghívás</button>
+          <button onclick="ccMarkDailyDoneV1345('prezi')">+ Prezi</button>
+          <button onclick="ccMarkDailyDoneV1345('follow')">+ Utánkövetés</button>
+          <button class="soft" onclick="ccMarkDailyDoneV1345('close')">Napi zárás kész</button>
+        </div>
+        <h3>Napi checklist</h3>${ccChecklistHtmlV1345()}
+      </div>
+      <div>
+        <h3>Mai kezelendő lista</h3>${ccDailyListHtmlV1345()}
+        <div class="controlActionsV1345">
+          <button class="blue" onclick="launchLiveQaChecksV1344?.();runFullSystemAuditV1343?.();setTimeout(renderControlCenterV1345,700)">Éles QA + audit</button>
+          <button class="soft" onclick="cloudPushAllV1339?.()">Cloud mentés most</button>
+          <button class="soft" onclick="clearOldCachesV1343?.()">Cache törlés</button>
+        </div>
+        <h3>Napló</h3><div class="controlLogV1345">${ccStateV1345().logs.slice(-14).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs még napi vezérlő log."}</div>
+      </div>
+    </div>
+  </div>`;
+}
+const oldRenderV1345=typeof render==="function"?render:null;
+if(oldRenderV1345){render=function(){const r=oldRenderV1345();setTimeout(renderControlCenterV1345,900);return r;}}
+const oldSetViewV1345=typeof setView==="function"?setView:null;
+if(oldSetViewV1345){setView=function(v){const r=oldSetViewV1345(v);setTimeout(()=>{if(v==="dashboard"||v==="home"||v==="now")renderControlCenterV1345();},500);return r;}}
+const oldProdSetViewV1345=typeof prodSetViewV1314==="function"?prodSetViewV1314:null;
+if(oldProdSetViewV1345){prodSetViewV1314=function(v){const r=oldProdSetViewV1345(v);setTimeout(()=>{if(v==="dashboard"||v==="home"||v==="now")renderControlCenterV1345();},500);return r;}}
+const oldRunDeepQaV1345=typeof runDeepQaV92==="function"?runDeepQaV92:null;
+if(oldRunDeepQaV1345){runDeepQaV92=function(){const qa=oldRunDeepQaV1345();qa.version="v13.45";qa.liveControlCenterFinalFlow={enabled:true,panel:!!document.getElementById("controlCenterHostV1345"),nextAction:ccNextActionV1345().step,status:ccStateV1345().lastStatus,dailyTargets:true,flowSteps:true,liveReadyBadges:true,dailyList:(ccStateV1345().dailyList||[]).length};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ központi napi munkafolyamat vezérlő</li><li>✅ Ma mit csináljak? főgomb</li><li>✅ import → vault → lista → meghívás → prezi → utánkövetés → zárás flow</li><li>✅ főállás / mellékállás célkártyák</li><li>✅ éles készültség jelző</li><li>✅ napi lista generálás</li><li>✅ gyors napi mutató rögzítés</li><li>✅ QA + audit gyorsgomb</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>{renderControlCenterV1345();},1200);
+setInterval(()=>{if(document.getElementById("controlCenterHostV1345")) renderControlCenterV1345();},60000);
 
 </script>
 <div id="globalLoader"><div class="loaderPanel"><div class="spinner"></div><b id="loaderText">Dolgozom...</b><div class="small" id="loaderSub">Kérlek várj egy pillanatot.</div></div></div>

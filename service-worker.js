@@ -1,6 +1,6 @@
-/* ZDiamond CRM Service Worker v13.39 */
-const APP_VERSION = "v13.39";
-const CACHE_NAME = "zdiamond-crm-app-v13-39";
+/* ZDiamond CRM Service Worker v13.45 */
+const APP_VERSION = "v13.45";
+const CACHE_NAME = "zdiamond-crm-app-v13-45";
 const APP_SHELL = ["/","/index.html","/manifest.webmanifest","/icons/icon-192.png","/icons/icon-512.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
@@ -17,7 +17,7 @@ self.addEventListener("fetch", event => {
   const req = event.request;
   if(req.method !== "GET") return;
   const url = new URL(req.url);
-  if(url.hostname.includes("googleapis.com") || url.hostname.includes("accounts.google.com") || url.hostname.includes("gstatic.com")){
+  if(url.hostname.includes("supabase.co") || url.hostname.includes("googleapis.com") || url.hostname.includes("accounts.google.com") || url.hostname.includes("gstatic.com")){
     event.respondWith(fetch(req)); return;
   }
   if(req.mode === "navigate" || url.pathname === "/" || url.pathname.endsWith("index.html") || url.pathname.endsWith("service-worker.js")){
