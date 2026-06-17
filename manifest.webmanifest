@@ -1,9 +1,9 @@
 {
-  "name": "ZDiamond CRM",
-  "short_name": "ZDiamond",
-  "start_url": "./index.html?v=13.53",
+  "name": "RisePath ZDiamond CRM",
+  "short_name": "RisePath",
+  "start_url": "/?v=13.86&safe=1",
   "display": "standalone",
-  "background_color": "#0b1220",
-  "theme_color": "#dc2626",
+  "background_color": "#f8fafc",
+  "theme_color": "#111827",
   "icons": []
 }

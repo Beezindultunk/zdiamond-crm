@@ -1,3 +1,3 @@
-# RisePath / ZDiamond CRM v13.84
+# RisePath / ZDiamond CRM v13.86
 
-Early Boot Cloud Guard Final – cloud fallback installed in HEAD before legacy code, prevents white screen before app scripts run.
+Static Launcher & App Isolation Final. index.html is a stable launcher; app.html contains the full CRM isolated behind a Start button.
