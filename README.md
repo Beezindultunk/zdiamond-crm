@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.48
+# ZDiamond CRM v13.49
 
-Always Visible Cloud Setup – fixed floating and inline Supabase setup panel.
+Supabase URL Auto Fix – normalizes Project URL and prevents PGRST125 invalid path errors.
