@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow</title>
+  <title>ZINZINO ROYAL CROWN CRM v13.47 – Goal Dashboard Auto Planner</title>
   <style>
     :root{
       --royal:#172554; --gold:#d4af37; --crown:#fff8dc;
@@ -1971,7 +1971,7 @@ body.large-list-fix-v1336 #viewAll{max-width:100%!important;overflow-x:hidden!im
 
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 body.universal-fit-v1337,
 body.universal-fit-v1337 main,
 body.universal-fit-v1337 #app,
@@ -2182,7 +2182,7 @@ body.universal-fit-v1337 #viewGuidedWorkflow{overflow-x:hidden!important}
 }
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .importQueueV1338{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2255,7 +2255,7 @@ body.import-queue-v1338 #viewSecureImportHub{max-width:100%!important;overflow-x
 @media(max-width:620px){.importQueueStatsV1338{grid-template-columns:1fr}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .cloudSyncV1339{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2301,7 +2301,7 @@ body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub
 }
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .onboardingOverlayV1340{position:fixed;inset:0;background:rgba(15,23,42,.82);z-index:99000;display:none;align-items:center;justify-content:center;padding:18px}
 .onboardingOverlayV1340.open{display:flex}
 .onboardingModalV1340{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;box-shadow:0 30px 90px rgba(0,0,0,.35);border:1px solid #d0d5dd;color:#111827}
@@ -2324,7 +2324,7 @@ body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub
 @media(max-width:780px){.onboardingGridV1340,.onboardingCardsV1340{grid-template-columns:1fr}.onboardingHeaderV1340 h2{font-size:22px}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .vaultV1341{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2371,7 +2371,7 @@ body.vault-v1341 #secureImportHubDashboard,body.vault-v1341 #viewSecureImportHub
 @media(max-width:620px){.vaultStatsV1341{grid-template-columns:1fr}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 body.freeze-guard-v1342{
   --dock-bg:rgba(11,18,32,.94);
   --dock-border:rgba(255,255,255,.13);
@@ -2491,7 +2491,7 @@ body.freeze-guard-v1342 .largeFixTableWrapV1336{
 @media print{body.freeze-guard-v1342 .mncDockV1325,.freezeGuardPanelV1342{display:none!important}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .systemAuditV1343{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2540,7 +2540,7 @@ body.system-audit-v1343 .importTableV1327 tr:nth-child(n+120){
 @media(max-width:620px){.auditGridV1343{grid-template-columns:1fr}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .launchReadyV1344{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2593,7 +2593,7 @@ body.live-launch-v1344 .mncBrandV1325 small:after{content:" LIVE";color:#16a34a;
 @media(max-width:620px){.launchStatsV1344{grid-template-columns:1fr}}
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 .controlCenterV1345{
   background:#fff;
   border:1px solid #d0d5dd;
@@ -2685,6 +2685,144 @@ body.final-flow-v1345 .mncMainV1325{padding-bottom:100px!important}
   .controlCenterHeroV1345 h2{font-size:22px}
 }
 
+
+/* === v13.47 Goal Dashboard Auto Planner === */
+.approvalGateV1346{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #2563eb;
+  border-radius:18px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.approvalGateV1346 h3{margin:0 0 8px;color:#172554}
+.approvalGridV1346{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.approvalGateV1346 input,.approvalGateV1346 select,.approvalGateV1346 textarea{
+  width:100%;max-width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:8px;font-weight:800
+}
+.approvalGateV1346 label{font-weight:950;color:#172554;font-size:12px;display:block;margin-top:7px}
+.approvalActionsV1346{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.approvalActionsV1346 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.approvalActionsV1346 button.blue{background:#2563eb}.approvalActionsV1346 button.gold{background:#c7a12b;color:#111827}.approvalActionsV1346 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.approvalActionsV1346 button.red{background:#dc2626}
+.approvalStatsV1346{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin:8px 0}
+.approvalStatsV1346 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.approvalStatsV1346 b{display:block;font-size:20px;color:#14532d}
+.approvalTableV1346{max-height:320px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.approvalTableV1346 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.approvalTableV1346 th,.approvalTableV1346 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.approvalTableV1346 th{position:sticky;top:0;background:#eff6ff;color:#172554}
+.approvalBadgeV1346{display:inline-flex;border-radius:999px;padding:3px 8px;margin:2px;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;font-size:11px;font-weight:950}
+.approvalBadgeV1346.pending{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.approvalBadgeV1346.rejected{background:#fef2f2;color:#b91c1c;border-color:#fecaca}
+.publicRegisterBoxV1346{
+  margin-top:14px;
+  border:1px solid #d0d5dd;
+  border-radius:16px;
+  padding:12px;
+  background:#f8fafc;
+}
+.loginPendingBoxV1346{
+  margin-top:12px;
+  background:#fff7ed;
+  border:1px solid #fed7aa;
+  color:#9a3412;
+  border-radius:14px;
+  padding:10px;
+  display:none;
+}
+.loginPendingBoxV1346.open{display:block}
+@media(max-width:980px){.approvalGridV1346{grid-template-columns:1fr}.approvalStatsV1346{grid-template-columns:1fr 1fr}.approvalTableV1346 table{min-width:760px}}
+@media(max-width:620px){.approvalStatsV1346{grid-template-columns:1fr}}
+
+
+/* === v13.47 Goal Dashboard Auto Planner === */
+.goalDashV1347{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #16a34a;
+  border-radius:18px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.goalDashV1347 h3{margin:0 0 8px;color:#14532d}
+.goalHeroV1347{
+  background:linear-gradient(135deg,#0b1220,#173d25,#c7a12b);
+  color:#fff;
+  border-radius:20px;
+  padding:16px;
+  margin-bottom:12px;
+}
+.goalHeroV1347 h2{margin:0 0 4px;font-size:26px;letter-spacing:-.03em}
+.goalHeroV1347 p{margin:0;color:#e5e7eb}
+.goalGridV1347{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.goalStatsV1347{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:10px 0}
+.goalCardV1347{
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:9px;
+  min-width:0;
+}
+.goalCardV1347 b{display:block;font-size:20px;color:#14532d}
+.goalCardV1347 small{color:#667085}
+.goalCardV1347.green{border-color:#bbf7d0;background:#ecfdf3}
+.goalCardV1347.red{border-color:#fecaca;background:#fef2f2}
+.goalCardV1347.blue{border-color:#bfdbfe;background:#eff6ff}
+.goalCardV1347.green b{color:#14532d}.goalCardV1347.red b{color:#b91c1c}.goalCardV1347.blue b{color:#1d4ed8}
+.goalProgressV1347{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:6px 0}
+.goalProgressV1347 i{display:block;height:100%;width:0;background:#2563eb}
+.goalCardV1347.green .goalProgressV1347 i{background:#22c55e}
+.goalCardV1347.red .goalProgressV1347 i{background:#ef4444}
+.goalCardV1347.blue .goalProgressV1347 i{background:#3b82f6}
+.goalActionsV1347{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.goalActionsV1347 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.goalActionsV1347 button.blue{background:#2563eb}.goalActionsV1347 button.gold{background:#c7a12b;color:#111827}.goalActionsV1347 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.goalActionsV1347 button.red{background:#dc2626}
+.goalDashV1347 input,.goalDashV1347 select,.goalDashV1347 textarea{
+  width:100%;max-width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:8px;font-weight:800
+}
+.goalDashV1347 label{font-weight:950;color:#172554;font-size:12px;display:block;margin-top:7px}
+.goalModalV1347{
+  position:fixed;inset:0;background:rgba(15,23,42,.82);z-index:99500;display:none;align-items:center;justify-content:center;padding:16px
+}
+.goalModalV1347.open{display:flex}
+.goalModalBoxV1347{
+  width:min(760px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:22px;border:1px solid #d0d5dd;box-shadow:0 30px 90px rgba(0,0,0,.35)
+}
+.goalModalHeadV1347{background:linear-gradient(135deg,#0b1220,#173d25,#c7a12b);color:#fff;padding:18px}
+.goalModalBodyV1347{padding:16px}
+.goalPlanGridV1347{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.goalBadgeV1347{display:inline-flex;border-radius:999px;padding:4px 9px;margin:2px;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;font-size:12px;font-weight:950}
+.goalBadgeV1347.red{background:#fef2f2;color:#b91c1c;border-color:#fecaca}
+.goalBadgeV1347.blue{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.goalTableV1347{max-height:340px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.goalTableV1347 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.goalTableV1347 th,.goalTableV1347 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.goalTableV1347 th{position:sticky;top:0;background:#ecfdf3;color:#14532d}
+body.goal-v1347 .lifeSheetHeaderV1320 input,
+body.goal-v1347 #lifePartnerNameV1347{font-weight:950!important}
+body.goal-v1347 .lifeSheetV1320:before{
+  content:"Partner: " attr(data-partner-name);
+  display:block;
+  font-weight:950;
+  color:#14532d;
+  margin-bottom:6px;
+}
+@media(max-width:1180px){.goalGridV1347{grid-template-columns:1fr}.goalStatsV1347{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.goalStatsV1347{grid-template-columns:1fr 1fr}.goalPlanGridV1347{grid-template-columns:1fr}}
+@media(max-width:520px){.goalStatsV1347{grid-template-columns:1fr}.goalHeroV1347 h2{font-size:21px}}
+
 </style>
 
 <link rel="manifest" href="./manifest.webmanifest">
@@ -2697,7 +2835,7 @@ body.final-flow-v1345 .mncMainV1325{padding-bottom:100px!important}
 </head>
 <body>
 <header>
-  <h1>👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow</h1>
+  <h1>👑 ZINZINO ROYAL CROWN CRM v13.47 – Goal Dashboard Auto Planner</h1>
   <p>Több felhasználós, színes pipeline CRM Z4F rendszerrel és tiszta Facebook HTML import előnézettel.</p>
 </header>
 
@@ -2731,7 +2869,7 @@ body.final-flow-v1345 .mncMainV1325{padding-bottom:100px!important}
 
       <div class="navGroup">
         <h3>🧭 Verzió / állapot</h3>
-        <div class="row"><span class="ownerBadge">v13.45</span><span class="pill">Live Control Center Final Flow</span></div>
+        <div class="row"><span class="ownerBadge">v13.47</span><span class="pill">Goal Dashboard Auto Planner</span></div>
         <div class="small" id="saveStatePanel">Mentési állapot betöltése...</div>
         <button class="ghost" onclick="openChangelog()">Mi változott?</button>
       </div>
@@ -24461,17 +24599,17 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
 
 
 
-/* === v13.45 Live Control Center Final Flow === */
+/* === v13.47 Goal Dashboard Auto Planner === */
 (function(){
-  const V='v13.45';
+  const V='v13.47';
   function setVersionUiV1337(){
-    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Live Control Center Final Flow'; }catch(e){}
+    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Goal Dashboard Auto Planner'; }catch(e){}
     const h1=document.querySelector('h1');
-    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Live Control Center Final Flow';
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Goal Dashboard Auto Planner';
     const versionCard=[...document.querySelectorAll('h3')].find(h=>/Verzió\s*\/\s*állapot/i.test(h.textContent))?.parentElement;
     if(versionCard){
       const b=versionCard.querySelector('.ownerBadge'); if(b) b.textContent=V;
-      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Live Control Center Final Flow';
+      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Goal Dashboard Auto Planner';
     }
     const smallBrand=document.querySelector('.mncBrandV1325 small');
     if(smallBrand) smallBrand.textContent=V;
@@ -24512,7 +24650,7 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
     const modal=document.getElementById('modal');
     if(title) title.textContent='Verzió / Changelog';
     if(body){
-      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
+      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
     }
     if(modal) modal.classList.add('open');
   };
@@ -24540,8 +24678,8 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
 })();
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_IMPORT_QUEUE_PROCESSOR_V1338__ = true;
 
 let queueRunV1338 = false;
@@ -24812,7 +24950,7 @@ function renderImportQueueV1338(){
     target.prepend(host);
   }
   host.innerHTML=`<div class="importQueueV1338">
-    <h3>Import tárhely & háttér névfeldolgozó – v13.45</h3>
+    <h3>Import tárhely & háttér névfeldolgozó – v13.47</h3>
     <p>A fájlokat először csak eltárolja. Utána kis csomagokban áthúzza a neveket a CRM adatbázisba. Ami már átment, azt többet nem olvassa be. Google és Facebook listát összefésüli.</p>
     <div class="importQueueStatsV1338">
       <div><b>${st.files}</b><span>fájl tárhelyen</span></div>
@@ -24888,7 +25026,7 @@ if(oldRunDeepQaV1338){
   runDeepQaV92=function(){
     const qa=oldRunDeepQaV1338();
     const s=queueStatsV1338();
-    qa.version="v13.45";
+    qa.version="v13.47";
     qa.importQueueProcessor={
       enabled:true,
       panel:!!document.getElementById("importQueueHostV1338"),
@@ -24907,14 +25045,14 @@ if(oldRunDeepQaV1338){
 }
 openChangelog = function(){
   document.getElementById("modalTitle").textContent="Verzió / Changelog";
-  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ import tárhely fájlokhoz</li><li>✅ feldolgozás kis csomagokban</li><li>✅ folytatható feldolgozás</li><li>✅ ami már átment, azt nem olvassa be újra</li><li>✅ Google + Facebook lista összefésülés</li><li>✅ duplikáció és merge index</li><li>✅ kész fájlok külön kezelése</li><li>✅ QA importQueueProcessor blokk</li></ul></div>`;
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ import tárhely fájlokhoz</li><li>✅ feldolgozás kis csomagokban</li><li>✅ folytatható feldolgozás</li><li>✅ ami már átment, azt nem olvassa be újra</li><li>✅ Google + Facebook lista összefésülés</li><li>✅ duplikáció és merge index</li><li>✅ kész fájlok külön kezelése</li><li>✅ QA importQueueProcessor blokk</li></ul></div>`;
   document.getElementById("modal").classList.add("open");
 };
 setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderImportQueueV1338(); },800);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_CLOUD_TEAM_SYNC_GOOGLE_FLOW_V1339__ = true;
 
 let cloudSyncTimerV1339 = null;
@@ -25203,7 +25341,7 @@ function renderCloudSyncCenterV1339(){
   const contacts=(db.contacts||[]).filter(c=>(c.ownerId||"tomi")===user.ownerId || user.ownerId==="tomi").length;
   const queue=queueStatsV1338 ? queueStatsV1338() : {files:0,processed:0,total:0,imported:0};
   host.innerHTML=`<div class="cloudSyncV1339">
-    <h3>Felhő / Saját felhasználói struktúra / Google javítás – v13.45</h3>
+    <h3>Felhő / Saját felhasználói struktúra / Google javítás – v13.47</h3>
     <p>Ez a modul teszi felhőkész állapotba a rendszert: minden belépő saját ownerId alapján dolgozik, cloudba menthető, majd másik eszközön azonnal visszatölthető.</p>
     <div class="cloudStatsV1339">
       <div><b>${user.name}</b><span>belépő</span></div>
@@ -25291,7 +25429,7 @@ const oldRunDeepQaV1339 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null
 if(oldRunDeepQaV1339){
   runDeepQaV92=function(){
     const qa=oldRunDeepQaV1339();
-    qa.version="v13.45";
+    qa.version="v13.47";
     qa.cloudTeamSyncGoogleFlow={
       enabled:true,
       panel:!!document.getElementById("cloudSyncHostV1339"),
@@ -25307,21 +25445,21 @@ if(oldRunDeepQaV1339){
 }
 openChangelog = function(){
   document.getElementById("modalTitle").textContent="Verzió / Changelog";
-  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ cloud-ready adattárolás minden belépőnek saját ownerId szerint</li><li>✅ Supabase REST adapter</li><li>✅ profil, kontakt, import queue, napi adatok cloud szinkron</li><li>✅ Google névjegy letöltés javított teljes oldalas indító</li><li>✅ Google előnézet import tárhelyre</li><li>✅ főállású cél: heti 15–20 prezi</li><li>✅ mellékállású cél: heti 5–7 prezi</li><li>✅ QA cloudTeamSyncGoogleFlow blokk</li></ul></div>`;
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ cloud-ready adattárolás minden belépőnek saját ownerId szerint</li><li>✅ Supabase REST adapter</li><li>✅ profil, kontakt, import queue, napi adatok cloud szinkron</li><li>✅ Google névjegy letöltés javított teljes oldalas indító</li><li>✅ Google előnézet import tárhelyre</li><li>✅ főállású cél: heti 15–20 prezi</li><li>✅ mellékállású cél: heti 5–7 prezi</li><li>✅ QA cloudTeamSyncGoogleFlow blokk</li></ul></div>`;
   document.getElementById("modal").classList.add("open");
 };
 setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderCloudSyncCenterV1339(); cloudStartAutoSyncV1339(); },900);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_FIRST_LOGIN_CLOUD_ONBOARDING_V1340__ = true;
 
 let onboardingStepV1340 = 1;
 const onboardingTotalV1340 = 5;
 
 function onboardStateV1340(){
-  db.onboardingV1340 = db.onboardingV1340 || {completed:false,completedAt:null,personal:{},upline:{},work:{mode:"fulltime"},cloud:{created:false,pending:false,lastError:""},firstRunVersion:"v13.45"};
+  db.onboardingV1340 = db.onboardingV1340 || {completed:false,completedAt:null,personal:{},upline:{},work:{mode:"fulltime"},cloud:{created:false,pending:false,lastError:""},firstRunVersion:"v13.47"};
   return db.onboardingV1340;
 }
 function onboardLoginV1340(){
@@ -25370,7 +25508,7 @@ async function onboardCreateCloudStructureV1340(){
 }
 async function onboardFinishV1340(){
   onboardReadFormV1340(); await onboardCreateCloudStructureV1340();
-  const o=onboardStateV1340(), login=onboardLoginV1340(); o.completed=true; o.completedAt=new Date().toISOString(); o.version="v13.45";
+  const o=onboardStateV1340(), login=onboardLoginV1340(); o.completed=true; o.completedAt=new Date().toISOString(); o.version="v13.47";
   localStorage.setItem("onboarding_done_v1340_"+(login.ownerId||"tomi"),"1");
   try{
     if(cloudConfiguredV1339?.()){
@@ -25393,7 +25531,7 @@ function onboardStepHtmlV1340(){
 function renderOnboardingV1340(){
   let ov=document.getElementById("onboardingOverlayV1340");
   if(!ov){ ov=document.createElement("div"); ov.id="onboardingOverlayV1340"; ov.className="onboardingOverlayV1340"; document.body.appendChild(ov); }
-  ov.innerHTML=`<div class="onboardingModalV1340"><div class="onboardingHeaderV1340"><h2>Első belépős beállítás – v13.45</h2><p>Végigvezetlek a saját felhős munkatered létrehozásán.</p><div class="onboardingProgressV1340"><i style="width:${onboardProgressV1340()}%"></i></div></div><div class="onboardingBodyV1340">${onboardStepHtmlV1340()}</div><div class="onboardingActionsV1340"><button class="soft" onclick="onboardPrevV1340()" ${onboardingStepV1340===1?"disabled":""}>← Vissza</button><div><button class="soft" onclick="onboardCloseV1340()">Később</button>${onboardingStepV1340<onboardingTotalV1340?`<button onclick="onboardNextV1340()">Tovább →</button>`:`<button class="gold" onclick="onboardFinishV1340()">Befejezés és indulás</button>`}</div></div></div>`;
+  ov.innerHTML=`<div class="onboardingModalV1340"><div class="onboardingHeaderV1340"><h2>Első belépős beállítás – v13.47</h2><p>Végigvezetlek a saját felhős munkatered létrehozásán.</p><div class="onboardingProgressV1340"><i style="width:${onboardProgressV1340()}%"></i></div></div><div class="onboardingBodyV1340">${onboardStepHtmlV1340()}</div><div class="onboardingActionsV1340"><button class="soft" onclick="onboardPrevV1340()" ${onboardingStepV1340===1?"disabled":""}>← Vissza</button><div><button class="soft" onclick="onboardCloseV1340()">Később</button>${onboardingStepV1340<onboardingTotalV1340?`<button onclick="onboardNextV1340()">Tovább →</button>`:`<button class="gold" onclick="onboardFinishV1340()">Befejezés és indulás</button>`}</div></div></div>`;
 }
 function renderFirstLoginStatusV1340(){
   let host=document.getElementById("firstLoginStatusHostV1340");
@@ -25425,14 +25563,14 @@ async function startupCloudLoadV1340(){ try{ if(cloudConfiguredV1339?.()) await 
 function startCloudSaveHeartbeatV1340(){ setInterval(async()=>{ try{ if(cloudStateV1339?.().enabled && cloudConfiguredV1339?.()) await cloudPushAllV1339(); }catch(e){} },90000); }
 
 const oldRunDeepQaV1340 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
-if(oldRunDeepQaV1340){ runDeepQaV92=function(){ const qa=oldRunDeepQaV1340(); qa.version="v13.45"; qa.firstLoginGuidedCloudOnboarding={enabled:true,overlay:!!document.getElementById("onboardingOverlayV1340"),completed:!!onboardStateV1340().completed,asksPersonalData:true,asksUpline:true,asksWorkMode:true,createsPersonalCloudStructure:true,cloudLoadOnLogin:true,cloudSaveHeartbeat:true,autoSoftwareUpdate:true,fulltimePresentationTarget:20,parttimePresentationTarget:7}; return qa; } }
-openChangelog = function(){ document.getElementById("modalTitle").textContent="Verzió / Changelog"; document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ első belépős kérdéssor</li><li>✅ személyes adatok</li><li>✅ felsővonal / mentor</li><li>✅ főállású vagy mellékállású üzletépítő mód</li><li>✅ saját ownerId/teamId adatstruktúra</li><li>✅ cloud struktúra létrehozás</li><li>✅ belépéskor cloud betöltés</li><li>✅ automatikus cloud mentés</li><li>✅ automatikus szoftverfrissítés ellenőrzés</li></ul></div>`; document.getElementById("modal").classList.add("open"); };
+if(oldRunDeepQaV1340){ runDeepQaV92=function(){ const qa=oldRunDeepQaV1340(); qa.version="v13.47"; qa.firstLoginGuidedCloudOnboarding={enabled:true,overlay:!!document.getElementById("onboardingOverlayV1340"),completed:!!onboardStateV1340().completed,asksPersonalData:true,asksUpline:true,asksWorkMode:true,createsPersonalCloudStructure:true,cloudLoadOnLogin:true,cloudSaveHeartbeat:true,autoSoftwareUpdate:true,fulltimePresentationTarget:20,parttimePresentationTarget:7}; return qa; } }
+openChangelog = function(){ document.getElementById("modalTitle").textContent="Verzió / Changelog"; document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ első belépős kérdéssor</li><li>✅ személyes adatok</li><li>✅ felsővonal / mentor</li><li>✅ főállású vagy mellékállású üzletépítő mód</li><li>✅ saját ownerId/teamId adatstruktúra</li><li>✅ cloud struktúra létrehozás</li><li>✅ belépéskor cloud betöltés</li><li>✅ automatikus cloud mentés</li><li>✅ automatikus szoftverfrissítés ellenőrzés</li></ul></div>`; document.getElementById("modal").classList.add("open"); };
 setTimeout(()=>{renderFirstLoginStatusV1340(); if(onboardNeedsV1340()) onboardOpenV1340(false); startupCloudLoadV1340(); startCloudSaveHeartbeatV1340(); checkSoftwareUpdateV1340();},1100);
 setInterval(checkSoftwareUpdateV1340,5*60*1000);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_IMMUTABLE_IMPORT_VAULT_V1341__ = true;
 
 let vaultRunV1341=false;
@@ -25480,7 +25618,7 @@ async function vaultDeleteV1341(store,key){
   });
 }
 function vaultStateV1341(){
-  db.importVaultV1341=db.importVaultV1341||{files:[],dedupe:{},logs:[],lastRun:null,version:"v13.45"};
+  db.importVaultV1341=db.importVaultV1341||{files:[],dedupe:{},logs:[],lastRun:null,version:"v13.47"};
   db.importVaultV1341.files=db.importVaultV1341.files||[];
   db.importVaultV1341.dedupe=db.importVaultV1341.dedupe||{};
   db.importVaultV1341.logs=db.importVaultV1341.logs||[];
@@ -25695,7 +25833,7 @@ function renderVaultV1341(){
   if(!host){const target=document.getElementById("secureImportHubDashboard")||document.querySelector("main")||document.body; host=document.createElement("div"); host.id="vaultHostV1341"; target.prepend(host);}
   const s=vaultStatsV1341();
   host.innerHTML=`<div class="vaultV1341">
-    <h3>Live Control Center Final Flow – v13.45</h3>
+    <h3>Goal Dashboard Auto Planner – v13.47</h3>
     <p>A Google/Facebook/CSV forrás először immutable tárhelyre kerül IndexedDB-ben. Nem a localStorage-t terheli, nem fagyaszt, és csak kis szeletekben dolgozza át a neveket a CRM-be.</p>
     <div class="vaultStatsV1341"><div><b>${s.files}</b><span>source</span></div><div><b>${s.processed}/${s.total}</b><span>feldolgozott</span></div><div><b>${s.imported}</b><span>új név</span></div><div><b>${s.updated}</b><span>összefésült</span></div><div><b>${s.done}</b><span>kész</span></div><div><b>${s.pct}%</b><span>állapot</span></div></div>
     <div class="vaultProgressV1341"><i style="width:${s.pct}%"></i></div>
@@ -25715,13 +25853,13 @@ if(oldSetViewV1341){setView=function(v){const ok=oldSetViewV1341(v); if(v==="sec
 const oldProdSetViewV1341 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
 if(oldProdSetViewV1341){prodSetViewV1314=function(v){const ok=oldProdSetViewV1341(v); if(v==="secureImportHub"||v==="googleStart"||v==="facebookImportControl") setTimeout(renderVaultV1341,90); return ok;}}
 const oldRunDeepQaV1341 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
-if(oldRunDeepQaV1341){runDeepQaV92=function(){const qa=oldRunDeepQaV1341();const s=vaultStatsV1341();qa.version="v13.45";qa.immutableImportVault={enabled:true,panel:!!document.getElementById("vaultHostV1341"),files:s.files,total:s.total,processed:s.processed,indexedDb:true,streaming:true,requestIdle:!!window.requestIdleCallback,cloudMetaSync:true,dedupeKeys:Object.keys(vaultStateV1341().dedupe||{}).length};return qa;}}
-openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ Google/Facebook/CSV immutable import tárhely IndexedDB-ben</li><li>✅ nagy fájl nem localStorage-ba kerül</li><li>✅ streaming feldolgozás requestIdleCallback-kal</li><li>✅ csak kis szeletekben olvas és ír</li><li>✅ ami már átment, dedupe index miatt nem fut újra</li><li>✅ Google + Facebook összefésülés</li><li>✅ vault meta cloud sync</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+if(oldRunDeepQaV1341){runDeepQaV92=function(){const qa=oldRunDeepQaV1341();const s=vaultStatsV1341();qa.version="v13.47";qa.immutableImportVault={enabled:true,panel:!!document.getElementById("vaultHostV1341"),files:s.files,total:s.total,processed:s.processed,indexedDb:true,streaming:true,requestIdle:!!window.requestIdleCallback,cloudMetaSync:true,dedupeKeys:Object.keys(vaultStateV1341().dedupe||{}).length};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ Google/Facebook/CSV immutable import tárhely IndexedDB-ben</li><li>✅ nagy fájl nem localStorage-ba kerül</li><li>✅ streaming feldolgozás requestIdleCallback-kal</li><li>✅ csak kis szeletekben olvas és ír</li><li>✅ ami már átment, dedupe index miatt nem fut újra</li><li>✅ Google + Facebook összefésülés</li><li>✅ vault meta cloud sync</li></ul></div>`;document.getElementById("modal").classList.add("open");};
 setTimeout(()=>{if((window.view||"")==="secureImportHub") renderVaultV1341();},900);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_FREEZE_GUARD_IMPORT_ENGINE_V1342__ = true;
 
 let fgRunV1342=false;
@@ -25743,11 +25881,11 @@ function fgApplyV1342(){
   document.body.classList.add("freeze-guard-v1342","universal-fit-v1337");
   try{
     const h1=document.querySelector("h1");
-    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.47 – Goal Dashboard Auto Planner";
     const versionCard=[...document.querySelectorAll("h3")].find(h=>/Verzió\s*\/\s*állapot/i.test(h.textContent))?.parentElement;
     if(versionCard){
-      const b=versionCard.querySelector(".ownerBadge"); if(b) b.textContent="v13.45";
-      const p=versionCard.querySelector(".pill"); if(p) p.textContent="Live Control Center Final Flow";
+      const b=versionCard.querySelector(".ownerBadge"); if(b) b.textContent="v13.47";
+      const p=versionCard.querySelector(".pill"); if(p) p.textContent="Goal Dashboard Auto Planner";
     }
   }catch(e){}
 }
@@ -25902,7 +26040,7 @@ function renderFreezeGuardV1342(){
   }
   const s=fgStatsV1342();
   host.innerHTML=`<div class="freezeGuardPanelV1342">
-    <h3>Freeze Guard Import Engine – v13.45</h3>
+    <h3>Freeze Guard Import Engine – v13.47</h3>
     <p>Ez védi a rendszert a Google/Facebook nagy fájlok miatti lefagyástól. A fájl streamelve kerül IndexedDB vaultba, majd időkeretes szeletekben megy át a CRM-be.</p>
     <div class="freezeGuardStatsV1342">
       <div><b>${s.files}</b><span>vault source</span></div>
@@ -25940,15 +26078,15 @@ if(oldProdSetViewV1342){
 }
 const oldRunDeepQaV1342 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
 if(oldRunDeepQaV1342){
-  runDeepQaV92=function(){const qa=oldRunDeepQaV1342();const s=fgStatsV1342();qa.version="v13.45";qa.freezeGuardImportEngine={enabled:true,panel:!!document.getElementById("freezeGuardHostV1342"),premiumDock:true,fileStreaming:true,indexedDbVault:true,timeboxedProcessing:true,watchdog:true,legacyImportBlocked:true,stats:s};return qa;}
+  runDeepQaV92=function(){const qa=oldRunDeepQaV1342();const s=fgStatsV1342();qa.version="v13.47";qa.freezeGuardImportEngine={enabled:true,panel:!!document.getElementById("freezeGuardHostV1342"),premiumDock:true,fileStreaming:true,indexedDbVault:true,timeboxedProcessing:true,watchdog:true,legacyImportBlocked:true,stats:s};return qa;}
 }
-openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ prémium alsó dock design</li><li>✅ nagy fájl streamelt IndexedDB vault upload</li><li>✅ nincs teljes readAsText nagy Facebook/Google fájlnál</li><li>✅ régi fagyasztó import utak blokkolva</li><li>✅ időkeretes feldolgozás, UI életben tartva</li><li>✅ watchdog, ami megállítja az elakadt feldolgozást</li><li>✅ QA freezeGuardImportEngine blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ prémium alsó dock design</li><li>✅ nagy fájl streamelt IndexedDB vault upload</li><li>✅ nincs teljes readAsText nagy Facebook/Google fájlnál</li><li>✅ régi fagyasztó import utak blokkolva</li><li>✅ időkeretes feldolgozás, UI életben tartva</li><li>✅ watchdog, ami megállítja az elakadt feldolgozást</li><li>✅ QA freezeGuardImportEngine blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
 setTimeout(()=>{fgApplyV1342(); if((window.view||"")==="secureImportHub") renderFreezeGuardV1342();},700);
 setInterval(fgApplyV1342,2500);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_FULL_SYSTEM_AUDIT_PERFORMANCE_REPAIR_V1343__ = true;
 
 let auditLastV1343 = null;
@@ -25971,12 +26109,12 @@ function showPerfToastV1343(msg){
 function applySystemAuditV1343(){
   document.body.classList.add("system-audit-v1343","freeze-guard-v1342","universal-fit-v1337");
   try{
-    document.title="ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
+    document.title="ZINZINO ROYAL CROWN CRM v13.47 – Goal Dashboard Auto Planner";
     const h1=document.querySelector("h1");
-    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.45 – Live Control Center Final Flow";
-    document.querySelectorAll(".ownerBadge").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.45"});
-    document.querySelectorAll(".versionTag").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.45"});
-    const brand=document.querySelector(".mncBrandV1325 small"); if(brand) brand.textContent="v13.45";
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent="👑 ZINZINO ROYAL CROWN CRM v13.47 – Goal Dashboard Auto Planner";
+    document.querySelectorAll(".ownerBadge").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.47"});
+    document.querySelectorAll(".versionTag").forEach(b=>{if(/v13\./.test(b.textContent)) b.textContent="v13.47"});
+    const brand=document.querySelector(".mncBrandV1325 small"); if(brand) brand.textContent="v13.47";
   }catch(e){}
 }
 
@@ -26101,8 +26239,8 @@ function auditCheckV1343(name, ok, repair=""){
 async function runFullSystemAuditV1343(){
   applySystemAuditV1343();
   const checks=[];
-  checks.push(auditCheckV1343("Verzió kijelzés", document.title.includes("v13.45"), "Fejléc/kártya átírva v13.45-ra."));
-  checks.push(auditCheckV1343("Alsó premium dock", !!document.querySelector(".mncDockV1325"), "Dock CSS v13.42/v13.45 aktív."));
+  checks.push(auditCheckV1343("Verzió kijelzés", document.title.includes("v13.47"), "Fejléc/kártya átírva v13.47-ra."));
+  checks.push(auditCheckV1343("Alsó premium dock", !!document.querySelector(".mncDockV1325"), "Dock CSS v13.42/v13.47 aktív."));
   checks.push(auditCheckV1343("Első belépős onboarding", typeof onboardOpenV1340==="function" && typeof onboardFinishV1340==="function"));
   checks.push(auditCheckV1343("Cloud profil/kontakt sync", typeof cloudPushAllV1339==="function" && typeof cloudPullAllV1339==="function", "Supabase URL+anon key kell az élő teszthez."));
   checks.push(auditCheckV1343("Google full-page login", typeof googleDirectRedirectV1339==="function" && typeof googleFetchContactsV1339==="function", "Élő Google teszt OAuth oldalon fut."));
@@ -26145,7 +26283,7 @@ function renderSystemAuditPanelV1343(){
   }
   const a=auditLastV1343 || {ok:0,total:0,longTasks:perfLongTasksV1343,lastFreeze:perfLastFreezeV1343};
   host.innerHTML=`<div class="systemAuditV1343">
-    <h3>Teljes rendszer audit & gyorsítás – v13.45</h3>
+    <h3>Teljes rendszer audit & gyorsítás – v13.47</h3>
     <p>Ez ellenőrzi a fő funkciókat, blokkolja a lassú import útvonalakat, csökkenti az iPad/telefon DOM-terhelést, és cache-resetet ad a régi verziók ellen.</p>
     <div class="auditGridV1343">
       <div><b>${a.ok||0}/${a.total||0}</b><span>audit OK</span></div>
@@ -26153,7 +26291,7 @@ function renderSystemAuditPanelV1343(){
       <div><b>${vaultStatsV1341?.().processed||0}</b><span>vault processed</span></div>
       <div><b>${largeFilteredContactsV1336?.().length||0}</b><span>látható név</span></div>
       <div><b>${cloudConfiguredV1339?.()?"ON":"OFF"}</b><span>cloud config</span></div>
-      <div><b>v13.45</b><span>aktív build</span></div>
+      <div><b>v13.47</b><span>aktív build</span></div>
     </div>
     ${perfLastFreezeV1343?`<div class="vaultNoticeV1341"><b>Utolsó teljesítmény jelzés:</b> ${esc(perfLastFreezeV1343)}</div>`:""}
     <div class="auditActionsV1343">
@@ -26201,20 +26339,20 @@ const oldRunDeepQaV1343 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null
 if(oldRunDeepQaV1343){
   runDeepQaV92=function(){
     const qa=oldRunDeepQaV1343();
-    qa.version="v13.45";
+    qa.version="v13.47";
     qa.fullSystemAuditPerformanceRepair={enabled:true,panel:!!document.getElementById("systemAuditHostV1343"),lastAudit:auditLastV1343,saveDebounced:true,legacyHeavyImportsBlocked:true,largeListPageGuard:true,longTaskCount:perfLongTasksV1343,cacheReset:true};
     return qa;
   }
 }
-openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ teljes rendszer audit panel</li><li>✅ régi cache reset</li><li>✅ debounced mentés, kevesebb fagyás</li><li>✅ nagy névlista page guard iPaden/telefonon</li><li>✅ vault slice hossz figyelés</li><li>✅ régi lassú import útvonalak blokkolása</li><li>✅ long task teljesítményfigyelés</li><li>✅ QA fullSystemAuditPerformanceRepair blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ teljes rendszer audit panel</li><li>✅ régi cache reset</li><li>✅ debounced mentés, kevesebb fagyás</li><li>✅ nagy névlista page guard iPaden/telefonon</li><li>✅ vault slice hossz figyelés</li><li>✅ régi lassú import útvonalak blokkolása</li><li>✅ long task teljesítményfigyelés</li><li>✅ QA fullSystemAuditPerformanceRepair blokk</li></ul></div>`;document.getElementById("modal").classList.add("open");};
 
 setTimeout(()=>{applySystemAuditV1343(); renderSystemAuditPanelV1343();},900);
 setTimeout(()=>runFullSystemAuditV1343(),1800);
 setInterval(applySystemAuditV1343,2500);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_LIVE_LAUNCH_REGISTRATION_TEAM_QA_V1344__ = true;
 
 let launchLogsV1344=[];
@@ -26380,7 +26518,7 @@ function renderLaunchReadyV1344(){
   }
   const s=launchStatsV1344();
   host.innerHTML=`<div class="launchReadyV1344">
-    <h3>Éles indulás / regisztráció / csapat QA – v13.45</h3>
+    <h3>Éles indulás / regisztráció / csapat QA – v13.47</h3>
     <p>Ma használható éles próba: saját regisztráció, kódos belépés, kolléga meghívó, tesztnevek, gyors QA.</p>
     <div class="launchStatsV1344">
       <div><b>${s.owner}</b><span>aktív owner</span></div>
@@ -26422,20 +26560,20 @@ function renderLaunchReadyV1344(){
 const oldRenderV1344=typeof render==="function"?render:null;
 if(oldRenderV1344){render=function(){const r=oldRenderV1344();setTimeout(renderLaunchReadyV1344,700);return r;}}
 const oldRunDeepQaV1344=typeof runDeepQaV92==="function"?runDeepQaV92:null;
-if(oldRunDeepQaV1344){runDeepQaV92=function(){const qa=oldRunDeepQaV1344();qa.version="v13.45";qa.liveLaunchRegistrationTeamQa={enabled:true,panel:!!document.getElementById("launchReadyHostV1344"),registration:true,codeLogin:true,inviteCodes:true,liveQa:launchStateV1344().lastQa,defaultCodes:["TOMI-ADMIN-2026","EVA-ADMIN-2026","DIAMOND-START-2026","TEAM-START-2026"]};return qa;}}
-openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ éles indulási panel</li><li>✅ regisztráció első belépésnél</li><li>✅ belépés saját kóddal</li><li>✅ kolléga meghívó kód generálás</li><li>✅ saját ownerId munkatér létrehozás</li><li>✅ éles próba tesztnevek</li><li>✅ éles start QA lista</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+if(oldRunDeepQaV1344){runDeepQaV92=function(){const qa=oldRunDeepQaV1344();qa.version="v13.47";qa.liveLaunchRegistrationTeamQa={enabled:true,panel:!!document.getElementById("launchReadyHostV1344"),registration:true,codeLogin:true,inviteCodes:true,liveQa:launchStateV1344().lastQa,defaultCodes:["TOMI-ADMIN-2026","EVA-ADMIN-2026","DIAMOND-START-2026","TEAM-START-2026"]};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ éles indulási panel</li><li>✅ regisztráció első belépésnél</li><li>✅ belépés saját kóddal</li><li>✅ kolléga meghívó kód generálás</li><li>✅ saját ownerId munkatér létrehozás</li><li>✅ éles próba tesztnevek</li><li>✅ éles start QA lista</li></ul></div>`;document.getElementById("modal").classList.add("open");};
 setTimeout(()=>{renderLaunchReadyV1344();launchInviteFromUrlV1344();},1000);
 
 
-/* === v13.45 Live Control Center Final Flow === */
-var APP_VERSION = "v13.45";
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
 window.__RC_LIVE_CONTROL_CENTER_FINAL_FLOW_V1345__ = true;
 
 let controlLogsV1345=[];
 let controlLastStatusV1345=null;
 
 function ccStateV1345(){
-  db.controlCenterV1345=db.controlCenterV1345||{logs:[],lastStep:"",lastStatus:null,dailyList:[],version:"v13.45"};
+  db.controlCenterV1345=db.controlCenterV1345||{logs:[],lastStep:"",lastStatus:null,dailyList:[],version:"v13.47"};
   db.controlCenterV1345.logs=db.controlCenterV1345.logs||[];
   return db.controlCenterV1345;
 }
@@ -26625,7 +26763,7 @@ function renderControlCenterV1345(){
   ccStateV1345().lastStatus={date:new Date().toISOString(),readiness:s.readiness,next:n.step};
   host.innerHTML=`<div class="controlCenterV1345">
     <div class="controlCenterHeroV1345">
-      <h2>🎯 Live Control Center – v13.45</h2>
+      <h2>🎯 Live Control Center – v13.47</h2>
       <p>Belépés után ez vezeti végig a napi hálózatépítő munkát: import → lista → meghívás → prezi → utánkövetés → napi zárás → cloud mentés.</p>
     </div>
     <div>${ccLiveReadyHtmlV1345()}</div>
@@ -26671,10 +26809,357 @@ if(oldSetViewV1345){setView=function(v){const r=oldSetViewV1345(v);setTimeout(()
 const oldProdSetViewV1345=typeof prodSetViewV1314==="function"?prodSetViewV1314:null;
 if(oldProdSetViewV1345){prodSetViewV1314=function(v){const r=oldProdSetViewV1345(v);setTimeout(()=>{if(v==="dashboard"||v==="home"||v==="now")renderControlCenterV1345();},500);return r;}}
 const oldRunDeepQaV1345=typeof runDeepQaV92==="function"?runDeepQaV92:null;
-if(oldRunDeepQaV1345){runDeepQaV92=function(){const qa=oldRunDeepQaV1345();qa.version="v13.45";qa.liveControlCenterFinalFlow={enabled:true,panel:!!document.getElementById("controlCenterHostV1345"),nextAction:ccNextActionV1345().step,status:ccStateV1345().lastStatus,dailyTargets:true,flowSteps:true,liveReadyBadges:true,dailyList:(ccStateV1345().dailyList||[]).length};return qa;}}
-openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.45</span><h3>ZINZINO ROYAL CROWN CRM – Live Control Center Final Flow</h3><ul><li>✅ központi napi munkafolyamat vezérlő</li><li>✅ Ma mit csináljak? főgomb</li><li>✅ import → vault → lista → meghívás → prezi → utánkövetés → zárás flow</li><li>✅ főállás / mellékállás célkártyák</li><li>✅ éles készültség jelző</li><li>✅ napi lista generálás</li><li>✅ gyors napi mutató rögzítés</li><li>✅ QA + audit gyorsgomb</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+if(oldRunDeepQaV1345){runDeepQaV92=function(){const qa=oldRunDeepQaV1345();qa.version="v13.47";qa.liveControlCenterFinalFlow={enabled:true,panel:!!document.getElementById("controlCenterHostV1345"),nextAction:ccNextActionV1345().step,status:ccStateV1345().lastStatus,dailyTargets:true,flowSteps:true,liveReadyBadges:true,dailyList:(ccStateV1345().dailyList||[]).length};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ központi napi munkafolyamat vezérlő</li><li>✅ Ma mit csináljak? főgomb</li><li>✅ import → vault → lista → meghívás → prezi → utánkövetés → zárás flow</li><li>✅ főállás / mellékállás célkártyák</li><li>✅ éles készültség jelző</li><li>✅ napi lista generálás</li><li>✅ gyors napi mutató rögzítés</li><li>✅ QA + audit gyorsgomb</li></ul></div>`;document.getElementById("modal").classList.add("open");};
 setTimeout(()=>{renderControlCenterV1345();},1200);
 setInterval(()=>{if(document.getElementById("controlCenterHostV1345")) renderControlCenterV1345();},60000);
+
+
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
+window.__RC_REGISTRATION_APPROVAL_GATE_V1346__ = true;
+
+function approvalStateV1346(){
+  db.approvalV1346=db.approvalV1346||{requests:[],approvedUsers:[],logs:[],version:"v13.47"};
+  db.approvalV1346.requests=db.approvalV1346.requests||[];
+  db.approvalV1346.approvedUsers=db.approvalV1346.approvedUsers||[];
+  db.approvalV1346.logs=db.approvalV1346.logs||[];
+  return db.approvalV1346;
+}
+function approvalLogV1346(msg){
+  const st=approvalStateV1346();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  try{save?.()}catch(e){}
+}
+function approvalIsAdminV1346(){
+  const r=db.currentUserRole || loginStateV1327?.()?.role || "";
+  const oid=db.currentOwnerId || loginStateV1327?.()?.ownerId || "";
+  return r==="admin" || oid==="tomi" || oid==="eva";
+}
+function approvalUserKeyV1346(email){return String(email||"").trim().toLowerCase()}
+function approvalMakeCodeV1346(name,role){
+  const clean=String(name||"user").toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,18)||"USER";
+  return (role==="diamond"?"DIAMOND":role==="admin"?"ADMIN":"TEAM")+"-"+clean+"-"+Math.random().toString(36).slice(2,6).toUpperCase();
+}
+function approvalRequestRegisterV1346(){
+  const get=id=>document.getElementById(id)?.value?.trim()||"";
+  const name=get("publicRegNameV1346"), email=get("publicRegEmailV1346"), phone=get("publicRegPhoneV1346"), upline=get("publicRegUplineV1346"), mode=get("publicRegModeV1346")||"parttime", note=get("publicRegNoteV1346");
+  if(!name || !email){alert("Név és e-mail kötelező a regisztrációs kérelemhez.");return}
+  const st=approvalStateV1346();
+  const key=approvalUserKeyV1346(email);
+  const existing=st.requests.find(r=>r.key===key && r.status==="pending");
+  if(existing){alert("Ehhez az e-mailhez már van függő jóváhagyási kérelem.");return}
+  const req={id:"req_"+Date.now()+"_"+Math.random().toString(36).slice(2,8),key,name,email,phone,upline,mode,note,status:"pending",createdAt:new Date().toISOString(),requestedFrom:location.href};
+  st.requests.push(req);
+  approvalLogV1346("Új regisztrációs kérelem: "+name+" / "+email);
+  try{save?.(); cloudPushAllV1339?.()}catch(e){}
+  alert("Regisztrációs kérelmed elküldve. Az admin jóváhagyása után kapsz belépési kódot.");
+  renderApprovalGateV1346();
+}
+function approvalApproveV1346(id, role="user"){
+  if(!approvalIsAdminV1346()){alert("Csak admin hagyhat jóvá regisztrációt.");return}
+  const st=approvalStateV1346();
+  const req=st.requests.find(r=>r.id===id);
+  if(!req){alert("Nincs ilyen kérelem.");return}
+  const code=approvalMakeCodeV1346(req.name,role);
+  const ownerId=launchOwnerIdV1344 ? launchOwnerIdV1344(req.name,req.email) : ("user_"+Date.now()+"_"+Math.random().toString(36).slice(2,6));
+  req.status="approved"; req.approvedAt=new Date().toISOString(); req.approvedBy=db.currentOwnerId||"tomi"; req.code=code; req.ownerId=ownerId; req.role=role;
+  st.approvedUsers.push({ownerId,name:req.name,email:req.email,phone:req.phone,upline:req.upline,workMode:req.mode,role,label:role==="diamond"?"Gyémánt aladmin":role==="admin"?"Admin":"Csapattag",code,approvedAt:req.approvedAt});
+  const ls=launchStateV1344 ? launchStateV1344() : (db.launchV1344=db.launchV1344||{users:[],invites:[]});
+  ls.invites=ls.invites||[];
+  if(!ls.invites.find(i=>i.code===code)) ls.invites.push({code,role,label:role==="diamond"?"Gyémánt aladmin":role==="admin"?"Admin":"Csapattag",ownerId,name:req.name,used:false,createdAt:new Date().toISOString(),createdBy:db.currentOwnerId||"tomi",approvedRequestId:id});
+  approvalLogV1346("Regisztráció jóváhagyva: "+req.name+" / kód: "+code);
+  try{save?.(); cloudPushAllV1339?.()}catch(e){}
+  renderApprovalGateV1346();
+  alert("Jóváhagyva. Belépési kód: "+code);
+}
+function approvalRejectV1346(id){
+  if(!approvalIsAdminV1346()){alert("Csak admin utasíthat el kérelmet.");return}
+  const req=approvalStateV1346().requests.find(r=>r.id===id);
+  if(!req)return;
+  req.status="rejected"; req.rejectedAt=new Date().toISOString(); req.rejectedBy=db.currentOwnerId||"tomi";
+  approvalLogV1346("Regisztráció elutasítva: "+req.name);
+  try{save?.(); cloudPushAllV1339?.()}catch(e){}
+  renderApprovalGateV1346();
+}
+function approvalLoginByApprovedCodeV1346(code){
+  const inv=(launchStateV1344?.().invites||[]).find(i=>i.code===code);
+  if(!inv) return false;
+  db.currentOwnerId=inv.ownerId; db.currentUserName=inv.name||inv.label||"Felhasználó"; db.currentUserRole=inv.role||"user";
+  inv.used=true; inv.usedAt=new Date().toISOString();
+  localStorage.setItem("onboarding_done_v1340_"+db.currentOwnerId,"1");
+  approvalLogV1346("Jóváhagyott belépés: "+code+" → "+db.currentOwnerId);
+  try{save?.(); cloudPullAllV1339?.()}catch(e){}
+  renderApprovalGateV1346();
+  return true;
+}
+const oldLaunchLoginWithCodeV1346=typeof launchLoginWithCodeV1344==="function"?launchLoginWithCodeV1344:null;
+if(oldLaunchLoginWithCodeV1346){
+  launchLoginWithCodeV1344=function(){
+    const code=document.getElementById("launchLoginCodeV1344")?.value?.trim()||"";
+    if(approvalLoginByApprovedCodeV1346(code)){alert("Belépve jóváhagyott kóddal."); return;}
+    return oldLaunchLoginWithCodeV1346();
+  }
+}
+function approvalStatsV1346(){
+  const st=approvalStateV1346();
+  return {all:st.requests.length,pending:st.requests.filter(r=>r.status==="pending").length,approved:st.requests.filter(r=>r.status==="approved").length,rejected:st.requests.filter(r=>r.status==="rejected").length,users:st.approvedUsers.length};
+}
+function approvalRowsV1346(){
+  const rows=approvalStateV1346().requests.slice().reverse();
+  if(!rows.length)return `<tr><td colspan="6">Nincs regisztrációs kérelem.</td></tr>`;
+  return rows.map(r=>`<tr><td><b>${esc(r.name)}</b><br><small>${esc(r.email)}</small></td><td>${esc(r.phone||"")}<br><small>${esc(r.upline||"")}</small></td><td>${r.mode==="fulltime"?"Főállás":"Mellékállás"}</td><td><span class="approvalBadgeV1346 ${r.status==="pending"?"pending":r.status==="rejected"?"rejected":""}">${esc(r.status)}</span><br><small>${esc(r.code||"")}</small></td><td>${esc(String(r.createdAt||"").slice(0,19).replace("T"," "))}</td><td><div class="approvalActionsV1346">${r.status==="pending"?`<button onclick="approvalApproveV1346('${r.id}','user')">Jóváhagy</button><button class="blue" onclick="approvalApproveV1346('${r.id}','diamond')">Gyémánt</button><button class="red" onclick="approvalRejectV1346('${r.id}')">Elutasít</button>`:`<button class="soft" onclick="navigator.clipboard?.writeText('${esc(r.code||"")}')">Kód másolás</button>`}</div></td></tr>`).join("");
+}
+function renderApprovalGateV1346(){
+  let host=document.getElementById("approvalGateHostV1346");
+  if(!host){
+    const target=document.querySelector("main")||document.body;
+    host=document.createElement("div");
+    host.id="approvalGateHostV1346";
+    target.prepend(host);
+  }
+  const st=approvalStatsV1346();
+  host.innerHTML=`<div class="approvalGateV1346">
+    <h3>Regisztráció jóváhagyási kapu – v13.47</h3>
+    <p>Ha valakinek még nincs saját fiókja, itt regisztrációs kérelmet ad le. Az admin jóváhagyja, és csak utána kap működő belépési kódot.</p>
+    <div class="approvalStatsV1346">
+      <div><b>${st.pending}</b><span>függő</span></div><div><b>${st.approved}</b><span>jóváhagyott</span></div><div><b>${st.rejected}</b><span>elutasított</span></div><div><b>${st.users}</b><span>user</span></div><div><b>${approvalIsAdminV1346()?"Admin":"User"}</b><span>jogosultság</span></div>
+    </div>
+    <div class="approvalGridV1346">
+      <div class="publicRegisterBoxV1346">
+        <h4>Nincs fiókod? Regisztrációs kérelem</h4>
+        <label>Név</label><input id="publicRegNameV1346" placeholder="Teljes név">
+        <label>Email</label><input id="publicRegEmailV1346" placeholder="email@domain.hu">
+        <label>Telefon</label><input id="publicRegPhoneV1346" placeholder="+36...">
+        <label>Ki a felsővonal / mentor?</label><input id="publicRegUplineV1346" placeholder="Mentor neve">
+        <label>Munka mód</label><select id="publicRegModeV1346"><option value="parttime">Főállás mellett építem</option><option value="fulltime">Főállásban építem</option></select>
+        <label>Megjegyzés</label><textarea id="publicRegNoteV1346" placeholder="Rövid cél / miért szeretnél belépni?"></textarea>
+        <div class="approvalActionsV1346"><button class="blue" onclick="approvalRequestRegisterV1346()">Regisztrációs kérelem küldése</button></div>
+        <div class="loginPendingBoxV1346 open">A belépés csak admin jóváhagyás után aktív.</div>
+      </div>
+      <div>
+        <h4>Admin jóváhagyási lista</h4>
+        <div class="approvalTableV1346"><table><thead><tr><th>Név / email</th><th>Telefon / felsővonal</th><th>Mód</th><th>Állapot / kód</th><th>Dátum</th><th>Művelet</th></tr></thead><tbody>${approvalRowsV1346()}</tbody></table></div>
+      </div>
+    </div>
+  </div>`;
+}
+const oldRenderApprovalV1346=typeof render==="function"?render:null;
+if(oldRenderApprovalV1346){render=function(){const r=oldRenderApprovalV1346();setTimeout(renderApprovalGateV1346,800);return r;}}
+const oldRunDeepQaV1346=typeof runDeepQaV92==="function"?runDeepQaV92:null;
+if(oldRunDeepQaV1346){runDeepQaV92=function(){const qa=oldRunDeepQaV1346();qa.version="v13.47";qa.registrationApprovalGate={enabled:true,panel:!!document.getElementById("approvalGateHostV1346"),publicRequest:true,adminApproval:true,approvedCodeLogin:true,pendingCount:approvalStatsV1346().pending};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ nincs fiókom regisztrációs kérelem</li><li>✅ admin jóváhagyási lista</li><li>✅ jóváhagyás után belépési kód generálás</li><li>✅ elutasítás</li><li>✅ jóváhagyott kódos belépés</li><li>✅ saját ownerId munkatér</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>renderApprovalGateV1346(),1200);
+
+
+/* === v13.47 Goal Dashboard Auto Planner === */
+var APP_VERSION = "v13.47";
+window.__RC_GOAL_DASHBOARD_AUTO_PLANNER_V1347__ = true;
+
+function goalStateV1347(){
+  db.goalPlannerV1347=db.goalPlannerV1347||{partnerName:"",monthly:{},weekly:{},logs:[],lastPrompt:"",version:"v13.47"};
+  db.goalPlannerV1347.monthly=db.goalPlannerV1347.monthly||{};
+  db.goalPlannerV1347.weekly=db.goalPlannerV1347.weekly||{};
+  db.goalPlannerV1347.logs=db.goalPlannerV1347.logs||[];
+  return db.goalPlannerV1347;
+}
+function goalLogV1347(msg){
+  const st=goalStateV1347();
+  st.logs.push({date:new Date().toISOString(),msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  try{save?.()}catch(e){}
+}
+function goalTodayV1347(){return new Date().toISOString().slice(0,10)}
+function goalMonthKeyV1347(d=new Date()){return d.toISOString().slice(0,7)}
+function goalWeekKeyV1347(d=new Date()){
+  const x=new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  const day=x.getDay(); // 0 Sun
+  const diff=(day>=4?day-4:day+3); // Thursday start
+  x.setDate(x.getDate()-diff);
+  return x.toISOString().slice(0,10);
+}
+function goalDaysInMonthV1347(d=new Date()){return new Date(d.getFullYear(),d.getMonth()+1,0).getDate()}
+function goalWeekEndV1347(startKey){
+  const d=new Date(startKey+"T00:00:00");
+  d.setDate(d.getDate()+6);
+  return d.toISOString().slice(0,10);
+}
+function goalDefaultPlanV1347(mode){
+  const part=mode==="parttime";
+  return {
+    invites: part?150:450,
+    presentations: part?24:80,
+    followups: part?60:180,
+    subscriptions: part?4:12,
+    partners: part?1:4,
+    credits: part?750:3000
+  };
+}
+function goalDefaultWeekV1347(mode){
+  const part=mode==="parttime";
+  return {
+    invites: part?35:100,
+    presentations: part?7:20,
+    followups: part?14:45,
+    subscriptions: part?1:3,
+    partners: part?0:1,
+    credits: part?180:750
+  };
+}
+function goalCurrentModeV1347(){return ccUserV1345?.().mode || db.userWorkModeV1339 || "fulltime"}
+function goalMetricsV1347(){
+  const contacts=(typeof ccContactsV1345==="function"?ccContactsV1345():(db.contacts||[]));
+  const today=goalTodayV1347(), m=goalMonthKeyV1347(), wk=goalWeekKeyV1347();
+  const inMonth=c=>String(c.updatedAt||c.lastContactedAt||c.importedAt||"").slice(0,7)===m;
+  const inWeek=c=>{
+    const ds=String(c.updatedAt||c.lastContactedAt||c.importedAt||"").slice(0,10);
+    return ds>=wk && ds<=goalWeekEndV1347(wk);
+  };
+  const count=(pred)=>contacts.filter(pred).length;
+  const metricFor=pred=>({month:count(c=>inMonth(c)&&pred(c)), week:count(c=>inWeek(c)&&pred(c))});
+  const v=db.vitalSignsV1319?.days||{};
+  Object.values(v).forEach(()=>{});
+  return {
+    invites: metricFor(c=>["contacted","presentation","followup","partner","customer","subscription"].some(s=>String(c.status||"").toLowerCase().includes(s))),
+    presentations: metricFor(c=>["presentation","prezi"].some(s=>String(c.status||"").toLowerCase().includes(s))),
+    followups: metricFor(c=>String(c.status||"").toLowerCase().includes("follow")),
+    subscriptions: metricFor(c=>["subscription","customer"].some(s=>String(c.status||"").toLowerCase().includes(s))),
+    partners: metricFor(c=>String(c.status||"").toLowerCase().includes("partner")),
+    credits:{month:Number(db.monthCreditsV1347||0),week:Number(db.weekCreditsV1347||0)}
+  };
+}
+function goalPlanV1347(){
+  const st=goalStateV1347(), mode=goalCurrentModeV1347(), mk=goalMonthKeyV1347(), wk=goalWeekKeyV1347();
+  if(!st.monthly[mk]) st.monthly[mk]={...goalDefaultPlanV1347(mode),created:false};
+  if(!st.weekly[wk]) st.weekly[wk]={...goalDefaultWeekV1347(mode),created:false,start:wk,end:goalWeekEndV1347(wk)};
+  return {monthKey:mk,weekKey:wk,monthly:st.monthly[mk],weekly:st.weekly[wk]};
+}
+function goalStatusClassV1347(actual,target,period){
+  if(!target) return "blue";
+  const now=new Date();
+  let expected=0;
+  if(period==="month"){
+    expected=target*(now.getDate()/goalDaysInMonthV1347(now));
+  }else{
+    const start=new Date(goalWeekKeyV1347(now)+"T00:00:00");
+    const dayPassed=Math.max(1,Math.min(7,Math.floor((now-start)/(24*3600*1000))+1));
+    expected=target*(dayPassed/7);
+  }
+  if(actual >= target) return "green";
+  if(Math.abs(actual-expected) <= Math.max(1,target*0.06)) return "blue";
+  if(actual < expected) return "red";
+  return "green";
+}
+function goalCardV1347(label,key,period){
+  const p=goalPlanV1347(), m=goalMetricsV1347();
+  const target=period==="month"?Number(p.monthly[key]||0):Number(p.weekly[key]||0);
+  const actual=Number(m[key]?.[period]||0);
+  const cls=goalStatusClassV1347(actual,target,period);
+  const pct=target?Math.min(100,Math.round(actual/target*100)):0;
+  const remain=Math.max(0,target-actual);
+  return `<div class="goalCardV1347 ${cls}"><b>${actual}/${target}</b><small>${label} – ${period==="month"?"havi":"heti"} • még ${remain}</small><div class="goalProgressV1347"><i style="width:${pct}%"></i></div></div>`;
+}
+function goalNeedsPromptV1347(){
+  const p=goalPlanV1347();
+  const now=new Date();
+  const hour=now.getHours();
+  if(!p.monthly.created && now.getDate()===1) return "month";
+  if(!p.weekly.created && now.getDay()===4 && hour>=4) return "week";
+  if(!p.monthly.created) return "month";
+  if(!p.weekly.created) return "week";
+  return "";
+}
+function goalOpenModalV1347(type){
+  const p=goalPlanV1347(), st=goalStateV1347();
+  const plan=type==="month"?p.monthly:p.weekly;
+  let modal=document.getElementById("goalModalV1347");
+  if(!modal){modal=document.createElement("div");modal.id="goalModalV1347";modal.className="goalModalV1347";document.body.appendChild(modal);}
+  modal.innerHTML=`<div class="goalModalBoxV1347">
+    <div class="goalModalHeadV1347"><h2>${type==="month"?"Havi terv megadása":"Heti terv megadása"} – v13.47</h2><p>${type==="month"?p.monthKey:p.weekKey+" – "+goalWeekEndV1347(p.weekKey)}</p></div>
+    <div class="goalModalBodyV1347">
+      <label>Partner neve / munkatárs neve</label><input id="goalPartnerNameInputV1347" value="${escAttr(st.partnerName||ccUserV1345?.().name||"")}">
+      <div class="goalPlanGridV1347">
+        <div><label>Ajánlás / Megkeresés</label><input id="goalInvitesV1347" type="number" value="${plan.invites||0}"></div>
+        <div><label>Prezi / Prezi jelölt</label><input id="goalPresentationsV1347" type="number" value="${plan.presentations||0}"></div>
+        <div><label>Utánkövetés</label><input id="goalFollowupsV1347" type="number" value="${plan.followups||0}"></div>
+        <div><label>Előfizetés / Vásárló</label><input id="goalSubscriptionsV1347" type="number" value="${plan.subscriptions||0}"></div>
+        <div><label>Partner</label><input id="goalPartnersV1347" type="number" value="${plan.partners||0}"></div>
+        <div><label>Kredit</label><input id="goalCreditsV1347" type="number" value="${plan.credits||0}"></div>
+      </div>
+      <div class="goalActionsV1347">
+        <button class="gold" onclick="goalSavePlanV1347('${type}')">Terv mentése és tovább</button>
+        <button class="soft" onclick="goalCloseModalV1347()">Bezárás</button>
+      </div>
+      <p><b>Fontos:</b> első napon és csütörtök reggel kötelező megadni, különben a rendszer újra kéri.</p>
+    </div>
+  </div>`;
+  modal.classList.add("open");
+}
+function goalCloseModalV1347(){document.getElementById("goalModalV1347")?.classList.remove("open")}
+function goalSavePlanV1347(type){
+  const p=goalPlanV1347(), st=goalStateV1347();
+  const get=id=>Number(document.getElementById(id)?.value||0);
+  const plan={invites:get("goalInvitesV1347"),presentations:get("goalPresentationsV1347"),followups:get("goalFollowupsV1347"),subscriptions:get("goalSubscriptionsV1347"),partners:get("goalPartnersV1347"),credits:get("goalCreditsV1347"),created:true,updatedAt:new Date().toISOString()};
+  st.partnerName=document.getElementById("goalPartnerNameInputV1347")?.value?.trim()||st.partnerName||ccUserV1345?.().name||"";
+  if(type==="month") st.monthly[p.monthKey]=plan; else st.weekly[p.weekKey]={...plan,start:p.weekKey,end:goalWeekEndV1347(p.weekKey)};
+  goalLogV1347((type==="month"?"Havi":"Heti")+" terv mentve.");
+  try{save?.();cloudPushAllV1339?.()}catch(e){}
+  goalCloseModalV1347();
+  renderGoalDashboardV1347();
+}
+function goalPatchLifeSheetV1347(){
+  const st=goalStateV1347();
+  document.querySelectorAll(".lifeSheetV1320").forEach(el=>el.setAttribute("data-partner-name",st.partnerName||ccUserV1345?.().name||""));
+  const title=document.querySelector("#lifePartnerNameV1347");
+  if(title) title.value=st.partnerName||"";
+}
+function goalRowsV1347(){
+  const labels={invites:"Ajánlás / Megkeresés",presentations:"Prezi / Prezi jelölt",followups:"Utánkövetés",subscriptions:"Előfizetés / Vásárló",partners:"Partner",credits:"Kredit"};
+  const p=goalPlanV1347(), m=goalMetricsV1347();
+  return Object.keys(labels).map(k=>{
+    const mw=Number(m[k]?.week||0), mm=Number(m[k]?.month||0), wt=Number(p.weekly[k]||0), mt=Number(p.monthly[k]||0);
+    return `<tr><td>${labels[k]}</td><td>${mw}/${wt}</td><td>${Math.max(0,wt-mw)}</td><td>${mm}/${mt}</td><td>${Math.max(0,mt-mm)}</td><td><span class="goalBadgeV1347 ${goalStatusClassV1347(mw,wt,"week")}">${goalStatusClassV1347(mw,wt,"week")}</span></td></tr>`;
+  }).join("");
+}
+function renderGoalDashboardV1347(){
+  document.body.classList.add("goal-v1347");
+  let host=document.getElementById("goalDashboardHostV1347");
+  if(!host){const target=document.querySelector("main")||document.body;host=document.createElement("div");host.id="goalDashboardHostV1347";target.prepend(host);}
+  const p=goalPlanV1347(), st=goalStateV1347(), need=goalNeedsPromptV1347();
+  host.innerHTML=`<div class="goalDashV1347">
+    <div class="goalHeroV1347"><h2>📊 Cél Dashboard – v13.47</h2><p>Partner: <b>${esc(st.partnerName||ccUserV1345?.().name||"")}</b> • Havi terv: ${p.monthKey} • Heti terv: ${p.weekKey} – ${goalWeekEndV1347(p.weekKey)}</p></div>
+    <div>${need?`<span class="goalBadgeV1347 red">⚠️ Hiányzó ${need==="month"?"havi":"heti"} terv</span>`:`<span class="goalBadgeV1347">✅ Havi/heti terv megadva</span>`}</div>
+    <div class="goalStatsV1347">
+      ${goalCardV1347("Megkeresés","invites","week")}
+      ${goalCardV1347("Prezi","presentations","week")}
+      ${goalCardV1347("Utánkövetés","followups","week")}
+      ${goalCardV1347("Partner","partners","month")}
+      ${goalCardV1347("Kredit","credits","week")}
+      ${goalCardV1347("Előfizetés","subscriptions","month")}
+    </div>
+    <div class="goalActionsV1347">
+      <button class="gold" onclick="goalOpenModalV1347('month')">Havi terv megadása</button>
+      <button class="blue" onclick="goalOpenModalV1347('week')">Heti terv megadása</button>
+      <button onclick="renderGoalDashboardV1347()">Célok frissítése</button>
+      <button class="soft" onclick="prodSetViewV1314 ? prodSetViewV1314('lifePlanner') : setView('lifePlanner')">Életjelek táblázat</button>
+    </div>
+    <div class="goalTableV1347"><table><thead><tr><th>Mutató</th><th>Heti tény/terv</th><th>Heti hátra</th><th>Havi tény/terv</th><th>Havi hátra</th><th>Állapot</th></tr></thead><tbody>${goalRowsV1347()}</tbody></table></div>
+  </div>`;
+  goalPatchLifeSheetV1347();
+  if(need){setTimeout(()=>goalOpenModalV1347(need),400);}
+}
+const oldRenderGoalV1347=typeof render==="function"?render:null;
+if(oldRenderGoalV1347){render=function(){const r=oldRenderGoalV1347();setTimeout(renderGoalDashboardV1347,900);return r;}}
+const oldLifeRenderV1347=typeof renderLifePlannerDashboard==="function"?renderLifePlannerDashboard:null;
+if(oldLifeRenderV1347){renderLifePlannerDashboard=function(){const r=oldLifeRenderV1347();setTimeout(()=>{goalPatchLifeSheetV1347();renderGoalDashboardV1347();},120);return r;}}
+const oldMarkDailyV1347=typeof ccMarkDailyDoneV1345==="function"?ccMarkDailyDoneV1345:null;
+if(oldMarkDailyV1347){ccMarkDailyDoneV1345=function(type){const r=oldMarkDailyV1347(type);setTimeout(renderGoalDashboardV1347,150);return r;}}
+const oldRunDeepQaV1347=typeof runDeepQaV92==="function"?runDeepQaV92:null;
+if(oldRunDeepQaV1347){runDeepQaV92=function(){const qa=oldRunDeepQaV1347();qa.version="v13.47";qa.goalDashboardAutoPlanner={enabled:true,panel:!!document.getElementById("goalDashboardHostV1347"),partnerName:goalStateV1347().partnerName,monthlyPlan:!!goalPlanV1347().monthly.created,weeklyPlan:!!goalPlanV1347().weekly.created,requiresPrompt:goalNeedsPromptV1347(),continuousUpdate:true};return qa;}}
+openChangelog=function(){document.getElementById("modalTitle").textContent="Verzió / Changelog";document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.47</span><h3>ZINZINO ROYAL CROWN CRM – Goal Dashboard Auto Planner</h3><ul><li>✅ partner név ráírása az életjelek / tervező logikára</li><li>✅ havi terv bekérése minden hónap 1-én</li><li>✅ heti terv bekérése minden csütörtök reggel</li><li>✅ blokkoló felugró tervbekérés</li><li>✅ heti/havi cél dashboard</li><li>✅ zöld/piros/kék állapotjelzés</li><li>✅ folyamatos update napi munka alapján</li><li>✅ hátralévő célok számítása</li></ul></div>`;document.getElementById("modal").classList.add("open");};
+setTimeout(()=>renderGoalDashboardV1347(),1300);
+setInterval(()=>{if(document.getElementById("goalDashboardHostV1347")) renderGoalDashboardV1347();},60000);
 
 </script>
 <div id="globalLoader"><div class="loaderPanel"><div class="spinner"></div><b id="loaderText">Dolgozom...</b><div class="small" id="loaderSub">Kérlek várj egy pillanatot.</div></div></div>

@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.45
+# ZDiamond CRM v13.47
 
-Live Control Center Final Flow – daily workflow controller, next best action, readiness, targets, daily list.
+Goal Dashboard Auto Planner – monthly/weekly mandatory planning, partner name, color-coded progress, continuous updates.
