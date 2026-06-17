@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.37
+# ZDiamond CRM v13.39
 
-Universal Responsive Screen Fit – iPad / phone / desktop layout hardening and screen-fit tables.
+Cloud Team Sync & Google Contact Flow – cloud-ready multi-user storage, Supabase REST adapter, Google contact import flow, network-builder execution targets.

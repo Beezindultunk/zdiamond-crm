@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZINZINO ROYAL CROWN CRM v13.37 – Universal Responsive Screen Fit</title>
+  <title>ZINZINO ROYAL CROWN CRM v13.39 – Cloud Team Sync & Google Contact Flow</title>
   <style>
     :root{
       --royal:#172554; --gold:#d4af37; --crown:#fff8dc;
@@ -1971,7 +1971,7 @@ body.large-list-fix-v1336 #viewAll{max-width:100%!important;overflow-x:hidden!im
 
 
 
-/* === v13.37 Universal Responsive Screen Fit === */
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
 body.universal-fit-v1337,
 body.universal-fit-v1337 main,
 body.universal-fit-v1337 #app,
@@ -2181,6 +2181,125 @@ body.universal-fit-v1337 #viewGuidedWorkflow{overflow-x:hidden!important}
   body.universal-fit-v1337 .lifeTableV1320 td{font-size:10px!important;padding:4px 2px!important}
 }
 
+
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+.importQueueV1338{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #14532d;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.importQueueV1338 h3{margin:0 0 8px;color:#14532d}
+.importQueueV1338 p{color:#667085;margin:4px 0 8px}
+.importQueueGridV1338{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.importQueueV1338 textarea{
+  width:100%;
+  min-height:170px;
+  border:1px solid #d0d5dd;
+  border-radius:12px;
+  padding:10px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:12px;
+}
+.importQueueV1338 input,.importQueueV1338 select{
+  width:100%;
+  border:1px solid #d0d5dd;
+  border-radius:10px;
+  padding:8px;
+  font-weight:800;
+}
+.importQueueActionsV1338{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.importQueueActionsV1338 button{
+  border:0;
+  border-radius:10px;
+  background:#14532d;
+  color:white;
+  font-weight:900;
+  padding:8px 10px;
+  cursor:pointer;
+}
+.importQueueActionsV1338 button.blue{background:#2563eb}
+.importQueueActionsV1338 button.gold{background:#c7a12b;color:#111827}
+.importQueueActionsV1338 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}
+.importQueueActionsV1338 button.red{background:#dc2626;color:white}
+.importQueueStatsV1338{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:8px 0}
+.importQueueStatsV1338 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.importQueueStatsV1338 b{display:block;font-size:20px;color:#14532d}
+.queueProgressV1338{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:8px 0}
+.queueProgressV1338 i{display:block;height:100%;width:0;background:linear-gradient(90deg,#22c55e,#2563eb)}
+.queueFileListV1338{max-height:250px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+.queueFileV1338{display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px;border-bottom:1px solid #e5e7eb;align-items:center}
+.queueFileV1338:last-child{border-bottom:0}
+.queueFileV1338 b{color:#172554}
+.queueFileV1338 small{color:#667085;display:block}
+.queueBadgeV1338{display:inline-flex;border-radius:999px;padding:3px 7px;font-size:11px;font-weight:900;border:1px solid #bbf7d0;background:#ecfdf3;color:#14532d;margin:2px}
+.queueBadgeV1338.fb{border-color:#bfdbfe;background:#eff6ff;color:#1d4ed8}
+.queueBadgeV1338.warn{border-color:#fed7aa;background:#fff7ed;color:#c2410c}
+.queueLogV1338{max-height:170px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.queuePreviewV1338{max-height:260px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px}
+.queuePreviewV1338 table{width:100%;border-collapse:collapse;table-layout:fixed}
+.queuePreviewV1338 th,.queuePreviewV1338 td{border-bottom:1px solid #e5e7eb;padding:6px;font-size:12px;text-align:left;overflow-wrap:anywhere}
+.queuePreviewV1338 th{background:#f0fdf4;color:#14532d;position:sticky;top:0}
+body.import-queue-v1338 #secureImportHubDashboard,
+body.import-queue-v1338 #viewSecureImportHub{max-width:100%!important;overflow-x:hidden!important}
+@media(max-width:980px){
+  .importQueueGridV1338{grid-template-columns:1fr}
+  .importQueueStatsV1338{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){.importQueueStatsV1338{grid-template-columns:1fr}}
+
+
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+.cloudSyncV1339{
+  background:#fff;
+  border:1px solid #d0d5dd;
+  border-left:8px solid #2563eb;
+  border-radius:16px;
+  padding:14px;
+  margin:12px 0;
+  color:#111827;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+}
+.cloudSyncV1339 h3{margin:0 0 8px;color:#172554}
+.cloudSyncV1339 p{color:#667085;margin:4px 0 8px}
+.cloudGridV1339{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cloudSyncV1339 input,.cloudSyncV1339 select,.cloudSyncV1339 textarea{
+  width:100%;max-width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:8px;font-weight:800
+}
+.cloudSyncV1339 label{font-size:12px;font-weight:950;color:#172554;display:block;margin-top:6px}
+.cloudActionsV1339{display:flex;gap:7px;flex-wrap:wrap;margin:9px 0}
+.cloudActionsV1339 button{
+  border:0;border-radius:10px;background:#14532d;color:white;font-weight:900;padding:8px 10px;cursor:pointer
+}
+.cloudActionsV1339 button.blue{background:#2563eb}.cloudActionsV1339 button.gold{background:#c7a12b;color:#111827}.cloudActionsV1339 button.soft{background:#f3f4f6;color:#111827;border:1px solid #e5e7eb}.cloudActionsV1339 button.red{background:#dc2626}
+.cloudStatsV1339{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:8px 0}
+.cloudStatsV1339 div{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:8px;min-width:0}
+.cloudStatsV1339 b{display:block;font-size:20px;color:#14532d}
+.cloudBadgeV1339{display:inline-flex;border-radius:999px;padding:3px 8px;margin:2px;background:#ecfdf3;color:#14532d;border:1px solid #bbf7d0;font-size:11px;font-weight:950}
+.cloudBadgeV1339.warn{background:#fff7ed;color:#c2410c;border-color:#fed7aa}.cloudBadgeV1339.blue{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.cloudLogV1339{max-height:180px;overflow:auto;background:#0b1220;color:#d1fae5;border-radius:12px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.flowCardV1339{background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:10px;margin:8px 0}
+.flowTargetsV1339{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.flowTargetsV1339 div{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:8px}
+.gFixV1339{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:14px;padding:10px;margin:8px 0}
+body.cloud-v1339 #secureImportHubDashboard,body.cloud-v1339 #viewSecureImportHub{max-width:100%!important;overflow-x:hidden!important}
+@media(max-width:980px){
+  .cloudGridV1339{grid-template-columns:1fr}
+  .cloudStatsV1339{grid-template-columns:1fr 1fr}
+  .flowTargetsV1339{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .cloudStatsV1339,.flowTargetsV1339{grid-template-columns:1fr}
+}
+
 </style>
 
 <link rel="manifest" href="./manifest.webmanifest">
@@ -2193,7 +2312,7 @@ body.universal-fit-v1337 #viewGuidedWorkflow{overflow-x:hidden!important}
 </head>
 <body>
 <header>
-  <h1>👑 ZINZINO ROYAL CROWN CRM v13.37 – Universal Responsive Screen Fit</h1>
+  <h1>👑 ZINZINO ROYAL CROWN CRM v13.39 – Cloud Team Sync & Google Contact Flow</h1>
   <p>Több felhasználós, színes pipeline CRM Z4F rendszerrel és tiszta Facebook HTML import előnézettel.</p>
 </header>
 
@@ -2227,7 +2346,7 @@ body.universal-fit-v1337 #viewGuidedWorkflow{overflow-x:hidden!important}
 
       <div class="navGroup">
         <h3>🧭 Verzió / állapot</h3>
-        <div class="row"><span class="ownerBadge">v13.37</span><span class="pill">Universal Responsive Screen Fit</span></div>
+        <div class="row"><span class="ownerBadge">v13.39</span><span class="pill">Cloud Team Sync & Google Contact Flow</span></div>
         <div class="small" id="saveStatePanel">Mentési állapot betöltése...</div>
         <button class="ghost" onclick="openChangelog()">Mi változott?</button>
       </div>
@@ -23957,17 +24076,17 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
 
 
 
-/* === v13.37 Universal Responsive Screen Fit === */
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
 (function(){
-  const V='v13.37';
+  const V='v13.39';
   function setVersionUiV1337(){
-    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Universal Responsive Screen Fit'; }catch(e){}
+    try{ document.title='ZINZINO ROYAL CROWN CRM '+V+' – Cloud Team Sync & Google Contact Flow'; }catch(e){}
     const h1=document.querySelector('h1');
-    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Universal Responsive Screen Fit';
+    if(h1 && /ZINZINO ROYAL CROWN CRM/i.test(h1.textContent)) h1.textContent='👑 ZINZINO ROYAL CROWN CRM '+V+' – Cloud Team Sync & Google Contact Flow';
     const versionCard=[...document.querySelectorAll('h3')].find(h=>/Verzió\s*\/\s*állapot/i.test(h.textContent))?.parentElement;
     if(versionCard){
       const b=versionCard.querySelector('.ownerBadge'); if(b) b.textContent=V;
-      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Universal Responsive Screen Fit';
+      const p=versionCard.querySelector('.pill'); if(p) p.textContent='Cloud Team Sync & Google Contact Flow';
     }
     const smallBrand=document.querySelector('.mncBrandV1325 small');
     if(smallBrand) smallBrand.textContent=V;
@@ -24008,7 +24127,7 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
     const modal=document.getElementById('modal');
     if(title) title.textContent='Verzió / Changelog';
     if(body){
-      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Universal Responsive Screen Fit</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
+      body.innerHTML = `<div class="scriptbox"><span class="versionTag">${V}</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ iPad / telefon / gép képernyőre igazított felület</li><li>✅ életjel és AI nézetek szélességjavítása</li><li>✅ élettervező táblázat képernyőhöz igazítva</li><li>✅ táblázatok fix-layout és tördelés</li><li>✅ oldalsáv automatikus elrejtése kisebb kijelzőn</li><li>✅ alsó dokk szélességkorlát</li><li>✅ nyomtatásnál tisztább PDF tördelés</li></ul></div>`;
     }
     if(modal) modal.classList.add('open');
   };
@@ -24034,6 +24153,779 @@ setTimeout(()=>{ if((window.view||"")==="largeListWork" || (window.view||"")==="
   document.addEventListener('DOMContentLoaded', ()=>setTimeout(applyResponsiveV1337, 80));
   setTimeout(applyResponsiveV1337, 200);
 })();
+
+
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+var APP_VERSION = "v13.39";
+window.__RC_IMPORT_QUEUE_PROCESSOR_V1338__ = true;
+
+let queueRunV1338 = false;
+let queueTimerV1338 = null;
+let queuePreviewCacheV1338 = [];
+
+function queueOwnerV1338(){
+  return (typeof loginStateV1327==="function" ? loginStateV1327()?.ownerId : null) || db.currentOwnerId || "tomi";
+}
+function queueStoreV1338(){
+  db.importQueueV1338 = db.importQueueV1338 || {files:[], processedKeys:{}, mergeIndex:{}, logs:[], lastRun:null};
+  db.importQueueV1338.files = db.importQueueV1338.files || [];
+  db.importQueueV1338.processedKeys = db.importQueueV1338.processedKeys || {};
+  db.importQueueV1338.mergeIndex = db.importQueueV1338.mergeIndex || {};
+  db.importQueueV1338.logs = db.importQueueV1338.logs || [];
+  return db.importQueueV1338;
+}
+function queueLogV1338(msg){
+  const st=queueStoreV1338();
+  st.logs.push({date:new Date().toISOString(), msg});
+  if(st.logs.length>300) st.logs=st.logs.slice(-300);
+  try{save?.()}catch(e){}
+}
+function queueHashV1338(str){
+  str=String(str||"");
+  let h=2166136261;
+  for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h+= (h<<1)+(h<<4)+(h<<7)+(h<<8)+(h<<24);}
+  return "h"+(h>>>0).toString(36)+"_"+str.length;
+}
+function queueCleanV1338(v){return String(v||"").replace(/\u00a0/g," ").replace(/\s+/g," ").trim()}
+function queueEmailV1338(v){return String(v||"").toLowerCase().trim()}
+function queuePhoneV1338(v){return String(v||"").replace(/[^\d+]/g,"").replace(/^00/,"+").trim()}
+function queueLooksEmailV1338(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v||"").trim())}
+function queueLooksPhoneV1338(v){return String(v||"").replace(/[^\d]/g,"").length>=7}
+function queueContactKeyV1338(c){
+  const email=queueEmailV1338(c.email);
+  if(email) return "email:"+email;
+  const phone=queuePhoneV1338(c.phone);
+  if(phone) return "phone:"+phone;
+  return "name:"+queueCleanV1338(c.name).toLowerCase();
+}
+function queueLineKeyV1338(file,line){
+  return `${file.id}:${queueHashV1338(line)}`;
+}
+function queueSplitCsvLineV1338(line){
+  const res=[]; let cur="", q=false;
+  line=String(line||"");
+  for(let i=0;i<line.length;i++){
+    const ch=line[i], n=line[i+1];
+    if(ch === '"' && q && n === '"'){cur+='"'; i++; continue}
+    if(ch === '"'){q=!q; continue}
+    if((ch === "," || ch === ";" || ch === "\t") && !q){res.push(queueCleanV1338(cur)); cur=""; continue}
+    cur += ch;
+  }
+  res.push(queueCleanV1338(cur));
+  return res;
+}
+function queueHtmlToLinesV1338(text){
+  let clean=String(text||"")
+    .replace(/<script[\s\S]*?<\/script>/gi,"\n")
+    .replace(/<style[\s\S]*?<\/style>/gi,"\n")
+    .replace(/<(div|li|span|a|p|br|tr|td|h\d)[^>]*>/gi,"\n")
+    .replace(/<[^>]+>/g,"\n")
+    .replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"');
+  return clean.split(/\r?\n/).map(queueCleanV1338).filter(Boolean);
+}
+function queueTextToLinesV1338(text, type){
+  if(type==="facebook_html" || String(text||"").includes("<html") || String(text||"").includes("<body")) return queueHtmlToLinesV1338(text);
+  return String(text||"").split(/\r?\n/).map(queueCleanV1338).filter(Boolean);
+}
+function queueLineToContactV1338(line, file){
+  const type=file.type || "name_list";
+  const cols=queueSplitCsvLineV1338(line);
+  const low=cols.join(" ").toLowerCase();
+  if(low.includes("name") && (low.includes("email") || low.includes("phone"))) return null;
+  if(low.includes("név") && (low.includes("email") || low.includes("telefon"))) return null;
+  const bad=["friends","ismerős","facebook","profile","timeline","message","add friend","photos","mutual","about","see more","following"];
+  if(type.includes("facebook") && bad.some(b=>low.includes(b))) return null;
+
+  let name="", phone="", email="", company="", note="";
+  cols.forEach(c=>{
+    if(queueLooksEmailV1338(c) && !email) email=queueEmailV1338(c);
+    else if(queueLooksPhoneV1338(c) && !phone) phone=queuePhoneV1338(c);
+    else if(!name) name=queueCleanV1338(c);
+    else if(!company && c.length>2 && cols.length>3) company=queueCleanV1338(c);
+    else note += (note?" | ":"") + queueCleanV1338(c);
+  });
+  if(!name && email) name=email;
+  if(!name && phone) name=phone;
+  name=queueCleanV1338(name);
+  if(!name || name.length<2 || name.length>120) return null;
+  if(type.includes("facebook") && name.split(" ").length<2 && !email && !phone) return null;
+  const owner=queueOwnerV1338();
+  const c={name,phone,email,company,note,ownerId:owner,status:"new",stage:0,source:type,sources:[type],importedAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+  if(type.includes("facebook") && !phone && !email){
+    c.fbName=name;
+    c.note=(c.note?c.note+" | ":"")+"Facebook kapcsolat – kérj telefonszámot / időpontot";
+  }
+  if(type.includes("google")) c.sources=["google_csv",type];
+  return c;
+}
+function queueAddFileV1338(name, type, text){
+  const st=queueStoreV1338();
+  const hash=queueHashV1338(text);
+  const exists=st.files.find(f=>f.hash===hash && f.ownerId===queueOwnerV1338());
+  if(exists){queueLogV1338("Már létező import fájl kihagyva: "+name); return exists;}
+  const lines=queueTextToLinesV1338(text,type);
+  const f={id:"qf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8), ownerId:queueOwnerV1338(), name:name||("import_"+new Date().toISOString()), type, hash, createdAt:new Date().toISOString(), status:"queued", cursor:0, total:lines.length, processed:0, imported:0, updated:0, duplicate:0, skipped:0, rawText:text};
+  st.files.push(f);
+  queueLogV1338(`Fájl import tárhelyre téve: ${f.name} (${f.total} sor)`);
+  try{save?.()}catch(e){}
+  return f;
+}
+function queueAddFromPasteV1338(){
+  const text=document.getElementById("queuePasteV1338")?.value||"";
+  const type=document.getElementById("queueTypeV1338")?.value||"name_list";
+  if(!text.trim()){alert("Nincs beillesztett névlista.");return}
+  queueAddFileV1338("beillesztett_"+type+"_"+new Date().toISOString().slice(0,19), type, text);
+  document.getElementById("queuePasteV1338").value="";
+  renderImportQueueV1338();
+}
+function queueAddFromFileV1338(input){
+  const file=input.files?.[0]; if(!file) return;
+  const type=document.getElementById("queueTypeV1338")?.value||"name_list";
+  const r=new FileReader();
+  r.onload=e=>{ queueAddFileV1338(file.name,type,e.target.result||""); renderImportQueueV1338(); input.value=""; };
+  r.readAsText(file);
+}
+function queueAddGooglePreviewV1338(){
+  const arr = (gSettingsV1332?.().preview) || (db.googleHardV1329?.preview) || [];
+  if(!arr.length){alert("Nincs Google előnézet. Előbb húzd le a Google névjegyeket, vagy tölts fel CSV-t.");return}
+  const text=arr.map(c=>[c.name,c.phone,c.email,c.company].filter(Boolean).join(";")).join("\n");
+  queueAddFileV1338("google_preview_"+new Date().toISOString().slice(0,10)+".csv","google_csv",text);
+  renderImportQueueV1338();
+}
+function queuePreviewFileV1338(id){
+  const f=queueStoreV1338().files.find(x=>x.id===id); if(!f) return;
+  const lines=queueTextToLinesV1338(f.rawText,f.type).slice(f.cursor, f.cursor+80);
+  queuePreviewCacheV1338=lines.map(line=>queueLineToContactV1338(line,f)).filter(Boolean).slice(0,50);
+  renderImportQueueV1338();
+}
+function queueExistingContactMapV1338(){
+  db.contacts=db.contacts||[];
+  const owner=queueOwnerV1338();
+  const map=new Map();
+  db.contacts.forEach((c,i)=>{
+    if((c.ownerId||"tomi")===owner || owner==="tomi") map.set(queueContactKeyV1338(c), {c,i});
+  });
+  return map;
+}
+function queueMergeContactV1338(c,map){
+  const key=queueContactKeyV1338(c);
+  const hit=map.get(key);
+  if(hit){
+    const h=hit.c;
+    h.name=h.name||c.name;
+    h.phone=h.phone||c.phone;
+    h.email=h.email||c.email;
+    h.company=h.company||c.company;
+    h.note=h.note||c.note;
+    h.sources=[...new Set([...(h.sources||[]),...(c.sources||[])])];
+    h.source=h.sources[0]||h.source||c.source;
+    h.ownerId=h.ownerId||c.ownerId;
+    h.updatedAt=new Date().toISOString();
+    if(c.fbName && !h.fbName) h.fbName=c.fbName;
+    return "updated";
+  }
+  c.id=c.id||("c_"+Date.now()+"_"+Math.random().toString(36).slice(2,8));
+  db.contacts.push(c);
+  map.set(key,{c,i:db.contacts.length-1});
+  return "added";
+}
+function queueProcessChunkV1338(maxLines=160){
+  const st=queueStoreV1338();
+  const file=st.files.find(f=>f.ownerId===queueOwnerV1338() && f.status!=="done");
+  if(!file){queueRunV1338=false; queueLogV1338("Nincs több feldolgozandó import fájl."); renderImportQueueV1338(); return false;}
+  file.status="processing";
+  const lines=queueTextToLinesV1338(file.rawText,file.type);
+  file.total=lines.length;
+  const map=queueExistingContactMapV1338();
+  let worked=0;
+  while(file.cursor < lines.length && worked < maxLines){
+    const line=lines[file.cursor];
+    const lineKey=queueLineKeyV1338(file,line);
+    file.cursor++; worked++; file.processed++;
+    if(st.processedKeys[lineKey]){file.duplicate++; continue;}
+    const contact=queueLineToContactV1338(line,file);
+    st.processedKeys[lineKey]=true;
+    if(!contact){file.skipped++; continue;}
+    const ckey=queueContactKeyV1338(contact);
+    if(st.mergeIndex[ckey]){
+      file.duplicate++;
+      continue;
+    }
+    const result=queueMergeContactV1338(contact,map);
+    st.mergeIndex[ckey]=true;
+    if(result==="added") file.imported++; else file.updated++;
+  }
+  if(file.cursor >= lines.length){file.status="done"; file.doneAt=new Date().toISOString(); queueLogV1338(`Kész: ${file.name} – új: ${file.imported}, frissített: ${file.updated}, duplikáció: ${file.duplicate}, kihagyva: ${file.skipped}`);}
+  st.lastRun=new Date().toISOString();
+  try{save?.()}catch(e){}
+  renderImportQueueV1338();
+  return true;
+}
+function queueStartV1338(){
+  queueRunV1338=true;
+  queueLogV1338("Feldolgozás indítva.");
+  function loop(){
+    if(!queueRunV1338) return;
+    const has=queueProcessChunkV1338(Number(document.getElementById("queueChunkV1338")?.value||160));
+    if(has) queueTimerV1338=setTimeout(loop, 40);
+  }
+  loop();
+}
+function queuePauseV1338(){queueRunV1338=false; if(queueTimerV1338) clearTimeout(queueTimerV1338); queueLogV1338("Feldolgozás szüneteltetve."); renderImportQueueV1338();}
+function queueResetDoneV1338(){
+  if(!confirm("Csak a kész import fájlokat törlöd a tárhelyből? A CRM-be átvitt nevek megmaradnak.")) return;
+  const st=queueStoreV1338();
+  st.files=st.files.filter(f=>f.status!=="done");
+  queueLogV1338("Kész import fájlok törölve a tárhelyből.");
+  try{save?.()}catch(e){}
+  renderImportQueueV1338();
+}
+function queueHardResetV1338(){
+  if(!confirm("Import tárhely teljes törlése? A CRM kontaktok megmaradnak, csak az import queue törlődik.")) return;
+  db.importQueueV1338={files:[], processedKeys:{}, mergeIndex:{}, logs:[], lastRun:null};
+  try{save?.()}catch(e){}
+  renderImportQueueV1338();
+}
+function queueStatsV1338(){
+  const st=queueStoreV1338();
+  const files=st.files.filter(f=>f.ownerId===queueOwnerV1338());
+  const total=files.reduce((a,f)=>a+(f.total||0),0);
+  const processed=files.reduce((a,f)=>a+(f.processed||0),0);
+  return {
+    files:files.length,total,processed,
+    imported:files.reduce((a,f)=>a+(f.imported||0),0),
+    updated:files.reduce((a,f)=>a+(f.updated||0),0),
+    done:files.filter(f=>f.status==="done").length,
+    pending:files.filter(f=>f.status!=="done").length,
+    pct: total?Math.round(processed/total*100):0
+  };
+}
+function queueFilesHtmlV1338(){
+  const files=queueStoreV1338().files.filter(f=>f.ownerId===queueOwnerV1338()).slice().reverse();
+  if(!files.length) return `<div class="queueFileV1338"><div><b>Nincs import tárhelyen fájl.</b><small>Tölts fel vagy illessz be névlistát.</small></div></div>`;
+  return files.map(f=>`<div class="queueFileV1338">
+    <div><b>${esc(f.name)}</b><small>${f.type} • ${f.status} • ${f.processed||0}/${f.total||0} sor • új ${f.imported||0}, frissített ${f.updated||0}, duplikáció ${f.duplicate||0}</small></div>
+    <div class="importQueueActionsV1338"><button class="soft" onclick="queuePreviewFileV1338('${f.id}')">Előnézet</button></div>
+  </div>`).join("");
+}
+function queuePreviewHtmlV1338(){
+  if(!queuePreviewCacheV1338.length) return `<div class="queuePreviewV1338"><table><tbody><tr><td>Nincs előnézet. Kattints egy fájlnál: Előnézet.</td></tr></tbody></table></div>`;
+  return `<div class="queuePreviewV1338"><table><thead><tr><th>#</th><th>Név</th><th>Telefon</th><th>Email</th><th>Forrás</th></tr></thead><tbody>${queuePreviewCacheV1338.map((c,i)=>`<tr><td>${i+1}</td><td>${esc(c.name||"")}</td><td>${esc(c.phone||"")}</td><td>${esc(c.email||"")}</td><td>${esc((c.sources||[]).join(", "))}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function queueLogsHtmlV1338(){
+  const logs=queueStoreV1338().logs.slice(-18).reverse();
+  return `<div class="queueLogV1338">${logs.map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>") || "Nincs log."}</div>`;
+}
+function renderImportQueueV1338(){
+  document.body.classList.add("import-queue-v1338");
+  const st=queueStatsV1338();
+  let host=document.getElementById("importQueueHostV1338");
+  if(!host){
+    const target=document.getElementById("secureImportHubDashboard") || document.querySelector("main") || document.body;
+    host=document.createElement("div");
+    host.id="importQueueHostV1338";
+    target.prepend(host);
+  }
+  host.innerHTML=`<div class="importQueueV1338">
+    <h3>Import tárhely & háttér névfeldolgozó – v13.39</h3>
+    <p>A fájlokat először csak eltárolja. Utána kis csomagokban áthúzza a neveket a CRM adatbázisba. Ami már átment, azt többet nem olvassa be. Google és Facebook listát összefésüli.</p>
+    <div class="importQueueStatsV1338">
+      <div><b>${st.files}</b><span>fájl tárhelyen</span></div>
+      <div><b>${st.processed}/${st.total}</b><span>feldolgozott sor</span></div>
+      <div><b>${st.imported}</b><span>új név</span></div>
+      <div><b>${st.updated}</b><span>összefésült</span></div>
+      <div><b>${st.done}</b><span>kész fájl</span></div>
+      <div><b>${st.pct}%</b><span>állapot</span></div>
+    </div>
+    <div class="queueProgressV1338"><i style="width:${st.pct}%"></i></div>
+    <div class="importQueueGridV1338">
+      <div>
+        <label>Import típus</label>
+        <select id="queueTypeV1338">
+          <option value="name_list">Sima névlista</option>
+          <option value="facebook_html">Facebook HTML / névlista</option>
+          <option value="google_csv">Google CSV / Contacts export</option>
+          <option value="event_list">Rendezvény lista</option>
+          <option value="recommendation_list">Ajánlási lista</option>
+        </select>
+        <label>Fájl import tárhelyre</label>
+        <input type="file" accept=".txt,.csv,.html,.htm,text/plain,text/csv,text/html" onchange="queueAddFromFileV1338(this)">
+        <label>Vagy illeszd be a névlistát</label>
+        <textarea id="queuePasteV1338" placeholder="Kovács Péter&#10;Nagy Anna; +36301234567; anna@email.hu&#10;Facebook névlista..."></textarea>
+        <div class="importQueueActionsV1338">
+          <button class="blue" onclick="queueAddFromPasteV1338()">Fájl/lista tárhelyre tétele</button>
+          <button class="soft" onclick="queueAddGooglePreviewV1338()">Google előnézet tárhelyre</button>
+        </div>
+      </div>
+      <div>
+        <label>Csomagméret</label>
+        <select id="queueChunkV1338"><option value="80">80 név / kör</option><option value="160" selected>160 név / kör</option><option value="300">300 név / kör</option></select>
+        <div class="importQueueActionsV1338">
+          <button class="gold" onclick="queueStartV1338()">Feldolgozás indítása / folytatása</button>
+          <button class="soft" onclick="queuePauseV1338()">Szünet</button>
+          <button class="blue" onclick="prodSetViewV1314 ? prodSetViewV1314('largeListWork') : setView('largeListWork')">Nagy névlista</button>
+          <button class="soft" onclick="queueResetDoneV1338()">Kész fájlok törlése</button>
+          <button class="red" onclick="queueHardResetV1338()">Import tárhely törlése</button>
+        </div>
+        <h4>Import fájlok</h4>
+        <div class="queueFileListV1338">${queueFilesHtmlV1338()}</div>
+      </div>
+    </div>
+    <h4>Előnézet</h4>${queuePreviewHtmlV1338()}
+    <h4>Feldolgozási napló</h4>${queueLogsHtmlV1338()}
+  </div>`;
+}
+const oldRenderSecureImportHubV1338 = typeof renderSecureImportHubDashboard==="function" ? renderSecureImportHubDashboard : null;
+if(oldRenderSecureImportHubV1338){
+  renderSecureImportHubDashboard=function(){
+    oldRenderSecureImportHubV1338();
+    setTimeout(renderImportQueueV1338,60);
+  }
+}
+const oldSetViewV1338 = typeof setView==="function" ? setView : null;
+if(oldSetViewV1338){
+  setView=function(v){
+    const ok=oldSetViewV1338(v);
+    if(v==="secureImportHub" || v==="googleStart" || v==="facebookImportControl") setTimeout(renderImportQueueV1338,100);
+    return ok;
+  }
+}
+const oldProdSetViewV1338 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
+if(oldProdSetViewV1338){
+  prodSetViewV1314=function(v){
+    const ok=oldProdSetViewV1338(v);
+    if(v==="secureImportHub" || v==="googleStart" || v==="facebookImportControl") setTimeout(renderImportQueueV1338,100);
+    return ok;
+  }
+}
+const oldRunDeepQaV1338 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1338){
+  runDeepQaV92=function(){
+    const qa=oldRunDeepQaV1338();
+    const s=queueStatsV1338();
+    qa.version="v13.39";
+    qa.importQueueProcessor={
+      enabled:true,
+      panel:!!document.getElementById("importQueueHostV1338"),
+      files:s.files,
+      total:s.total,
+      processed:s.processed,
+      imported:s.imported,
+      updated:s.updated,
+      processedKeyCount:Object.keys(queueStoreV1338().processedKeys||{}).length,
+      mergeIndexCount:Object.keys(queueStoreV1338().mergeIndex||{}).length,
+      resumable:true,
+      googleFacebookMerge:true
+    };
+    return qa;
+  }
+}
+openChangelog = function(){
+  document.getElementById("modalTitle").textContent="Verzió / Changelog";
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.39</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ import tárhely fájlokhoz</li><li>✅ feldolgozás kis csomagokban</li><li>✅ folytatható feldolgozás</li><li>✅ ami már átment, azt nem olvassa be újra</li><li>✅ Google + Facebook lista összefésülés</li><li>✅ duplikáció és merge index</li><li>✅ kész fájlok külön kezelése</li><li>✅ QA importQueueProcessor blokk</li></ul></div>`;
+  document.getElementById("modal").classList.add("open");
+};
+setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderImportQueueV1338(); },800);
+
+
+/* === v13.39 Cloud Team Sync & Google Contact Flow === */
+var APP_VERSION = "v13.39";
+window.__RC_CLOUD_TEAM_SYNC_GOOGLE_FLOW_V1339__ = true;
+
+let cloudSyncTimerV1339 = null;
+let cloudBusyV1339 = false;
+
+function cloudStateV1339(){
+  db.cloudV1339 = db.cloudV1339 || {
+    provider:"supabase_rest",
+    supabaseUrl:"",
+    anonKey:"",
+    teamId:"zdiamond-main",
+    deviceId:localStorage.getItem("zd_device_id_v1339") || ("dev_"+Date.now()+"_"+Math.random().toString(36).slice(2,8)),
+    enabled:false,
+    lastPush:null,
+    lastPull:null,
+    lastError:"",
+    log:[]
+  };
+  localStorage.setItem("zd_device_id_v1339", db.cloudV1339.deviceId);
+  return db.cloudV1339;
+}
+function cloudUserV1339(){
+  const login = typeof loginStateV1327==="function" ? loginStateV1327() : null;
+  const mode = db.userWorkModeV1339 || "fulltime";
+  return {
+    ownerId:(login?.ownerId)||db.currentOwnerId||"tomi",
+    name:(login?.name)||db.currentUserName||"Töreki Tamás",
+    role:(login?.role)||db.currentUserRole||"admin",
+    label:(login?.label)||"Főadmin",
+    workMode:mode,
+    weeklyPresentationTarget:mode==="parttime" ? 7 : 20,
+    dailyPresentationTarget:mode==="parttime" ? 1 : 3,
+    weeklyInvitationTarget:mode==="parttime" ? 35 : 100,
+    dailyInvitationTarget:mode==="parttime" ? 5 : 15
+  };
+}
+function cloudLogV1339(msg){
+  const st=cloudStateV1339();
+  st.log.push({date:new Date().toISOString(), msg});
+  if(st.log.length>300) st.log=st.log.slice(-300);
+  try{save?.()}catch(e){}
+}
+function cloudHeadersV1339(){
+  const st=cloudStateV1339();
+  return {
+    "apikey":st.anonKey,
+    "Authorization":"Bearer "+st.anonKey,
+    "Content-Type":"application/json",
+    "Prefer":"resolution=merge-duplicates,return=minimal"
+  };
+}
+function cloudBaseV1339(table){
+  const st=cloudStateV1339();
+  return String(st.supabaseUrl||"").replace(/\/$/,"") + "/rest/v1/" + table;
+}
+function cloudConfiguredV1339(){
+  const st=cloudStateV1339();
+  return !!(st.supabaseUrl && st.anonKey && st.teamId);
+}
+async function cloudUpsertV1339(table, rows, conflict="id"){
+  if(!cloudConfiguredV1339()) throw new Error("Cloud nincs beállítva.");
+  if(!Array.isArray(rows)) rows=[rows];
+  const url=cloudBaseV1339(table)+"?on_conflict="+encodeURIComponent(conflict);
+  const res=await fetch(url,{method:"POST",headers:cloudHeadersV1339(),body:JSON.stringify(rows)});
+  if(!res.ok) throw new Error(table+" upsert hiba: "+await res.text());
+  return true;
+}
+async function cloudSelectV1339(table, query=""){
+  if(!cloudConfiguredV1339()) throw new Error("Cloud nincs beállítva.");
+  const res=await fetch(cloudBaseV1339(table)+query,{headers:cloudHeadersV1339()});
+  if(!res.ok) throw new Error(table+" select hiba: "+await res.text());
+  return await res.json();
+}
+function cloudNormalizeContactV1339(c){
+  const user=cloudUserV1339();
+  const id=c.id || ("c_"+Date.now()+"_"+Math.random().toString(36).slice(2,8));
+  c.id=id;
+  c.ownerId=c.ownerId||user.ownerId;
+  return {
+    id,
+    team_id:cloudStateV1339().teamId,
+    owner_id:c.ownerId,
+    name:c.name||"",
+    phone:c.phone||"",
+    email:c.email||"",
+    company:c.company||"",
+    status:c.status||"new",
+    stage:c.stage||0,
+    source:c.source||((c.sources||[])[0])||"",
+    sources:c.sources||[],
+    note:c.note||"",
+    tags:c.tags||[],
+    updated_at:c.updatedAt||new Date().toISOString(),
+    payload:c
+  };
+}
+function cloudDenormalizeContactV1339(r){
+  const p=r.payload||{};
+  return {
+    ...p,
+    id:r.id,
+    ownerId:r.owner_id,
+    name:p.name||r.name,
+    phone:p.phone||r.phone,
+    email:p.email||r.email,
+    company:p.company||r.company,
+    status:p.status||r.status,
+    source:p.source||r.source,
+    sources:p.sources||r.sources||[],
+    note:p.note||r.note,
+    tags:p.tags||r.tags||[],
+    updatedAt:r.updated_at
+  };
+}
+async function cloudSaveProfileV1339(){
+  const user=cloudUserV1339();
+  await cloudUpsertV1339("zdiamond_profiles",[{
+    id:user.ownerId,
+    team_id:cloudStateV1339().teamId,
+    owner_id:user.ownerId,
+    name:user.name,
+    role:user.role,
+    work_mode:user.workMode,
+    weekly_presentation_target:user.weeklyPresentationTarget,
+    weekly_invitation_target:user.weeklyInvitationTarget,
+    updated_at:new Date().toISOString(),
+    payload:{user, dbMeta:db.meta||{}}
+  }],"id");
+}
+async function cloudPushAllV1339(){
+  if(cloudBusyV1339) return;
+  cloudBusyV1339=true;
+  const st=cloudStateV1339();
+  try{
+    await cloudSaveProfileV1339();
+    db.contacts=db.contacts||[];
+    const owner=cloudUserV1339().ownerId;
+    const contacts=db.contacts.filter(c=>(c.ownerId||"tomi")===owner || owner==="tomi").map(cloudNormalizeContactV1339);
+    for(let i=0;i<contacts.length;i+=250){
+      await cloudUpsertV1339("zdiamond_contacts",contacts.slice(i,i+250),"id");
+      cloudLogV1339(`Cloud push kontaktok: ${Math.min(i+250,contacts.length)}/${contacts.length}`);
+    }
+    const queue=queueStoreV1338 ? queueStoreV1338() : (db.importQueueV1338||{files:[]});
+    await cloudUpsertV1339("zdiamond_queue",[{
+      id:cloudStateV1339().teamId+"_"+owner,
+      team_id:cloudStateV1339().teamId,
+      owner_id:owner,
+      updated_at:new Date().toISOString(),
+      payload:queue
+    }],"id");
+    const daily = {vitals:db.vitalSignsV1319||{}, planner:db.lifePlannerV1320||{}, stats:db.stats||{}};
+    await cloudUpsertV1339("zdiamond_daily",[{
+      id:cloudStateV1339().teamId+"_"+owner,
+      team_id:cloudStateV1339().teamId,
+      owner_id:owner,
+      updated_at:new Date().toISOString(),
+      payload:daily
+    }],"id");
+    st.lastPush=new Date().toISOString();
+    st.lastError="";
+    cloudLogV1339("Cloud mentés kész.");
+  }catch(e){
+    st.lastError=String(e);
+    cloudLogV1339("Cloud push hiba: "+String(e).slice(0,220));
+    alert("Cloud push hiba: "+String(e).slice(0,260));
+  }finally{
+    cloudBusyV1339=false;
+    try{save?.()}catch(e){}
+    renderCloudSyncCenterV1339();
+  }
+}
+async function cloudPullAllV1339(){
+  if(cloudBusyV1339) return;
+  cloudBusyV1339=true;
+  const st=cloudStateV1339();
+  const user=cloudUserV1339();
+  try{
+    const team=encodeURIComponent(st.teamId);
+    const owner=encodeURIComponent(user.ownerId);
+    const contacts=await cloudSelectV1339("zdiamond_contacts",`?team_id=eq.${team}&owner_id=eq.${owner}&select=*`);
+    db.contacts=db.contacts||[];
+    const map=new Map(db.contacts.map((c,i)=>[c.id,{c,i}]));
+    contacts.forEach(r=>{
+      const c=cloudDenormalizeContactV1339(r);
+      if(map.has(c.id)){
+        db.contacts[map.get(c.id).i]={...map.get(c.id).c,...c};
+      }else db.contacts.push(c);
+    });
+    const q=await cloudSelectV1339("zdiamond_queue",`?team_id=eq.${team}&owner_id=eq.${owner}&select=*`);
+    if(q[0]?.payload) db.importQueueV1338=q[0].payload;
+    const d=await cloudSelectV1339("zdiamond_daily",`?team_id=eq.${team}&owner_id=eq.${owner}&select=*`);
+    if(d[0]?.payload){
+      db.vitalSignsV1319=d[0].payload.vitals||db.vitalSignsV1319||{};
+      db.lifePlannerV1320=d[0].payload.planner||db.lifePlannerV1320||{};
+      db.stats=d[0].payload.stats||db.stats||{};
+    }
+    st.lastPull=new Date().toISOString();
+    st.lastError="";
+    cloudLogV1339(`Cloud betöltés kész. Kontakt: ${contacts.length}`);
+    try{save?.()}catch(e){}
+    try{renderLargeListFixV1336?.()}catch(e){}
+  }catch(e){
+    st.lastError=String(e);
+    cloudLogV1339("Cloud pull hiba: "+String(e).slice(0,220));
+    alert("Cloud pull hiba: "+String(e).slice(0,260));
+  }finally{
+    cloudBusyV1339=false;
+    renderCloudSyncCenterV1339();
+  }
+}
+function cloudSaveSettingsV1339(){
+  const st=cloudStateV1339();
+  st.supabaseUrl=(document.getElementById("cloudUrlV1339")?.value||"").trim();
+  st.anonKey=(document.getElementById("cloudKeyV1339")?.value||"").trim();
+  st.teamId=(document.getElementById("cloudTeamV1339")?.value||"zdiamond-main").trim();
+  st.enabled=!!document.getElementById("cloudEnabledV1339")?.checked;
+  db.userWorkModeV1339=document.getElementById("cloudWorkModeV1339")?.value || "fulltime";
+  try{save?.()}catch(e){}
+  if(st.enabled) cloudStartAutoSyncV1339();
+  renderCloudSyncCenterV1339();
+}
+function cloudStartAutoSyncV1339(){
+  const st=cloudStateV1339();
+  if(cloudSyncTimerV1339) clearInterval(cloudSyncTimerV1339);
+  if(!st.enabled || !cloudConfiguredV1339()) return;
+  cloudSyncTimerV1339=setInterval(()=>cloudPushAllV1339(),60000);
+  cloudLogV1339("Auto sync elindítva: 60 mp.");
+}
+function cloudStopAutoSyncV1339(){
+  if(cloudSyncTimerV1339) clearInterval(cloudSyncTimerV1339);
+  cloudSyncTimerV1339=null;
+  cloudStateV1339().enabled=false;
+  try{save?.()}catch(e){}
+  renderCloudSyncCenterV1339();
+}
+function cloudLogsHtmlV1339(){
+  return `<div class="cloudLogV1339">${cloudStateV1339().log.slice(-16).reverse().map(l=>`[${String(l.date).slice(11,19)}] ${esc(l.msg)}`).join("<br>")||"Nincs cloud log."}</div>`;
+}
+
+/* Google contact import hard repair: direct redirect + fallback CSV */
+function googleDirectClientIdV1339(){
+  return (document.getElementById("gClientIdV1332")?.value || document.getElementById("cloudGoogleClientV1339")?.value || "206902049213-sonkc4fiqs22arucm7i7eupdvs4531.apps.googleusercontent.com").trim();
+}
+function googleSaveClientV1339(){
+  const cid=googleDirectClientIdV1339();
+  localStorage.setItem("google_client_id_v1339",cid);
+  try{ db.googleRedirectV1332=db.googleRedirectV1332||{}; db.googleRedirectV1332.clientId=cid; save?.(); }catch(e){}
+}
+function googleDirectRedirectV1339(){
+  googleSaveClientV1339();
+  const cid=googleDirectClientIdV1339();
+  const url="https://accounts.google.com/o/oauth2/v2/auth"
+    +"?client_id="+encodeURIComponent(cid)
+    +"&redirect_uri="+encodeURIComponent("https://www.zdiamond.eu/")
+    +"&response_type=token"
+    +"&scope="+encodeURIComponent("https://www.googleapis.com/auth/contacts.readonly")
+    +"&include_granted_scopes=true"
+    +"&prompt=consent";
+  location.href=url;
+}
+async function googleFetchContactsV1339(){
+  const token=(db.googleRedirectV1332?.accessToken)||localStorage.getItem("google_access_token_v1332")||localStorage.getItem("google_access_token_v1329");
+  if(!token){alert("Nincs Google token. Nyomd meg: Google belépés teljes oldalon.");return}
+  try{
+    if(typeof gFetchContactsV1332==="function") await gFetchContactsV1332();
+    const arr=(db.googleRedirectV1332?.preview)||[];
+    if(arr.length){
+      const text=arr.map(c=>[c.name,c.phone,c.email,c.company].filter(Boolean).join(";")).join("\n");
+      queueAddFileV1338("google_contacts_direct_"+new Date().toISOString().slice(0,10)+".csv","google_csv",text);
+      cloudLogV1339("Google névjegyek import tárhelyre téve: "+arr.length);
+      renderImportQueueV1338?.();
+    }
+  }catch(e){alert("Google lekérés hiba: "+String(e).slice(0,260))}
+}
+function renderCloudSyncCenterV1339(){
+  document.body.classList.add("cloud-v1339");
+  let host=document.getElementById("cloudSyncHostV1339");
+  if(!host){
+    const target=document.getElementById("secureImportHubDashboard") || document.querySelector("main") || document.body;
+    host=document.createElement("div");
+    host.id="cloudSyncHostV1339";
+    target.prepend(host);
+  }
+  const st=cloudStateV1339();
+  const user=cloudUserV1339();
+  const contacts=(db.contacts||[]).filter(c=>(c.ownerId||"tomi")===user.ownerId || user.ownerId==="tomi").length;
+  const queue=queueStatsV1338 ? queueStatsV1338() : {files:0,processed:0,total:0,imported:0};
+  host.innerHTML=`<div class="cloudSyncV1339">
+    <h3>Felhő / Saját felhasználói struktúra / Google javítás – v13.39</h3>
+    <p>Ez a modul teszi felhőkész állapotba a rendszert: minden belépő saját ownerId alapján dolgozik, cloudba menthető, majd másik eszközön azonnal visszatölthető.</p>
+    <div class="cloudStatsV1339">
+      <div><b>${user.name}</b><span>belépő</span></div>
+      <div><b>${user.workMode==="parttime"?"mellék":"fő"}</b><span>munka mód</span></div>
+      <div><b>${user.weeklyPresentationTarget}</b><span>heti prezi cél</span></div>
+      <div><b>${contacts}</b><span>saját kontakt</span></div>
+      <div><b>${queue.processed}/${queue.total}</b><span>import feldolgozás</span></div>
+      <div><b>${st.enabled?"ON":"OFF"}</b><span>cloud sync</span></div>
+    </div>
+    <div class="flowCardV1339">
+      <h4>Hálózatépítő áramlás célok</h4>
+      <div class="flowTargetsV1339">
+        <div><b>Főállás</b><br><span class="cloudBadgeV1339">heti 15–20 prezentáció</span><br><small>napi 15 új meghívás, napi 3 prezi/időpont cél</small></div>
+        <div><b>Mellékállás</b><br><span class="cloudBadgeV1339 blue">heti 5–7 prezentáció</span><br><small>napi 5 új meghívás, napi 1 prezi/időpont cél</small></div>
+        <div><b>Napi flow</b><br><small>Import → lista → meghívás → időpont → prezi → utánkövetés → partner</small></div>
+        <div><b>Kontroll</b><br><small>Napi zárás, heti riport, havi trend, vezetői dashboard</small></div>
+      </div>
+    </div>
+    <div class="cloudGridV1339">
+      <div>
+        <h4>Cloud beállítás</h4>
+        <label>Supabase Project URL</label>
+        <input id="cloudUrlV1339" value="${escAttr(st.supabaseUrl||"")}" placeholder="https://xxxx.supabase.co">
+        <label>Supabase anon public key</label>
+        <input id="cloudKeyV1339" value="${escAttr(st.anonKey||"")}" placeholder="eyJ...">
+        <label>Team ID / szervezet</label>
+        <input id="cloudTeamV1339" value="${escAttr(st.teamId||"zdiamond-main")}">
+        <label>Munka mód</label>
+        <select id="cloudWorkModeV1339"><option value="fulltime" ${user.workMode==="fulltime"?"selected":""}>Főállású hálózatépítő</option><option value="parttime" ${user.workMode==="parttime"?"selected":""}>Mellékállású hálózatépítő</option></select>
+        <label><input type="checkbox" id="cloudEnabledV1339" ${st.enabled?"checked":""}> Auto cloud sync 60 mp</label>
+        <div class="cloudActionsV1339">
+          <button onclick="cloudSaveSettingsV1339()">Beállítás mentése</button>
+          <button class="blue" onclick="cloudPushAllV1339()">Cloud mentés most</button>
+          <button class="gold" onclick="cloudPullAllV1339()">Cloud betöltés most</button>
+          <button class="soft" onclick="cloudStopAutoSyncV1339()">Auto sync stop</button>
+        </div>
+      </div>
+      <div>
+        <h4>Google névjegy letöltés javított indító</h4>
+        <div class="gFixV1339">
+          <label>Google OAuth Client ID</label>
+          <input id="cloudGoogleClientV1339" value="${escAttr(localStorage.getItem("google_client_id_v1339")||localStorage.getItem("google_client_id_v1332")||"206902049213-sonkc4fiqs22arucm7i7eupdvs4531.apps.googleusercontent.com")}">
+          <div class="cloudActionsV1339">
+            <button onclick="googleSaveClientV1339()">Client ID mentése</button>
+            <button class="blue" onclick="googleDirectRedirectV1339()">Google belépés teljes oldalon</button>
+            <button class="gold" onclick="googleFetchContactsV1339()">Google névjegyek tárhelyre</button>
+          </div>
+          <small>Ha a Google OAuth továbbra sem működik, akkor azonnali használatra: Google Contacts export CSV → Import tárhely.</small>
+        </div>
+        <h4>Cloud állapot</h4>
+        <p><span class="cloudBadgeV1339 ${cloudConfiguredV1339()?"":"warn"}">${cloudConfiguredV1339()?"Cloud konfigurálva":"Cloud még nincs konfigurálva"}</span>
+        <span class="cloudBadgeV1339">Utolsó mentés: ${st.lastPush?String(st.lastPush).slice(0,19).replace("T"," "):"-"}</span>
+        <span class="cloudBadgeV1339">Utolsó betöltés: ${st.lastPull?String(st.lastPull).slice(0,19).replace("T"," "):"-"}</span></p>
+        ${st.lastError?`<div class="cloudBadgeV1339 warn">Utolsó hiba: ${esc(st.lastError).slice(0,240)}</div>`:""}
+      </div>
+    </div>
+    <h4>Cloud log</h4>${cloudLogsHtmlV1339()}
+  </div>`;
+}
+const oldRenderSecureImportHubV1339 = typeof renderSecureImportHubDashboard==="function" ? renderSecureImportHubDashboard : null;
+if(oldRenderSecureImportHubV1339){
+  renderSecureImportHubDashboard=function(){
+    oldRenderSecureImportHubV1339();
+    setTimeout(renderCloudSyncCenterV1339,40);
+    setTimeout(renderImportQueueV1338,80);
+  }
+}
+const oldSetViewV1339 = typeof setView==="function" ? setView : null;
+if(oldSetViewV1339){
+  setView=function(v){
+    const ok=oldSetViewV1339(v);
+    if(v==="secureImportHub" || v==="googleStart" || v==="facebookImportControl") setTimeout(renderCloudSyncCenterV1339,100);
+    return ok;
+  }
+}
+const oldProdSetViewV1339 = typeof prodSetViewV1314==="function" ? prodSetViewV1314 : null;
+if(oldProdSetViewV1339){
+  prodSetViewV1314=function(v){
+    const ok=oldProdSetViewV1339(v);
+    if(v==="secureImportHub" || v==="googleStart" || v==="facebookImportControl") setTimeout(renderCloudSyncCenterV1339,100);
+    return ok;
+  }
+}
+const oldRunDeepQaV1339 = typeof runDeepQaV92==="function" ? runDeepQaV92 : null;
+if(oldRunDeepQaV1339){
+  runDeepQaV92=function(){
+    const qa=oldRunDeepQaV1339();
+    qa.version="v13.39";
+    qa.cloudTeamSyncGoogleFlow={
+      enabled:true,
+      panel:!!document.getElementById("cloudSyncHostV1339"),
+      cloudConfigured:cloudConfiguredV1339(),
+      user:cloudUserV1339(),
+      tables:["zdiamond_profiles","zdiamond_contacts","zdiamond_queue","zdiamond_daily"],
+      googleFullPageLogin:true,
+      queueProcessor:!!window.__RC_IMPORT_QUEUE_PROCESSOR_V1338__,
+      networkFlowTargets:true
+    };
+    return qa;
+  }
+}
+openChangelog = function(){
+  document.getElementById("modalTitle").textContent="Verzió / Changelog";
+  document.getElementById("modalBody").innerHTML=`<div class="scriptbox"><span class="versionTag">v13.39</span><h3>ZINZINO ROYAL CROWN CRM – Cloud Team Sync & Google Contact Flow</h3><ul><li>✅ cloud-ready adattárolás minden belépőnek saját ownerId szerint</li><li>✅ Supabase REST adapter</li><li>✅ profil, kontakt, import queue, napi adatok cloud szinkron</li><li>✅ Google névjegy letöltés javított teljes oldalas indító</li><li>✅ Google előnézet import tárhelyre</li><li>✅ főállású cél: heti 15–20 prezi</li><li>✅ mellékállású cél: heti 5–7 prezi</li><li>✅ QA cloudTeamSyncGoogleFlow blokk</li></ul></div>`;
+  document.getElementById("modal").classList.add("open");
+};
+setTimeout(()=>{ if((window.view||"")==="secureImportHub") renderCloudSyncCenterV1339(); cloudStartAutoSyncV1339(); },900);
 
 </script>
 <div id="globalLoader"><div class="loaderPanel"><div class="spinner"></div><b id="loaderText">Dolgozom...</b><div class="small" id="loaderSub">Kérlek várj egy pillanatot.</div></div></div>
