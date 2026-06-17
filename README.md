@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.47
+# ZDiamond CRM v13.48
 
-Goal Dashboard Auto Planner – monthly/weekly mandatory planning, partner name, color-coded progress, continuous updates.
+Always Visible Cloud Setup – fixed floating and inline Supabase setup panel.
