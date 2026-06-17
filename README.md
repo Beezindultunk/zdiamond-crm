@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.81
+# ZDiamond CRM v13.82
 
-Real AI Backend Assistant Final – secure backend URL, OpenAI Responses API proxy concept, CRM context, AI actions, fallback mode.
+White Screen Recovery & Stable Boot Final – fixes recursive badge audit causing Maximum call stack size exceeded and blank screen.
