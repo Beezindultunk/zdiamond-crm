@@ -1,3 +1,3 @@
-# ZDiamond CRM v13.82
+# RisePath / ZDiamond CRM v13.83
 
-White Screen Recovery & Stable Boot Final – fixes recursive badge audit causing Maximum call stack size exceeded and blank screen.
+Cloud Fallback No White Screen Final – fixes Cloud nincs beállítva blank screen, adds recovery shell and full-time test data generator.
